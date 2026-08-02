@@ -2,10 +2,10 @@
  "updated": "2026-08-02",
  "currency": "NZD",
  "stats": {
-  "totalCards": 733,
-  "uniqueVariants": 215,
+  "totalCards": 734,
+  "uniqueVariants": 211,
   "uniqueNames": 164,
-  "totalSpent": 472.75,
+  "totalSpent": 472.83,
   "avgCostPerCard": 0.64,
   "needsCount": 3
  },
@@ -128,30 +128,16 @@
     {
      "name": "Boss's Orders",
      "variant": "Standard",
-     "qty": 16,
-     "cost": 2.37,
-     "avgAllIn": 0.15
-    },
-    {
-     "name": "Boss's Orders [Corbeau] - 183/217",
-     "variant": "No. 183/217 · Corbeau",
-     "qty": 10,
-     "cost": 4.79,
-     "avgAllIn": 0.48
-    },
-    {
-     "name": "Boss's Orders [Ghetsis]",
-     "variant": "Ghetsis",
-     "qty": 3,
-     "cost": 2.41,
-     "avgAllIn": 0.8
+     "qty": 27,
+     "cost": 8.74,
+     "avgAllIn": 0.32
     },
     {
      "name": "Boss's Orders [RH]",
      "variant": "Reverse Holo",
-     "qty": 1,
-     "cost": 0.08,
-     "avgAllIn": 0.08
+     "qty": 3,
+     "cost": 0.91,
+     "avgAllIn": 0.3
     }
    ]
   },
@@ -202,14 +188,7 @@
     {
      "name": "Budew [Holo] [PP]",
      "variant": "Holo · Prize Pack",
-     "qty": 1,
-     "cost": 0.0,
-     "avgAllIn": 0.0
-    },
-    {
-     "name": "Budew [PP]",
-     "variant": "Prize Pack",
-     "qty": 1,
+     "qty": 2,
      "cost": 0.0,
      "avgAllIn": 0.0
     }
@@ -242,12 +221,12 @@
    ]
   },
   {
-   "base": "Chicorita",
+   "base": "Chien-Pao",
    "total": 1,
    "variants": [
     {
-     "name": "Chicorita [RH]",
-     "variant": "Reverse Holo",
+     "name": "Chien-Pao",
+     "variant": "Standard",
      "qty": 1,
      "cost": 0.08,
      "avgAllIn": 0.08
@@ -255,12 +234,12 @@
    ]
   },
   {
-   "base": "Chien-Pao",
+   "base": "Chikorita",
    "total": 1,
    "variants": [
     {
-     "name": "Chien-Pao",
-     "variant": "Standard",
+     "name": "Chikorita [RH]",
+     "variant": "Reverse Holo",
      "qty": 1,
      "cost": 0.08,
      "avgAllIn": 0.08
@@ -1082,15 +1061,15 @@
      "name": "Lillie's Determination",
      "variant": "Standard",
      "qty": 21,
-     "cost": 14.19,
-     "avgAllIn": 0.68
+     "cost": 13.9,
+     "avgAllIn": 0.66
     },
     {
-     "name": "Lillie's Determination (Ascended Heroes)",
-     "variant": "Ascended Heroes",
+     "name": "Lillie's Determination [RH]",
+     "variant": "Reverse Holo",
      "qty": 1,
-     "cost": 0.35,
-     "avgAllIn": 0.35
+     "cost": 0.63,
+     "avgAllIn": 0.63
     }
    ]
   },
@@ -1988,14 +1967,14 @@
   },
   {
    "base": "Spiky Energy",
-   "total": 2,
+   "total": 3,
    "variants": [
     {
      "name": "Spiky Energy",
      "variant": "Standard",
-     "qty": 2,
-     "cost": 0.28,
-     "avgAllIn": 0.14
+     "qty": 3,
+     "cost": 0.36,
+     "avgAllIn": 0.12
     }
    ]
   },
@@ -2237,11 +2216,11 @@
    ]
   },
   {
-   "base": "Team Rocket's Spiders",
+   "base": "Team Rocket's Spidops",
    "total": 1,
    "variants": [
     {
-     "name": "Team Rocket's Spiders [PP]",
+     "name": "Team Rocket's Spidops [PP]",
      "variant": "Prize Pack",
      "qty": 1,
      "cost": 0.0,
@@ -2414,14 +2393,7 @@
     {
      "name": "Wally's Compassion [Holo] [PP]",
      "variant": "Holo · Prize Pack",
-     "qty": 2,
-     "cost": 0.0,
-     "avgAllIn": 0.0
-    },
-    {
-     "name": "Wally's Compassion [PP]",
-     "variant": "Prize Pack",
-     "qty": 1,
+     "qty": 3,
      "cost": 0.0,
      "avgAllIn": 0.0
     }
