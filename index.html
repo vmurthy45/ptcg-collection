@@ -146,7 +146,7 @@
 
   /* ---- Bottom tab bar ---- */
   nav{position:fixed; left:0; right:0; bottom:0; z-index:18; display:flex; background:var(--card);
-    border-top:1px solid var(--line); padding-bottom:max(4px, calc(var(--safe-b) - 16px))}
+    border-top:1px solid var(--line); padding-bottom:max(4px, calc(env(safe-area-inset-bottom, 0px) - 16px))}
   nav button{flex:1; border:0; background:none; color:var(--muted); padding:8px 0 6px; font:inherit;
     display:flex; flex-direction:column; align-items:center; gap:2px; cursor:pointer; font-size:.7rem; font-weight:600; position:relative}
   nav button .tico{font-size:1.25rem; line-height:1}

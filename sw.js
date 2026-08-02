@@ -1,5 +1,5 @@
-// Bump CACHE name whenever app files or data change, to force update.
-const CACHE = "ptcg-collection-v6";
+// Bump CACHE name whenever app files or data change.
+const CACHE = "ptcg-collection-v7";
 const ASSETS = [
   "./",
   "./index.html",
@@ -20,19 +20,15 @@ self.addEventListener("activate", e => {
   );
 });
 
-// Network-first for the data file (so fresh spreadsheets show once online),
-// cache-first for everything else (fast, offline-capable).
+// NETWORK-FIRST for everything: when online you always get the newest version
+// (no more stale home-screen PWA), falling back to the cache only when offline.
 self.addEventListener("fetch", e => {
-  const url = new URL(e.request.url);
-  if (url.pathname.endsWith("collection.json")) {
-    e.respondWith(
-      fetch(e.request).then(r => {
-        const copy = r.clone();
-        caches.open(CACHE).then(c => c.put(e.request, copy));
-        return r;
-      }).catch(() => caches.match(e.request))
-    );
-    return;
-  }
-  e.respondWith(caches.match(e.request).then(r => r || fetch(e.request)));
+  if (e.request.method !== "GET") return;
+  e.respondWith(
+    fetch(e.request).then(r => {
+      const copy = r.clone();
+      caches.open(CACHE).then(c => c.put(e.request, copy)).catch(() => {});
+      return r;
+    }).catch(() => caches.match(e.request).then(r => r || caches.match("./index.html")))
+  );
 });
