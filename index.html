@@ -126,6 +126,27 @@
   .pbtn.copy{flex:1; background:var(--blue); color:#fff}
   .pbtn.clear{flex:0 0 auto; padding:0 16px; background:var(--chip); color:var(--chip-ink)}
 
+  /* ---- Deck import ---- */
+  .impsub{color:var(--muted); font-size:.85rem; margin:4px 0 0}
+  #deckInput{width:100%; min-height:150px; resize:vertical; padding:12px; border:1.5px solid var(--line); border-radius:14px;
+    font-size:.9rem; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; background:var(--card); color:var(--ink); -webkit-appearance:none; margin:12px 0 8px}
+  #deckInput:focus{outline:none; border-color:var(--red)}
+  .impsum{padding:11px 14px; border-radius:12px; font-weight:700; font-size:.9rem; margin:6px 0 10px}
+  .impsum.ok{background:#e7f4ea; color:#1c6b34}
+  .impsum.miss{background:#fdeceb; color:#a62622}
+  .impadd{width:100%; margin:0 0 14px; height:46px; border:0; border-radius:12px; background:var(--red); color:#fff; font-size:1rem; font-weight:700; cursor:pointer}
+  .deckhdr{color:var(--muted); font-size:.74rem; font-weight:700; text-transform:uppercase; letter-spacing:.5px; padding:12px 4px 4px}
+  .deckrow{display:flex; align-items:center; gap:10px; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:9px 12px; margin:6px 0; box-shadow:var(--shadow)}
+  .deckrow.short{border-left:4px solid var(--red)}
+  .deckrow.ok{opacity:.66}
+  .deckrow.basic{opacity:.55}
+  .dq{flex:0 0 auto; min-width:28px; height:30px; padding:0 7px; border-radius:8px; background:var(--chip); color:var(--ink); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:.9rem}
+  .dn{flex:1; min-width:0; font-weight:600; font-size:.92rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .dstat{flex:0 0 auto; font-size:.73rem; font-weight:700; text-align:right}
+  .dstat.ok{color:#1c6b34}
+  .dstat.short{color:var(--red)}
+  .dstat.basic{color:var(--muted)}
+
   #toast{position:fixed; left:50%; bottom:calc(80px + var(--safe-b)); transform:translateX(-50%) translateY(16px);
     background:var(--dark); color:#fff; padding:10px 16px; border-radius:12px; font-size:.85rem; font-weight:600;
     box-shadow:0 6px 20px rgba(0,0,0,.3); opacity:0; pointer-events:none; transition:opacity .2s, transform .2s; z-index:30; max-width:88%; text-align:center}
@@ -181,6 +202,7 @@
   <section class="view active" id="view-search"></section>
   <section class="view" id="view-collection"></section>
   <section class="view" id="view-needs"></section>
+  <section class="view" id="view-import"></section>
 </main>
 
 <div class="resbar hidden" id="resbar"><div class="inner"><span id="resCount"></span><span id="resAvg"></span></div></div>
@@ -189,13 +211,15 @@
   <button id="tab-search" class="active"><span class="tico">🔍</span>Search</button>
   <button id="tab-collection"><span class="tico">🃏</span>Collection</button>
   <button id="tab-needs"><span class="tico">📝</span>Needs</button>
+  <button id="tab-import"><span class="tico">📥</span>Import</button>
 </nav>
 
 <script>
 const $ = s => document.querySelector(s);
 const money = n => "$" + n.toFixed(2);
 let DATA = null, TAB = "search", statsOpen = false;
-let pending = loadPending(), pendingQty = 1;   // on-the-go captured needs (local to this device)
+let pending = [], pendingQty = 1;              // on-the-go captured needs (populated from localStorage in init)
+let importMissing = [], deckText = "";         // deck-import state
 
 const norm = s => (s||"").toLowerCase();
 
@@ -367,6 +391,109 @@ function renderPending(){
      </div>`;
 }
 
+/* ---- Copy ALL needs (captured + spreadsheet), human-readable "2x Name" ---- */
+async function copyAllNeeds(){
+  const map = new Map();
+  const add = (qty, name) => { const k = dkey(name); if(map.has(k)) map.get(k).qty += qty; else map.set(k, { qty, name }); };
+  pending.forEach(p => add(+p.qty || 0, p.name));
+  DATA.needs.forEach(n => add(+n.qty || 0, n.name));
+  const list = [...map.values()].filter(x => x.qty > 0).sort((a,b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
+  if(!list.length){ toast("No needs to copy"); return; }
+  const text = list.map(x => `${x.qty}x ${x.name}`).join("\n");
+  const ok = await copyText(text);
+  if(ok) toast(`Copied ${list.length} need${list.length!==1?'s':''}`);
+  else window.prompt("Copy your needs list:", text);
+}
+
+/* ---- Deck import (paste a deck list, check against collection) ---- */
+const DKEY = "ptcg_deck";
+function loadDeck(){ try{ return localStorage.getItem(DKEY) || ""; }catch(e){ return ""; } }
+function saveDeck(){ try{ localStorage.setItem(DKEY, deckText); }catch(e){} }
+// normalise a card name for matching: lowercase, strip accents, unify apostrophes, collapse spaces
+function dkey(s){ return String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[’'`´]/g,"'").replace(/\s+/g," ").trim(); }
+
+const BASIC_ENERGY = new Set(["grass energy","fire energy","water energy","lightning energy","psychic energy","fighting energy","darkness energy","metal energy","fairy energy"]);
+function isBasicEnergy(name){ const k = dkey(name); return BASIC_ENERGY.has(k) || /^basic .+ energy$/.test(k); }
+
+function parseDeck(text){
+  const cards = [];
+  let section = "Other";
+  for(const raw of String(text).split(/\r?\n/)){
+    const line = raw.trim();
+    if(!line) continue;
+    if(!/^\d/.test(line)){                        // section header or noise line
+      const h = /^(pok[eé]mon|trainer|energy)\b/i.exec(line);
+      if(h){ const w = h[1].toLowerCase(); section = w.startsWith("pok") ? "Pokémon" : w.startsWith("tra") ? "Trainer" : "Energy"; }
+      continue;
+    }
+    const m = /^(\d+)\s*[xX]?\s+(.+)$/.exec(line); // "4 Name SET 97" / "4x Name SET 97"
+    if(!m) continue;
+    const count = parseInt(m[1], 10);
+    let toks = m[2].trim().split(/\s+/);
+    if(toks.length >= 3){                          // strip trailing "SET number" (uppercase code + numeric collector)
+      const last = toks[toks.length-1], prev = toks[toks.length-2];
+      if(/\d/.test(last) && !/[a-z]/.test(last) && /^[A-Z0-9]{2,5}$/.test(prev)) toks = toks.slice(0, -2);
+    }
+    const name = toks.join(" ").trim();
+    if(count > 0 && name) cards.push({ count, name, section });
+  }
+  return cards;
+}
+
+function renderImportResults(){
+  const el = $("#importResults"); if(!el) return;
+  const cards = parseDeck(deckText);
+  if(!cards.length){
+    importMissing = [];
+    el.innerHTML = `<div class="emptymini">Paste a deck list above and I'll check it against your collection.</div>`;
+    return;
+  }
+  const idx = new Map();
+  DATA.groups.forEach(g => idx.set(dkey(g.base), g.total));   // base name → total owned across all variants
+
+  const buckets = {};
+  let missCards = 0, missLines = 0;
+  importMissing = [];
+  cards.forEach(c => {
+    const basic = c.section === "Energy" && isBasicEnergy(c.name);
+    let have = 0, status = "ok", miss = 0;
+    if(basic){ status = "basic"; }
+    else {
+      have = idx.get(dkey(c.name)) || 0;
+      miss = Math.max(0, c.count - have);
+      if(miss > 0){ status = "short"; missCards += miss; missLines++; importMissing.push({ qty: miss, name: c.name }); }
+    }
+    (buckets[c.section] = buckets[c.section] || []).push({ ...c, have, status });
+  });
+
+  let html = missCards === 0
+    ? `<div class="impsum ok">✅ You have every card in this deck.</div>`
+    : `<div class="impsum miss">⚠️ Missing ${missCards} card${missCards!==1?'s':''} across ${missLines} line${missLines!==1?'s':''}.</div>`;
+  if(importMissing.length)
+    html += `<button id="importAddNeeds" class="impadd">➕ Add ${missCards} missing card${missCards!==1?'s':''} to Needs</button>`;
+
+  ["Pokémon","Trainer","Energy","Other"].forEach(sec => {
+    const list = buckets[sec]; if(!list || !list.length) return;
+    html += `<div class="deckhdr">${sec}</div>` + list.map(c => {
+      const stat = c.status === "basic" ? "basic · assumed in stock"
+                 : c.status === "short" ? `need ${c.count} · have ${c.have}`
+                 : `✓ have ${c.have}`;
+      return `<div class="deckrow ${c.status}"><span class="dq">${c.count}</span><span class="dn">${esc(c.name)}</span><span class="dstat ${c.status}">${stat}</span></div>`;
+    }).join("");
+  });
+  el.innerHTML = html;
+}
+
+function renderImport(){
+  updateResbar(0,0,false);
+  $("#view-import").innerHTML =
+    `<div class="caphdr" style="margin-top:14px">🧩 Deck check</div>
+     <div class="impsub">Paste a deck list — I'll show what's missing, then you can add it to Needs.</div>
+     <textarea id="deckInput" placeholder="Paste your deck list here…">${esc(deckText)}</textarea>
+     <div id="importResults"></div>`;
+  renderImportResults();
+}
+
 /* ---- Needs tab (spreadsheet needs + local on-the-go capture) ---- */
 function renderNeeds(){
   updateResbar(0,0,false);
@@ -388,13 +515,17 @@ function renderNeeds(){
        <button id="capBtn" class="capadd">Capture</button>
      </div>
      <div id="pendingSection"></div>
-     ${offHTML}`;
+     ${offHTML}
+     <div class="pendactions" style="margin-top:18px">
+       <button id="copyAllNeeds" class="pbtn copy" style="flex:1">📋 Copy all needs (captured + spreadsheet)</button>
+     </div>`;
   renderPending();
 }
 
 function render(){
   if(TAB === "search") renderSearch();
   else if(TAB === "collection") renderCollection();
+  else if(TAB === "import") renderImport();
   else renderNeeds();
 }
 
@@ -402,7 +533,7 @@ function setTab(t){
   TAB = t;
   $("#q").value = "";
   $("#searchbox").classList.remove("has");
-  ["search","collection","needs"].forEach(k => {
+  ["search","collection","needs","import"].forEach(k => {
     $("#tab-"+k).classList.toggle("active", k===t);
     $("#view-"+k).classList.toggle("active", k===t);
   });
@@ -433,9 +564,23 @@ async function init(){
     return;
   }
   $("#updated").textContent = "Updated " + fmtDate(DATA.updated);
+  pending = loadPending();     // load AFTER PKEY is initialised — fixes captures lost on reopen
+  deckText = loadDeck();
+  if(navigator.storage && navigator.storage.persist) navigator.storage.persist();  // ask iOS not to evict
   updateNeedsBadge();
   // delegated clicks
   $("main").addEventListener("click", e => {
+    if(e.target.closest("#copyAllNeeds")){ copyAllNeeds(); return; }
+    if(e.target.closest("#importAddNeeds")){
+      importMissing.forEach(m => {
+        const k = dkey(m.name), i = pending.findIndex(p => dkey(p.name) === k);
+        if(i >= 0) pending[i].qty = m.qty; else pending.unshift({ qty: m.qty, name: m.name });
+      });
+      savePending(); updateNeedsBadge();
+      toast(`Added ${importMissing.length} card${importMissing.length!==1?'s':''} to Needs`);
+      setTab("needs");
+      return;
+    }
     // on-the-go capture controls
     const step = e.target.closest("[data-step]");
     if(step){ pendingQty = Math.max(1, pendingQty + (+step.dataset.step)); const q = $("#capQty"); if(q) q.textContent = pendingQty; return; }
@@ -462,11 +607,15 @@ async function init(){
   $("main").addEventListener("keydown", e => {
     if(e.target.id === "capName" && e.key === "Enter"){ e.preventDefault(); capture(); }
   });
+  $("main").addEventListener("input", e => {
+    if(e.target.id === "deckInput"){ deckText = e.target.value; saveDeck(); renderImportResults(); }
+  });
   $("#q").addEventListener("input", onSearch);
   $("#clr").addEventListener("click", () => { $("#q").value=""; onSearch(); focusSearch(); });
   $("#tab-search").addEventListener("click", () => setTab("search"));
   $("#tab-collection").addEventListener("click", () => setTab("collection"));
   $("#tab-needs").addEventListener("click", () => setTab("needs"));
+  $("#tab-import").addEventListener("click", () => setTab("import"));
   render();
   focusSearch();
   setHeadH();
