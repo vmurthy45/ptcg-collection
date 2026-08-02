@@ -3,11 +3,11 @@
  "currency": "NZD",
  "stats": {
   "totalCards": 734,
-  "uniqueVariants": 211,
+  "uniqueVariants": 202,
   "uniqueNames": 164,
   "totalSpent": 472.83,
   "avgCostPerCard": 0.64,
-  "needsCount": 3
+  "needsCount": 12
  },
  "groups": [
   {
@@ -100,8 +100,8 @@
    "total": 2,
    "variants": [
     {
-     "name": "Battle Cage - 085/094",
-     "variant": "No. 085/094",
+     "name": "Battle Cage",
+     "variant": "Standard",
      "qty": 2,
      "cost": 0.28,
      "avgAllIn": 0.14
@@ -113,8 +113,8 @@
    "total": 1,
    "variants": [
     {
-     "name": "Bloodmoon Ursaluna ex - 141/167",
-     "variant": "No. 141/167",
+     "name": "Bloodmoon Ursaluna ex",
+     "variant": "Standard",
      "qty": 1,
      "cost": 4.57,
      "avgAllIn": 4.57
@@ -292,16 +292,9 @@
     {
      "name": "Crispin",
      "variant": "Standard",
-     "qty": 2,
-     "cost": 0.0,
-     "avgAllIn": 0.0
-    },
-    {
-     "name": "Crispin - 105/131",
-     "variant": "No. 105/131",
-     "qty": 4,
+     "qty": 6,
      "cost": 1.87,
-     "avgAllIn": 0.47
+     "avgAllIn": 0.31
     }
    ]
   },
@@ -358,16 +351,16 @@
     {
      "name": "Cynthia's Garchomp ex",
      "variant": "Standard",
-     "qty": 1,
-     "cost": 0.61,
-     "avgAllIn": 0.61
-    },
-    {
-     "name": "Cynthia's Garchomp ex - 104/182",
-     "variant": "No. 104/182",
      "qty": 2,
      "cost": 5.68,
      "avgAllIn": 2.84
+    },
+    {
+     "name": "Cynthia's Garchomp ex [JP]",
+     "variant": "JP",
+     "qty": 1,
+     "cost": 0.61,
+     "avgAllIn": 0.61
     }
    ]
   },
@@ -435,8 +428,8 @@
    "total": 1,
    "variants": [
     {
-     "name": "Cyrano - 170/191",
-     "variant": "No. 170/191",
+     "name": "Cyrano",
+     "variant": "Standard",
      "qty": 1,
      "cost": 0.85,
      "avgAllIn": 0.85
@@ -448,8 +441,8 @@
    "total": 4,
    "variants": [
     {
-     "name": "Dark Bell - 075/084",
-     "variant": "No. 075/084",
+     "name": "Dark Bell",
+     "variant": "Standard",
      "qty": 4,
      "cost": 0.28,
      "avgAllIn": 0.07
@@ -487,8 +480,8 @@
    "total": 4,
    "variants": [
     {
-     "name": "Dhelmise - 039/084",
-     "variant": "No. 039/084",
+     "name": "Dhelmise",
+     "variant": "Standard",
      "qty": 4,
      "cost": 0.28,
      "avgAllIn": 0.07
@@ -515,9 +508,16 @@
     {
      "name": "Dragapult ex",
      "variant": "Standard",
-     "qty": 7,
-     "cost": 15.46,
-     "avgAllIn": 2.21
+     "qty": 4,
+     "cost": 13.62,
+     "avgAllIn": 3.4
+    },
+    {
+     "name": "Dragapult ex [JP]",
+     "variant": "JP",
+     "qty": 3,
+     "cost": 1.84,
+     "avgAllIn": 0.61
     }
    ]
   },
@@ -528,20 +528,13 @@
     {
      "name": "Drakloak",
      "variant": "Standard",
-     "qty": 5,
-     "cost": 2.19,
-     "avgAllIn": 0.44
+     "qty": 9,
+     "cost": 2.68,
+     "avgAllIn": 0.3
     },
     {
-     "name": "Drakloak - 159/217",
-     "variant": "No. 159/217",
-     "qty": 4,
-     "cost": 0.49,
-     "avgAllIn": 0.12
-    },
-    {
-     "name": "Drakloak - 159/217 (Energy Symbol Pattern)",
-     "variant": "Energy Symbol Pattern · No. 159/217",
+     "name": "Drakloak (Energy Symbol Pattern)",
+     "variant": "Energy Symbol Pattern",
      "qty": 3,
      "cost": 2.1,
      "avgAllIn": 0.7
@@ -562,16 +555,9 @@
     {
      "name": "Dreepy",
      "variant": "Standard",
-     "qty": 8,
-     "cost": 3.42,
-     "avgAllIn": 0.43
-    },
-    {
-     "name": "Dreepy - 158/217",
-     "variant": "No. 158/217",
-     "qty": 4,
-     "cost": 0.28,
-     "avgAllIn": 0.07
+     "qty": 12,
+     "cost": 3.7,
+     "avgAllIn": 0.31
     }
    ]
   },
@@ -717,18 +703,18 @@
    "total": 6,
    "variants": [
     {
-     "name": "Fezandipiti ex - 114/193",
-     "variant": "No. 114/193",
-     "qty": 4,
-     "cost": 2.75,
-     "avgAllIn": 0.69
-    },
-    {
-     "name": "Fezandipiti ex - 142/217",
-     "variant": "No. 142/217",
+     "name": "Fezandipiti ex",
+     "variant": "Standard",
      "qty": 2,
      "cost": 17.51,
      "avgAllIn": 8.75
+    },
+    {
+     "name": "Fezandipiti ex [JP]",
+     "variant": "JP",
+     "qty": 4,
+     "cost": 2.75,
+     "avgAllIn": 0.69
     }
    ]
   },
@@ -752,16 +738,9 @@
     {
      "name": "Fighting Gong",
      "variant": "Standard",
-     "qty": 7,
-     "cost": 1.73,
-     "avgAllIn": 0.25
-    },
-    {
-     "name": "Fighting Gong - 116/132",
-     "variant": "No. 116/132",
-     "qty": 1,
-     "cost": 0.03,
-     "avgAllIn": 0.03
+     "qty": 8,
+     "cost": 1.77,
+     "avgAllIn": 0.22
     },
     {
      "name": "Fighting Gong [Holo] [PP]",
@@ -823,8 +802,8 @@
    "total": 8,
    "variants": [
     {
-     "name": "Gwynn - 078/084",
-     "variant": "No. 078/084",
+     "name": "Gwynn",
+     "variant": "Standard",
      "qty": 8,
      "cost": 0.55,
      "avgAllIn": 0.07
@@ -953,18 +932,11 @@
    "total": 4,
    "variants": [
     {
-     "name": "Janine's Secret Art - 059/064",
-     "variant": "No. 059/064",
-     "qty": 2,
-     "cost": 0.43,
-     "avgAllIn": 0.22
-    },
-    {
-     "name": "Janine's Secret Art - 112/131",
-     "variant": "No. 112/131",
-     "qty": 2,
-     "cost": 0.74,
-     "avgAllIn": 0.37
+     "name": "Janine's Secret Art",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 1.17,
+     "avgAllIn": 0.29
     }
    ]
   },
@@ -1014,9 +986,16 @@
     {
      "name": "Latias ex",
      "variant": "Standard",
-     "qty": 2,
-     "cost": 10.92,
-     "avgAllIn": 5.46
+     "qty": 1,
+     "cost": 10.0,
+     "avgAllIn": 10.0
+    },
+    {
+     "name": "Latias ex [JP]",
+     "variant": "JP",
+     "qty": 1,
+     "cost": 0.92,
+     "avgAllIn": 0.92
     }
    ]
   },
@@ -1045,8 +1024,8 @@
    "total": 2,
    "variants": [
     {
-     "name": "Lillie's Clefairy ex",
-     "variant": "Standard",
+     "name": "Lillie's Clefairy ex [JP]",
+     "variant": "JP",
      "qty": 2,
      "cost": 1.6,
      "avgAllIn": 0.8
@@ -1137,8 +1116,8 @@
    "total": 4,
    "variants": [
     {
-     "name": "Mega Darkrai ex - 048/084",
-     "variant": "No. 048/084",
+     "name": "Mega Darkrai ex",
+     "variant": "Standard",
      "qty": 4,
      "cost": 13.87,
      "avgAllIn": 3.47
@@ -1150,8 +1129,8 @@
    "total": 3,
    "variants": [
     {
-     "name": "Mega Kangaskhan ex - 025",
-     "variant": "No. 025",
+     "name": "Mega Kangaskhan ex",
+     "variant": "Standard",
      "qty": 3,
      "cost": 5.88,
      "avgAllIn": 1.96
@@ -1196,8 +1175,8 @@
    "total": 1,
    "variants": [
     {
-     "name": "Megaton Blower - 182/191",
-     "variant": "No. 182/191",
+     "name": "Megaton Blower",
+     "variant": "Standard",
      "qty": 1,
      "cost": 1.11,
      "avgAllIn": 1.11
@@ -1224,16 +1203,9 @@
     {
      "name": "Meowth ex",
      "variant": "Standard",
-     "qty": 1,
-     "cost": 7.0,
-     "avgAllIn": 7.0
-    },
-    {
-     "name": "Meowth ex - 062/088",
-     "variant": "No. 062/088",
-     "qty": 1,
-     "cost": 5.49,
-     "avgAllIn": 5.49
+     "qty": 2,
+     "cost": 12.49,
+     "avgAllIn": 6.24
     }
    ]
   },
@@ -1380,8 +1352,8 @@
    "total": 5,
    "variants": [
     {
-     "name": "N's PP Up - 195/217",
-     "variant": "No. 195/217",
+     "name": "N's PP Up",
+     "variant": "Standard",
      "qty": 4,
      "cost": 0.14,
      "avgAllIn": 0.03
@@ -1447,8 +1419,8 @@
    "total": 4,
    "variants": [
     {
-     "name": "N's Zoroark ex - 112/193",
-     "variant": "No. 112/193",
+     "name": "N's Zoroark ex [JP]",
+     "variant": "JP",
      "qty": 4,
      "cost": 3.11,
      "avgAllIn": 0.78
@@ -1553,16 +1525,9 @@
     {
      "name": "Poke Pad",
      "variant": "Standard",
-     "qty": 9,
-     "cost": 12.88,
-     "avgAllIn": 1.43
-    },
-    {
-     "name": "Poke Pad - 081/088",
-     "variant": "No. 081/088",
-     "qty": 13,
-     "cost": 9.27,
-     "avgAllIn": 0.71
+     "qty": 22,
+     "cost": 22.15,
+     "avgAllIn": 1.01
     }
    ]
   },
@@ -1630,8 +1595,8 @@
    "total": 6,
    "variants": [
     {
-     "name": "Prism Tower - 080/086",
-     "variant": "No. 080/086",
+     "name": "Prism Tower",
+     "variant": "Standard",
      "qty": 6,
      "cost": 1.31,
      "avgAllIn": 0.22
@@ -1696,8 +1661,8 @@
    "total": 1,
    "variants": [
     {
-     "name": "Psyduck - 039/217",
-     "variant": "No. 039/217",
+     "name": "Psyduck",
+     "variant": "Standard",
      "qty": 1,
      "cost": 0.14,
      "avgAllIn": 0.14
@@ -2134,25 +2099,11 @@
    "total": 3,
    "variants": [
     {
-     "name": "Team Rocket's Mewtwo ex - 063/193",
-     "variant": "No. 063/193",
-     "qty": 1,
-     "cost": 1.62,
-     "avgAllIn": 1.62
-    },
-    {
-     "name": "Team Rocket's Mewtwo ex - 079/217",
-     "variant": "No. 079/217",
-     "qty": 1,
-     "cost": 4.61,
-     "avgAllIn": 4.61
-    },
-    {
-     "name": "Team Rocket's Mewtwo ex - 081/182",
-     "variant": "No. 081/182",
-     "qty": 1,
-     "cost": 6.22,
-     "avgAllIn": 6.22
+     "name": "Team Rocket's Mewtwo ex",
+     "variant": "Standard",
+     "qty": 3,
+     "cost": 12.45,
+     "avgAllIn": 4.15
     }
    ]
   },
@@ -2189,16 +2140,9 @@
     {
      "name": "Team Rocket's Petrel",
      "variant": "Standard",
-     "qty": 4,
-     "cost": 0.97,
-     "avgAllIn": 0.24
-    },
-    {
-     "name": "Team Rocket's Petrel - 176/182",
-     "variant": "No. 176/182",
-     "qty": 1,
-     "cost": 1.11,
-     "avgAllIn": 1.11
+     "qty": 5,
+     "cost": 2.08,
+     "avgAllIn": 0.42
     }
    ]
   },
@@ -2235,16 +2179,9 @@
     {
      "name": "Team Rocket's Transceiver",
      "variant": "Standard",
-     "qty": 5,
-     "cost": 1.07,
-     "avgAllIn": 0.21
-    },
-    {
-     "name": "Team Rocket's Transceiver - 209/217",
-     "variant": "No. 209/217",
-     "qty": 4,
-     "cost": 0.97,
-     "avgAllIn": 0.24
+     "qty": 9,
+     "cost": 2.05,
+     "avgAllIn": 0.23
     }
    ]
   },
@@ -2306,8 +2243,8 @@
    "total": 4,
    "variants": [
     {
-     "name": "Toucannon - 068/084",
-     "variant": "No. 068/084",
+     "name": "Toucannon",
+     "variant": "Standard",
      "qty": 4,
      "cost": 1.66,
      "avgAllIn": 0.42
@@ -2480,6 +2417,30 @@
   {
    "qty": 2,
    "name": "Blaziken ex"
+  },
+  {
+   "qty": 1,
+   "name": "Chi-Yu"
+  },
+  {
+   "qty": 1,
+   "name": "Enriching Energy"
+  },
+  {
+   "qty": 4,
+   "name": "Hilda"
+  },
+  {
+   "qty": 1,
+   "name": "Pecharunt ex"
+  },
+  {
+   "qty": 1,
+   "name": "Shaymin"
+  },
+  {
+   "qty": 1,
+   "name": "Volcanion ex"
   }
  ]
 }
