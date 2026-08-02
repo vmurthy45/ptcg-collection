@@ -155,6 +155,9 @@
   .jpswitch .slider::before{content:""; position:absolute; top:3px; left:3px; width:24px; height:24px; border-radius:50%; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,.3); transition:transform .2s}
   .jpswitch input:checked + .slider{background:var(--red)}
   .jpswitch input:checked + .slider::before{transform:translateX(22px)}
+  .jpswitch .vicon{width:26px; height:26px; object-fit:contain; display:block}
+  .verswitches{display:flex; align-items:center; gap:22px; flex-wrap:wrap}
+  .proxytag{background:#40434a}
   .jphint{background:#eef3fb; color:#2a4a86; border-radius:12px; padding:9px 13px; font-size:.8rem; font-weight:600; margin:0 0 10px}
   .jp{display:inline-block; font-size:.58rem; font-weight:800; background:#c0392b; color:#fff; padding:1px 5px; border-radius:4px; margin-left:6px; vertical-align:middle; letter-spacing:.4px}
   .gcostline{border-top:1px solid var(--line); padding:8px 14px; font-size:.72rem; color:var(--muted); font-weight:600}
@@ -244,7 +247,7 @@ const $ = s => document.querySelector(s);
 const money = n => "$" + n.toFixed(2);
 let DATA = null, TAB = "search", statsOpen = false;
 let pending = [], pendingQty = 1;              // on-the-go captured needs (populated from localStorage in init)
-let importMissing = [], deckText = "", importJp = false;   // deck-import state (importJp: count Japanese prints?)
+let importMissing = [], deckText = "", importJp = false, importProxy = false;   // deck-import toggles (count Japanese / Proxy prints?)
 let notes = [];                                // local notes / ideas (populated in init)
 
 const norm = s => (s||"").toLowerCase();
@@ -265,7 +268,7 @@ function groupHTML(g){
   const rows = g.variants.map(v => `
     <div class="vrow">
       <div class="vqty">${v.qty}</div>
-      <div class="vmeta"><div class="vname">${v.version}${v.jp ? ' <span class="jp">JP</span>' : ''}</div></div>
+      <div class="vmeta"><div class="vname">${v.version}${v.jp ? ' <span class="jp">JP</span>' : ''}${v.proxy ? ' <span class="jp proxytag">PROXY</span>' : ''}</div></div>
     </div>`).join("");
   const costline = g.avgCost != null
     ? `<div class="gcostline">Avg ${money(g.avgCost)}/card · ${money(g.spent)} spent</div>` : "";
@@ -425,6 +428,8 @@ function loadDeck(){ try{ return localStorage.getItem(DKEY) || ""; }catch(e){ re
 function saveDeck(){ try{ localStorage.setItem(DKEY, deckText); }catch(e){} }
 function loadImportJp(){ try{ return localStorage.getItem("ptcg_import_jp") === "1"; }catch(e){ return false; } }
 function saveImportJp(){ try{ localStorage.setItem("ptcg_import_jp", importJp ? "1" : "0"); }catch(e){} }
+function loadImportProxy(){ try{ return localStorage.getItem("ptcg_import_proxy") === "1"; }catch(e){ return false; } }
+function saveImportProxy(){ try{ localStorage.setItem("ptcg_import_proxy", importProxy ? "1" : "0"); }catch(e){} }
 // normalise a card name for matching: lowercase, strip accents, unify apostrophes, collapse spaces
 function dkey(s){ return String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[’'`´]/g,"'").replace(/\s+/g," ").trim(); }
 
@@ -468,7 +473,7 @@ function renderImportResults(){
   DATA.groups.forEach(g => idx.set(dkey(g.base), g));   // base name → owned group
 
   const buckets = {};
-  let missCards = 0, missLines = 0, jpUsed = 0;
+  let missCards = 0, missLines = 0, jpExcl = false, proxyExcl = false;
   importMissing = [];
   cards.forEach(c => {
     const basic = c.section === "Energy" && isBasicEnergy(c.name);
@@ -476,10 +481,20 @@ function renderImportResults(){
     if(basic){ status = "basic"; }
     else {
       const g = idx.get(dkey(c.name));
-      have = g ? (importJp ? g.total : g.totalNonJp) : 0;
-      if(g && !importJp && g.total > g.totalNonJp && c.count > g.totalNonJp) jpUsed += (g.total - g.totalNonJp);
+      let jpQ = 0, proxyQ = 0;
+      if(g) for(const v of g.variants){
+        const excluded = (v.jp && !importJp) || (v.proxy && !importProxy);
+        if(!excluded) have += v.qty;
+        if(v.jp) jpQ += v.qty;
+        if(v.proxy) proxyQ += v.qty;
+      }
       miss = Math.max(0, c.count - have);
-      if(miss > 0){ status = "short"; missCards += miss; missLines++; c._mi = importMissing.length; importMissing.push({ qty: miss, name: c.name }); }
+      if(miss > 0){
+        status = "short"; missCards += miss; missLines++;
+        c._mi = importMissing.length; importMissing.push({ qty: miss, name: c.name });
+        if(!importJp && jpQ > 0) jpExcl = true;
+        if(!importProxy && proxyQ > 0) proxyExcl = true;
+      }
     }
     (buckets[c.section] = buckets[c.section] || []).push({ ...c, have, status });
   });
@@ -487,8 +502,10 @@ function renderImportResults(){
   let html = missCards === 0
     ? `<div class="impsum ok">✅ You have every card in this deck.</div>`
     : `<div class="impsum miss">⚠️ Missing ${missCards} card${missCards!==1?'s':''} across ${missLines} line${missLines!==1?'s':''}.</div>`;
-  if(!importJp && jpUsed > 0)
+  if(jpExcl)
     html += `<div class="jphint">🇯🇵 You own Japanese copies of some missing cards.</div>`;
+  if(proxyExcl)
+    html += `<div class="jphint">You have proxies of some missing cards.</div>`;
   if(importMissing.length)
     html += `<button id="importAddNeeds" class="impadd">➕ Add all ${missCards} missing to Needs</button>
              <div class="impsub2">…or tap “+ Needs” on any card below to add just that one.</div>`;
@@ -569,7 +586,10 @@ function renderImport(){
        <button id="deckImport" class="pbtn copy" style="flex:1">📋 Import from clipboard</button>
        ${hasDeck ? `<button id="deckErase" class="pbtn clear">Erase</button>` : ``}
      </div>
-     <label class="jpswitch" aria-label="Include Japanese prints"><span class="flag">🇯🇵</span><input type="checkbox" id="jpToggle" ${importJp?'checked':''}><span class="slider"></span></label>
+     <div class="verswitches">
+       <label class="jpswitch" aria-label="Include Japanese prints"><span class="flag">🇯🇵</span><input type="checkbox" id="jpToggle" ${importJp?'checked':''}><span class="slider"></span></label>
+       <label class="jpswitch" aria-label="Include proxies"><img class="vicon" src="icons/proxy.svg" alt=""><input type="checkbox" id="proxyToggle" ${importProxy?'checked':''}><span class="slider"></span></label>
+     </div>
      <div id="importResults"></div>`;
   renderImportResults();
 }
@@ -648,6 +668,7 @@ async function init(){
   pending = loadPending();     // load AFTER PKEY is initialised — fixes captures lost on reopen
   deckText = loadDeck();
   importJp = loadImportJp();
+  importProxy = loadImportProxy();
   notes = loadNotes();
   if(navigator.storage && navigator.storage.persist) navigator.storage.persist();  // ask iOS not to evict
   updateNeedsBadge();
@@ -709,6 +730,7 @@ async function init(){
   });
   $("main").addEventListener("change", e => {
     if(e.target.id === "jpToggle"){ importJp = e.target.checked; saveImportJp(); renderImportResults(); }
+    if(e.target.id === "proxyToggle"){ importProxy = e.target.checked; saveImportProxy(); renderImportResults(); }
   });
   $("#q").addEventListener("input", onSearch);
   $("#clr").addEventListener("click", () => { $("#q").value=""; onSearch(); focusSearch(); });

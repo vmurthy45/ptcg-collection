@@ -133,11 +133,13 @@ def main():
         name = clean_ws(str(name))
         version = clean_ws(str(version)) if version else "Standard"
         qty = int(qty)
-        jp = version.lower() == "japanese"
+        vl = version.lower()
+        jp = vl == "japanese"
+        proxy = vl == "proxy"
         g = owned.get(name)
         if g is None:
             g = owned[name] = {"base": name, "variants": [], "total": 0, "totalNonJp": 0}
-        g["variants"].append({"version": version, "qty": qty, "jp": jp})
+        g["variants"].append({"version": version, "qty": qty, "jp": jp, "proxy": proxy})
         g["total"] += qty
         if not jp:
             g["totalNonJp"] += qty
@@ -163,6 +165,7 @@ def main():
     owned_copies = sum(g["total"] for g in group_list)
     owned_entries = sum(len(g["variants"]) for g in group_list)
     jp_copies = sum(v["qty"] for g in group_list for v in g["variants"] if v["jp"])
+    proxy_copies = sum(v["qty"] for g in group_list for v in g["variants"] if v["proxy"])
 
     # ---- Needs ----
     needs = []
@@ -182,6 +185,7 @@ def main():
             "ownedNames": len(group_list),
             "ownedEntries": owned_entries,
             "japaneseCopies": jp_copies,
+            "proxyCopies": proxy_copies,
             "totalSpent": round(total_spent, 2),
             "purchasedCards": purchased_cards,
             "avgCostPerCard": round(total_spent / purchased_cards, 2) if purchased_cards else 0.0,

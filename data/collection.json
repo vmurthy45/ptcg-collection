@@ -6,6 +6,7 @@
   "ownedNames": 166,
   "ownedEntries": 200,
   "japaneseCopies": 15,
+  "proxyCopies": 0,
   "totalSpent": 472.91,
   "purchasedCards": 735,
   "avgCostPerCard": 0.64,
@@ -18,7 +19,8 @@
     {
      "version": "Standard",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -33,7 +35,8 @@
     {
      "version": "Standard",
      "qty": 19,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 19,
@@ -48,12 +51,14 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Reverse Holo",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 6,
@@ -68,7 +73,8 @@
     {
      "version": "Standard",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -83,7 +89,8 @@
     {
      "version": "Standard",
      "qty": 5,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 5,
@@ -98,7 +105,8 @@
     {
      "version": "Prize Pack",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -113,7 +121,8 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -128,7 +137,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -143,12 +153,14 @@
     {
      "version": "Standard",
      "qty": 27,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Reverse Holo",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 30,
@@ -163,7 +175,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -178,7 +191,8 @@
     {
      "version": "Standard",
      "qty": 27,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 27,
@@ -193,12 +207,14 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Prize Pack Holo",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -213,7 +229,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -228,7 +245,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -243,7 +261,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -258,7 +277,8 @@
     {
      "version": "Reverse Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -273,7 +293,8 @@
     {
      "version": "Standard",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -288,7 +309,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -303,7 +325,8 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -318,7 +341,8 @@
     {
      "version": "Standard",
      "qty": 6,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 6,
@@ -333,12 +357,14 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Full Art",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 5,
@@ -353,7 +379,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -368,7 +395,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -383,12 +411,14 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Japanese",
      "qty": 1,
-     "jp": true
+     "jp": true,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -403,7 +433,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -418,7 +449,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -433,7 +465,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -448,12 +481,14 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Prize Pack",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 5,
@@ -468,7 +503,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -483,7 +519,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -498,7 +535,8 @@
     {
      "version": "Standard",
      "qty": 7,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 7,
@@ -513,7 +551,8 @@
     {
      "version": "Standard",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -528,7 +567,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -543,7 +583,8 @@
     {
      "version": "Standard",
      "qty": 9,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 9,
@@ -558,12 +599,14 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Japanese",
      "qty": 3,
-     "jp": true
+     "jp": true,
+     "proxy": false
     }
    ],
    "total": 7,
@@ -578,12 +621,14 @@
     {
      "version": "Standard",
      "qty": 9,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 10,
@@ -598,7 +643,8 @@
     {
      "version": "Standard",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -613,7 +659,8 @@
     {
      "version": "Standard",
      "qty": 12,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 12,
@@ -628,7 +675,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -643,7 +691,8 @@
     {
      "version": "Standard",
      "qty": 7,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 7,
@@ -658,7 +707,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -673,7 +723,8 @@
     {
      "version": "Standard",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -688,7 +739,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -703,7 +755,8 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -718,7 +771,8 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -733,7 +787,8 @@
     {
      "version": "Prize Pack",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -748,7 +803,8 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -763,12 +819,14 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -783,12 +841,14 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Japanese",
      "qty": 4,
-     "jp": true
+     "jp": true,
+     "proxy": false
     }
    ],
    "total": 6,
@@ -803,7 +863,8 @@
     {
      "version": "Standard",
      "qty": 12,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 12,
@@ -818,12 +879,14 @@
     {
      "version": "Standard",
      "qty": 8,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Prize Pack Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 9,
@@ -838,7 +901,8 @@
     {
      "version": "Standard",
      "qty": 11,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 11,
@@ -853,7 +917,8 @@
     {
      "version": "Reverse Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -868,12 +933,14 @@
     {
      "version": "Standard",
      "qty": 13,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Prize Pack",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 14,
@@ -888,7 +955,8 @@
     {
      "version": "Standard",
      "qty": 8,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 8,
@@ -903,7 +971,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -918,7 +987,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -933,7 +1003,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -948,7 +1019,8 @@
     {
      "version": "Standard",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -963,7 +1035,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -978,7 +1051,8 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -993,7 +1067,8 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -1008,7 +1083,8 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -1023,7 +1099,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -1038,7 +1115,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -1053,7 +1131,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -1068,7 +1147,8 @@
     {
      "version": "Standard",
      "qty": 8,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 8,
@@ -1083,7 +1163,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -1098,12 +1179,14 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Japanese",
      "qty": 1,
-     "jp": true
+     "jp": true,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -1118,12 +1201,14 @@
     {
      "version": "Standard",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Prize Pack Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -1138,7 +1223,8 @@
     {
      "version": "Japanese",
      "qty": 2,
-     "jp": true
+     "jp": true,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -1153,12 +1239,14 @@
     {
      "version": "Standard",
      "qty": 21,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 22,
@@ -1173,7 +1261,8 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -1188,7 +1277,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -1203,7 +1293,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -1218,12 +1309,14 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Prize Pack Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 5,
@@ -1238,7 +1331,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -1253,7 +1347,8 @@
     {
      "version": "Standard",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -1268,12 +1363,14 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Prize Pack",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 5,
@@ -1288,7 +1385,8 @@
     {
      "version": "Standard",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -1303,7 +1401,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -1318,7 +1417,8 @@
     {
      "version": "Standard",
      "qty": 8,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 8,
@@ -1333,7 +1433,8 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -1348,7 +1449,8 @@
     {
      "version": "Standard",
      "qty": 12,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 12,
@@ -1363,7 +1465,8 @@
     {
      "version": "Reverse Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -1378,7 +1481,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -1393,7 +1497,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -1408,12 +1513,14 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -1428,12 +1535,14 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 5,
@@ -1448,12 +1557,14 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Prize Pack Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -1468,7 +1579,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -1483,7 +1595,8 @@
     {
      "version": "Standard",
      "qty": 5,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 5,
@@ -1498,12 +1611,14 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Prize Pack",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 5,
@@ -1518,12 +1633,14 @@
     {
      "version": "Prize Pack",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Prize Pack Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -1538,7 +1655,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -1553,12 +1671,14 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -1573,7 +1693,8 @@
     {
      "version": "Japanese",
      "qty": 4,
-     "jp": true
+     "jp": true,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -1588,7 +1709,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -1603,7 +1725,8 @@
     {
      "version": "Standard",
      "qty": 20,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 20,
@@ -1618,7 +1741,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -1633,7 +1757,8 @@
     {
      "version": "Full Art",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -1648,7 +1773,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -1663,7 +1789,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -1678,7 +1805,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -1693,7 +1821,8 @@
     {
      "version": "Standard",
      "qty": 22,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 22,
@@ -1708,7 +1837,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -1723,12 +1853,14 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Prize Pack",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -1743,7 +1875,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -1758,7 +1891,8 @@
     {
      "version": "Standard",
      "qty": 6,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 6,
@@ -1773,7 +1907,8 @@
     {
      "version": "Standard",
      "qty": 6,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 6,
@@ -1788,7 +1923,8 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -1803,7 +1939,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -1818,12 +1955,14 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Prize Pack Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -1838,7 +1977,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -1853,7 +1993,8 @@
     {
      "version": "Standard",
      "qty": 22,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 22,
@@ -1868,7 +2009,8 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -1883,7 +2025,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -1898,12 +2041,14 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 5,
@@ -1918,12 +2063,14 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Prize Pack",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -1938,7 +2085,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -1953,7 +2101,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -1968,7 +2117,8 @@
     {
      "version": "Standard",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -1983,7 +2133,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -1998,7 +2149,8 @@
     {
      "version": "Standard",
      "qty": 6,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 6,
@@ -2013,7 +2165,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -2028,7 +2181,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -2043,7 +2197,8 @@
     {
      "version": "Standard",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -2058,7 +2213,8 @@
     {
      "version": "Reverse Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -2073,7 +2229,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -2088,7 +2245,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -2103,7 +2261,8 @@
     {
      "version": "Standard",
      "qty": 8,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 8,
@@ -2118,7 +2277,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -2133,7 +2293,8 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -2148,7 +2309,8 @@
     {
      "version": "Standard",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -2163,7 +2325,8 @@
     {
      "version": "Prize Pack",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -2178,7 +2341,8 @@
     {
      "version": "Full Art",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -2193,7 +2357,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -2208,7 +2373,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -2223,7 +2389,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -2238,17 +2405,20 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Prize Pack",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -2263,7 +2433,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -2278,12 +2449,14 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Prize Pack",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 7,
@@ -2298,7 +2471,8 @@
     {
      "version": "Standard",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -2313,7 +2487,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -2328,7 +2503,8 @@
     {
      "version": "Standard",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -2343,7 +2519,8 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -2358,7 +2535,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -2373,7 +2551,8 @@
     {
      "version": "Standard",
      "qty": 5,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 5,
@@ -2388,7 +2567,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -2403,7 +2583,8 @@
     {
      "version": "Prize Pack",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -2418,7 +2599,8 @@
     {
      "version": "Standard",
      "qty": 9,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 9,
@@ -2433,12 +2615,14 @@
     {
      "version": "Standard",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -2453,12 +2637,14 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Reverse Holo",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -2473,7 +2659,8 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 2,
@@ -2488,7 +2675,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -2503,7 +2691,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -2518,7 +2707,8 @@
     {
      "version": "Standard",
      "qty": 4,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -2533,12 +2723,14 @@
     {
      "version": "Standard",
      "qty": 17,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 18,
@@ -2553,7 +2745,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -2568,7 +2761,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -2583,7 +2777,8 @@
     {
      "version": "Prize Pack Holo",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -2598,12 +2793,14 @@
     {
      "version": "Standard",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     },
     {
      "version": "Prize Pack",
      "qty": 2,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 4,
@@ -2618,7 +2815,8 @@
     {
      "version": "Reverse Holo",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -2633,7 +2831,8 @@
     {
      "version": "Standard",
      "qty": 3,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 3,
@@ -2648,7 +2847,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
@@ -2663,7 +2863,8 @@
     {
      "version": "Standard",
      "qty": 1,
-     "jp": false
+     "jp": false,
+     "proxy": false
     }
    ],
    "total": 1,
