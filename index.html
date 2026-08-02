@@ -96,12 +96,40 @@
   .chip.std{background:transparent; color:var(--muted); padding-left:0}
   .vcost{font-size:.72rem; color:var(--muted)}
 
-  /* ---- Needs ---- */
+  /* ---- Needs + on-the-go capture ---- */
+  .capbox{background:var(--card); border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow); padding:12px 14px; margin:12px 0 4px}
+  .caphdr{font-weight:700; font-size:.95rem; margin-bottom:10px}
+  .caprow{display:flex; gap:10px; align-items:center}
+  .stepper{display:flex; align-items:center; border:1.5px solid var(--line); border-radius:12px; overflow:hidden; flex:0 0 auto}
+  .stepper button{width:38px; height:44px; border:0; background:var(--chip); color:var(--ink); font-size:1.3rem; font-weight:700; cursor:pointer; line-height:1}
+  .stepper button:active{background:#e2e6ee}
+  .stepper span{min-width:36px; text-align:center; font-weight:800; font-size:1.05rem}
+  #capName{flex:1; min-width:0; height:44px; padding:0 12px; border:1.5px solid var(--line); border-radius:12px; font-size:1rem; background:var(--card); color:var(--ink); -webkit-appearance:none}
+  #capName:focus{outline:none; border-color:var(--red)}
+  .capadd{width:100%; margin-top:10px; height:46px; border:0; border-radius:12px; background:var(--red); color:#fff; font-size:1rem; font-weight:700; cursor:pointer}
+  .capadd:active{background:var(--red-dk)}
+
+  .pendhdr,.needhdr{font-size:.74rem; font-weight:700; text-transform:uppercase; letter-spacing:.5px; padding:12px 4px 6px}
+  .needhdr{color:var(--muted)}
+  .pendhdr{color:#9a7b12}
+  .emptymini{color:var(--muted); padding:8px 4px 4px; font-size:.9rem}
   .needrow{display:flex; align-items:center; gap:12px; background:var(--card); border:1px solid var(--line);
     border-radius:14px; padding:12px 14px; margin:8px 0; box-shadow:var(--shadow)}
+  .needrow.pend{border-left:4px solid var(--gold)}
   .needqty{flex:0 0 auto; width:40px; height:40px; border-radius:11px; background:var(--gold); color:#3a2c00;
     display:flex; align-items:center; justify-content:center; font-weight:800; font-size:1.05rem}
-  .needname{font-weight:600}
+  .needname{font-weight:600; flex:1; min-width:0}
+  .pnote{font-size:.74rem; color:var(--muted); font-weight:500; margin-top:2px}
+  .pdel{flex:0 0 auto; width:32px; height:32px; border-radius:50%; border:0; background:var(--chip); color:var(--muted); font-size:.85rem; cursor:pointer}
+  .pendactions{display:flex; gap:10px; margin:12px 0 4px}
+  .pbtn{height:44px; border:0; border-radius:12px; font-size:.9rem; font-weight:700; cursor:pointer}
+  .pbtn.copy{flex:1; background:var(--blue); color:#fff}
+  .pbtn.clear{flex:0 0 auto; padding:0 16px; background:var(--chip); color:var(--chip-ink)}
+
+  #toast{position:fixed; left:50%; bottom:calc(80px + var(--safe-b)); transform:translateX(-50%) translateY(16px);
+    background:var(--dark); color:#fff; padding:10px 16px; border-radius:12px; font-size:.85rem; font-weight:600;
+    box-shadow:0 6px 20px rgba(0,0,0,.3); opacity:0; pointer-events:none; transition:opacity .2s, transform .2s; z-index:30; max-width:88%; text-align:center}
+  #toast.show{opacity:1; transform:translateX(-50%) translateY(0)}
 
   .empty{text-align:center; color:var(--muted); padding:56px 24px; font-size:1rem}
   .empty .big{font-size:2.2rem; display:block; margin-bottom:10px}
@@ -167,6 +195,7 @@
 const $ = s => document.querySelector(s);
 const money = n => "$" + n.toFixed(2);
 let DATA = null, TAB = "search", statsOpen = false;
+let pending = loadPending(), pendingQty = 1;   // on-the-go captured needs (local to this device)
 
 const norm = s => (s||"").toLowerCase();
 
@@ -264,22 +293,103 @@ function renderCollection(){
   updateResbar(t.cards, t.cost, true, "Total");
 }
 
-/* ---- Needs tab (with its own needs-only search) ---- */
+/* ---- On-the-go needs capture (stored locally on this device) ---- */
+const PKEY = "ptcg_pending_needs";
+function loadPending(){ try{ return JSON.parse(localStorage.getItem(PKEY)) || []; }catch(e){ return []; } }
+function savePending(){ try{ localStorage.setItem(PKEY, JSON.stringify(pending)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+function toast(msg){
+  let t = $("#toast");
+  if(!t){ t = document.createElement("div"); t.id = "toast"; document.body.appendChild(t); }
+  t.textContent = msg; t.classList.add("show");
+  clearTimeout(t._t); t._t = setTimeout(() => t.classList.remove("show"), 2000);
+}
+
+async function copyText(text){
+  try{ await navigator.clipboard.writeText(text); return true; }
+  catch(e){
+    try{
+      const ta = document.createElement("textarea");
+      ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+      document.body.appendChild(ta); ta.focus(); ta.select();
+      const ok = document.execCommand("copy"); document.body.removeChild(ta); return ok;
+    }catch(e2){ return false; }
+  }
+}
+
+function updateNeedsBadge(){
+  const n = (DATA ? DATA.needs.length : 0) + pending.length;
+  const btn = $("#tab-needs");
+  let b = btn.querySelector(".badge");
+  if(n > 0){ if(!b){ b = document.createElement("span"); b.className = "badge"; btn.appendChild(b); } b.textContent = n; }
+  else if(b){ b.remove(); }
+}
+
+function capture(){
+  const el = $("#capName");
+  if(!el) return;
+  const name = (el.value || "").trim();
+  if(!name){ toast("Enter a card name"); el.focus(); return; }
+  pending.unshift({ qty: pendingQty, name });
+  savePending();
+  pendingQty = 1; $("#capQty").textContent = "1";
+  el.value = "";
+  renderPending(); updateNeedsBadge();
+  el.focus();
+  toast("Captured");
+}
+
+async function copyPending(){
+  if(!pending.length){ toast("Nothing to copy yet"); return; }
+  const tsv = pending.map(p => `${p.qty}\t${p.name}`).join("\n");   // qty <TAB> name → separate cells on paste
+  const ok = await copyText(tsv);
+  if(ok) toast(`Copied ${pending.length} row${pending.length!==1?'s':''} — paste into the Needs sheet`);
+  else window.prompt("Copy these rows, then paste into the Needs sheet:", tsv);
+}
+
+function renderPending(){
+  const el = $("#pendingSection");
+  if(!el) return;
+  if(!pending.length){ el.innerHTML = ""; return; }
+  const total = pending.reduce((a,p) => a + (+p.qty || 0), 0);
+  el.innerHTML =
+    `<div class="pendhdr">📍 Captured on the go · ${total} card${total!==1?'s':''}</div>` +
+    pending.map((p,i) => `
+      <div class="needrow pend">
+        <div class="needqty">${p.qty}</div>
+        <div class="needname">${esc(p.name)}</div>
+        <button class="pdel" data-del="${i}" aria-label="Remove">✕</button>
+      </div>`).join("") +
+    `<div class="pendactions">
+       <button id="pendCopy" class="pbtn copy">📋 Copy for spreadsheet</button>
+       <button id="pendErase" class="pbtn clear">Erase</button>
+     </div>`;
+}
+
+/* ---- Needs tab (spreadsheet needs + local on-the-go capture) ---- */
 function renderNeeds(){
   updateResbar(0,0,false);
-  const raw = $("#q").value.trim(), q = norm(raw);
-  const view = $("#view-needs");
-  if(DATA.needs.length === 0){
-    view.innerHTML = `<div class="empty"><span class="big">✅</span>Nothing on the needs list.</div>`; return;
-  }
-  const list = DATA.needs.filter(n => norm(n.name).includes(q));
-  if(list.length === 0){
-    view.innerHTML = `<div class="empty"><span class="big">🔍</span>No needed cards match “${raw}”.</div>`; return;
-  }
-  const total = list.reduce((a,n)=>a+n.qty,0);
-  view.innerHTML =
-    `<div class="sechint">${total} card${total!==1?'s':''} needed · ${list.length} name${list.length!==1?'s':''}</div>` +
-    list.map(n => `<div class="needrow"><div class="needqty">${n.qty}</div><div class="needname">${n.name}</div></div>`).join("");
+  pendingQty = 1;
+  const off = DATA.needs;
+  const offTotal = off.reduce((a,n) => a + n.qty, 0);
+  const offHTML = off.length
+    ? `<div class="needhdr">📋 From spreadsheet · ${offTotal} card${offTotal!==1?'s':''} · ${off.length} name${off.length!==1?'s':''}</div>` +
+      off.map(n => `<div class="needrow"><div class="needqty">${n.qty}</div><div class="needname">${esc(n.name)}</div></div>`).join("")
+    : `<div class="needhdr">📋 From spreadsheet</div><div class="emptymini">Nothing on the needs list yet.</div>`;
+
+  $("#view-needs").innerHTML =
+    `<div class="capbox">
+       <div class="caphdr">➕ Capture a needed card</div>
+       <div class="caprow">
+         <div class="stepper"><button data-step="-1" aria-label="Less">−</button><span id="capQty">1</span><button data-step="1" aria-label="More">+</button></div>
+         <input id="capName" type="text" autocomplete="off" autocapitalize="words" enterkeyhint="done" placeholder="Card name">
+       </div>
+       <button id="capBtn" class="capadd">Capture</button>
+     </div>
+     <div id="pendingSection"></div>
+     ${offHTML}`;
+  renderPending();
 }
 
 function render(){
@@ -296,9 +406,7 @@ function setTab(t){
     $("#tab-"+k).classList.toggle("active", k===t);
     $("#view-"+k).classList.toggle("active", k===t);
   });
-  const showSearch = (t === "search" || t === "needs");   // no search box on Collection
-  $("#searchwrap").classList.toggle("hide", !showSearch);
-  $("#q").placeholder = t === "needs" ? "Search needs…" : "Search cards…";
+  $("#searchwrap").classList.toggle("hide", t !== "search");   // search box only on the Search tab
   window.scrollTo(0,0);
   render();
   if(t === "search") focusSearch();                        // open keyboard on mobile (tap gesture)
@@ -325,19 +433,34 @@ async function init(){
     return;
   }
   $("#updated").textContent = "Updated " + fmtDate(DATA.updated);
-  if(DATA.stats.needsCount > 0){
-    const b = document.createElement("span"); b.className="badge"; b.textContent = DATA.needs.length;
-    $("#tab-needs").appendChild(b);
-  }
-  // delegated clicks: stats toggle + card expand/collapse
+  updateNeedsBadge();
+  // delegated clicks
   $("main").addEventListener("click", e => {
+    // on-the-go capture controls
+    const step = e.target.closest("[data-step]");
+    if(step){ pendingQty = Math.max(1, pendingQty + (+step.dataset.step)); const q = $("#capQty"); if(q) q.textContent = pendingQty; return; }
+    if(e.target.closest("#capBtn")){ capture(); return; }
+    const del = e.target.closest("[data-del]");
+    if(del){ pending.splice(+del.dataset.del, 1); savePending(); renderPending(); updateNeedsBadge(); return; }
+    if(e.target.closest("#pendCopy")){ copyPending(); return; }
+    if(e.target.closest("#pendErase")){
+      if(pending.length && confirm("Erase all captured needs? This only clears this phone's list — your spreadsheet isn't affected.")){
+        pending = []; savePending(); renderPending(); updateNeedsBadge();
+      }
+      return;
+    }
+    // stats toggle
     if(e.target.closest(".statstoggle")){
       statsOpen = !statsOpen;
       const b = $("#statsbox"); if(b) b.classList.toggle("open", statsOpen);
       return;
     }
+    // card expand/collapse
     const h = e.target.closest(".ghead");
     if(h) h.closest(".group").classList.toggle("open");
+  });
+  $("main").addEventListener("keydown", e => {
+    if(e.target.id === "capName" && e.key === "Enter"){ e.preventDefault(); capture(); }
   });
   $("#q").addEventListener("input", onSearch);
   $("#clr").addEventListener("click", () => { $("#q").value=""; onSearch(); focusSearch(); });
