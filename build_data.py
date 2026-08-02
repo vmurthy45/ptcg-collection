@@ -127,7 +127,7 @@ def main():
     colws = wb["Collection"]
     owned = OrderedDict()   # base name -> group
     for r in list(colws.iter_rows(min_col=1, max_col=6, values_only=True))[1:]:
-        name, _ctype, _set, _num, version, qty = r
+        name, ctype, cset, cnum, version, qty = r
         if not name or not isinstance(qty, (int, float)):
             continue
         name = clean_ws(str(name))
@@ -136,10 +136,13 @@ def main():
         vl = version.lower()
         jp = vl == "japanese"
         proxy = vl == "proxy"
+        cset = clean_ws(str(cset)) if cset not in (None, "") else None
+        cnum = str(cnum).strip() if cnum not in (None, "") else None
         g = owned.get(name)
         if g is None:
-            g = owned[name] = {"base": name, "variants": [], "total": 0, "totalNonJp": 0}
-        g["variants"].append({"version": version, "qty": qty, "jp": jp, "proxy": proxy})
+            g = owned[name] = {"base": name, "type": clean_ws(str(ctype)) if ctype else None,
+                               "variants": [], "total": 0, "totalNonJp": 0}
+        g["variants"].append({"version": version, "qty": qty, "jp": jp, "proxy": proxy, "set": cset, "num": cnum})
         g["total"] += qty
         if not jp:
             g["totalNonJp"] += qty

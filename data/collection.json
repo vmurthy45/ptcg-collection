@@ -15,12 +15,15 @@
  "groups": [
   {
    "base": "Abra",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "MEG",
+     "num": "54"
     }
    ],
    "total": 3,
@@ -31,12 +34,15 @@
   },
   {
    "base": "Air Balloon",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 19,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 19,
@@ -47,18 +53,23 @@
   },
   {
    "base": "Alakazam",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "MEG",
+     "num": "56"
     },
     {
      "version": "Reverse Holo",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "MEG",
+     "num": "56"
     }
    ],
    "total": 6,
@@ -69,12 +80,15 @@
   },
   {
    "base": "Area Zero Underdepths",
+   "type": "Stadium",
    "variants": [
     {
      "version": "Standard",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 3,
@@ -85,12 +99,15 @@
   },
   {
    "base": "Banette",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 5,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PBL",
+     "num": "34"
     }
    ],
    "total": 5,
@@ -101,12 +118,15 @@
   },
   {
    "base": "Basic Metal Energy",
+   "type": "Energy",
    "variants": [
     {
      "version": "Prize Pack",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 1,
@@ -117,12 +137,15 @@
   },
   {
    "base": "Battle Cage",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 2,
@@ -133,12 +156,15 @@
   },
   {
    "base": "Bloodmoon Ursaluna ex",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "TWM",
+     "num": "141"
     }
    ],
    "total": 1,
@@ -149,18 +175,23 @@
   },
   {
    "base": "Boss's Orders",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 27,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     },
     {
      "version": "Reverse Holo",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 30,
@@ -171,12 +202,15 @@
   },
   {
    "base": "Brave Bangle",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 1,
@@ -187,12 +221,15 @@
   },
   {
    "base": "Buddy-Buddy Poffin",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 27,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 27,
@@ -203,18 +240,23 @@
   },
   {
    "base": "Budew",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "16"
     },
     {
      "version": "Prize Pack Holo",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PRE",
+     "num": "4"
     }
    ],
    "total": 4,
@@ -225,12 +267,15 @@
   },
   {
    "base": "Bug Catching Set",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -241,12 +286,15 @@
   },
   {
    "base": "Cape of Toughness",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -257,12 +305,15 @@
   },
   {
    "base": "Chien-Pao",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "SSP",
+     "num": "56"
     }
    ],
    "total": 1,
@@ -273,12 +324,15 @@
   },
   {
    "base": "Chikorita",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "MEG",
+     "num": "8"
     }
    ],
    "total": 1,
@@ -289,12 +343,15 @@
   },
   {
    "base": "Ciphermaniac's Codebreaking",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 3,
@@ -305,12 +362,15 @@
   },
   {
    "base": "Combusken",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "DRI",
+     "num": "41"
     }
    ],
    "total": 1,
@@ -321,12 +381,15 @@
   },
   {
    "base": "Counter Catcher",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 2,
@@ -337,12 +400,15 @@
   },
   {
    "base": "Crispin",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 6,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 6,
@@ -353,18 +419,23 @@
   },
   {
    "base": "Crushing Hammer",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     },
     {
      "version": "Full Art",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 5,
@@ -375,12 +446,15 @@
   },
   {
    "base": "Crustle",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "DRI",
+     "num": "12"
     }
    ],
    "total": 1,
@@ -391,12 +465,15 @@
   },
   {
    "base": "Cynthia's Gabite",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "110"
     }
    ],
    "total": 4,
@@ -407,18 +484,23 @@
   },
   {
    "base": "Cynthia's Garchomp ex",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "DRI",
+     "num": "104"
     },
     {
      "version": "Japanese",
      "qty": 1,
      "jp": true,
-     "proxy": false
+     "proxy": false,
+     "set": "M2a",
+     "num": "90"
     }
    ],
    "total": 3,
@@ -429,12 +511,15 @@
   },
   {
    "base": "Cynthia's Gible",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "109"
     }
    ],
    "total": 4,
@@ -445,12 +530,15 @@
   },
   {
    "base": "Cynthia's Power Weight",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -461,12 +549,15 @@
   },
   {
    "base": "Cynthia's Roselia",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "DRI",
+     "num": "7"
     }
    ],
    "total": 4,
@@ -477,18 +568,23 @@
   },
   {
    "base": "Cynthia's Roserade",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "DRI",
+     "num": "8"
     },
     {
      "version": "Prize Pack",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "DRI",
+     "num": "8"
     }
    ],
    "total": 5,
@@ -499,12 +595,15 @@
   },
   {
    "base": "Cyrano",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 1,
@@ -515,12 +614,15 @@
   },
   {
    "base": "Dark Bell",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -531,12 +633,15 @@
   },
   {
    "base": "Darkness Energy",
+   "type": "Energy",
    "variants": [
     {
      "version": "Standard",
      "qty": 7,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 7,
@@ -547,12 +652,15 @@
   },
   {
    "base": "Dawn",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 3,
@@ -563,12 +671,15 @@
   },
   {
    "base": "Dhelmise",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PBL",
+     "num": "39"
     }
    ],
    "total": 4,
@@ -579,12 +690,15 @@
   },
   {
    "base": "Double Colorless Energy",
+   "type": "Energy",
    "variants": [
     {
      "version": "Standard",
      "qty": 9,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 9,
@@ -595,24 +709,31 @@
   },
   {
    "base": "Dragapult ex",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "TWM",
+     "num": "130"
     },
     {
      "version": "Standard",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "160"
     },
     {
      "version": "Japanese",
      "qty": 3,
      "jp": true,
-     "proxy": false
+     "proxy": false,
+     "set": "M2a",
+     "num": "134"
     }
    ],
    "total": 7,
@@ -623,24 +744,31 @@
   },
   {
    "base": "Drakloak",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 9,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "159"
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "TWM",
+     "num": "129"
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PRE",
+     "num": "72"
     }
    ],
    "total": 11,
@@ -651,12 +779,15 @@
   },
   {
    "base": "Drakloak (Energy Symbol Pattern)",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Reverse Holo",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "159"
     }
    ],
    "total": 2,
@@ -667,18 +798,23 @@
   },
   {
    "base": "Dreepy",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 8,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "158"
     },
     {
      "version": "Reverse Holo",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PRE",
+     "num": "71"
     }
    ],
    "total": 12,
@@ -689,12 +825,15 @@
   },
   {
    "base": "Drilbur",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PBL",
+     "num": "46"
     }
    ],
    "total": 4,
@@ -705,12 +844,15 @@
   },
   {
    "base": "Drizzile",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 7,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "SSH",
+     "num": "56/202"
     }
    ],
    "total": 7,
@@ -721,18 +863,23 @@
   },
   {
    "base": "Dudunsparce",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PRE",
+     "num": "80"
     },
     {
      "version": "Reverse Holo",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PRE",
+     "num": "80"
     }
    ],
    "total": 4,
@@ -743,12 +890,15 @@
   },
   {
    "base": "Dunsparce",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "JTG",
+     "num": "120"
     }
    ],
    "total": 3,
@@ -759,12 +909,15 @@
   },
   {
    "base": "Dusclops",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PRE",
+     "num": "37"
     }
    ],
    "total": 4,
@@ -775,12 +928,15 @@
   },
   {
    "base": "Dusknoir",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Reverse Holo",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PRE",
+     "num": "36"
     }
    ],
    "total": 2,
@@ -791,12 +947,15 @@
   },
   {
    "base": "Duskull",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PRE",
+     "num": "35"
     }
    ],
    "total": 2,
@@ -807,12 +966,15 @@
   },
   {
    "base": "Emboar",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Prize Pack",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "WHT",
+     "num": "13"
     }
    ],
    "total": 1,
@@ -823,12 +985,15 @@
   },
   {
    "base": "Evosoda",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 2,
@@ -839,24 +1004,31 @@
   },
   {
    "base": "Fan Rotom",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "171"
     },
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PRE",
+     "num": "85"
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "171"
     }
    ],
    "total": 3,
@@ -867,18 +1039,23 @@
   },
   {
    "base": "Fezandipiti ex",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "142"
     },
     {
      "version": "Japanese",
      "qty": 4,
      "jp": true,
-     "proxy": false
+     "proxy": false,
+     "set": "M2a",
+     "num": "114"
     }
    ],
    "total": 6,
@@ -889,12 +1066,15 @@
   },
   {
    "base": "Fighting Energy",
+   "type": "Energy",
    "variants": [
     {
      "version": "Standard",
      "qty": 12,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 12,
@@ -905,18 +1085,23 @@
   },
   {
    "base": "Fighting Gong",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 8,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     },
     {
      "version": "Prize Pack Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 9,
@@ -927,12 +1112,15 @@
   },
   {
    "base": "Fire Energy",
+   "type": "Energy",
    "variants": [
     {
      "version": "Standard",
      "qty": 11,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 11,
@@ -943,12 +1131,15 @@
   },
   {
    "base": "Flutter Mane",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PRE",
+     "num": "43"
     }
    ],
    "total": 1,
@@ -959,18 +1150,23 @@
   },
   {
    "base": "Grass Energy",
+   "type": "Energy",
    "variants": [
     {
      "version": "Standard",
      "qty": 13,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     },
     {
      "version": "Prize Pack",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 14,
@@ -981,12 +1177,15 @@
   },
   {
    "base": "Gwynn",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 8,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 8,
@@ -997,12 +1196,15 @@
   },
   {
    "base": "Handheld Fan",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 1,
@@ -1013,12 +1215,15 @@
   },
   {
    "base": "Harlequin",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 1,
@@ -1029,12 +1234,15 @@
   },
   {
    "base": "Hilda",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 1,
@@ -1045,12 +1253,15 @@
   },
   {
    "base": "Hoothoot",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PRE",
+     "num": "77"
     }
    ],
    "total": 3,
@@ -1061,12 +1272,15 @@
   },
   {
    "base": "Ice Rider Calyrex V",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "CRE",
+     "num": "45/198"
     }
    ],
    "total": 4,
@@ -1077,12 +1291,15 @@
   },
   {
    "base": "Ice Rider Calyrex VMAX",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "CRE",
+     "num": "046/198"
     }
    ],
    "total": 2,
@@ -1093,12 +1310,15 @@
   },
   {
    "base": "Ignition Energy",
+   "type": "Energy",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 2,
@@ -1109,12 +1329,15 @@
   },
   {
    "base": "Inteleon",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "SSH",
+     "num": "58/202"
     }
    ],
    "total": 2,
@@ -1125,12 +1348,15 @@
   },
   {
    "base": "Iono",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -1141,12 +1367,15 @@
   },
   {
    "base": "Janine's Secret Art",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -1157,12 +1386,15 @@
   },
   {
    "base": "Judge",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -1173,12 +1405,15 @@
   },
   {
    "base": "Kadabra",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 8,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "MEG",
+     "num": "55"
     }
    ],
    "total": 8,
@@ -1189,12 +1424,15 @@
   },
   {
    "base": "Keldeo EX",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "LTR",
+     "num": "45/113"
     }
    ],
    "total": 1,
@@ -1205,18 +1443,23 @@
   },
   {
    "base": "Latias ex",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "SSP",
+     "num": "76"
     },
     {
      "version": "Japanese",
      "qty": 1,
      "jp": true,
-     "proxy": false
+     "proxy": false,
+     "set": "M2a",
+     "num": "75"
     }
    ],
    "total": 2,
@@ -1227,18 +1470,23 @@
   },
   {
    "base": "Lightning Energy",
+   "type": "Energy",
    "variants": [
     {
      "version": "Standard",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     },
     {
      "version": "Prize Pack Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -1249,12 +1497,15 @@
   },
   {
    "base": "Lillie's Clefairy ex",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Japanese",
      "qty": 2,
      "jp": true,
-     "proxy": false
+     "proxy": false,
+     "set": "M2a",
+     "num": "60"
     }
    ],
    "total": 2,
@@ -1265,18 +1516,23 @@
   },
   {
    "base": "Lillie's Determination",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 21,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 22,
@@ -1287,12 +1543,15 @@
   },
   {
    "base": "Lillie's Pearl",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 2,
@@ -1303,12 +1562,15 @@
   },
   {
    "base": "Lively Stadium",
+   "type": "Stadium",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 1,
@@ -1319,12 +1581,15 @@
   },
   {
    "base": "Lumineon V",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "BRS",
+     "num": "40/172"
     }
    ],
    "total": 1,
@@ -1335,18 +1600,23 @@
   },
   {
    "base": "Lunatone",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "105"
     },
     {
      "version": "Prize Pack Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "MEG",
+     "num": "74"
     }
    ],
    "total": 5,
@@ -1357,12 +1627,15 @@
   },
   {
    "base": "Mega Darkrai ex",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PBL",
+     "num": "48"
     }
    ],
    "total": 4,
@@ -1373,12 +1646,15 @@
   },
   {
    "base": "Mega Kangaskhan ex",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "MEP",
+     "num": "25"
     }
    ],
    "total": 3,
@@ -1389,18 +1665,23 @@
   },
   {
    "base": "Mega Signal",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     },
     {
      "version": "Prize Pack",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 5,
@@ -1411,12 +1692,15 @@
   },
   {
    "base": "Meganium",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "MEG",
+     "num": "10"
     }
    ],
    "total": 3,
@@ -1427,12 +1711,15 @@
   },
   {
    "base": "Megaton Blower",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 1,
@@ -1443,12 +1730,15 @@
   },
   {
    "base": "Melony",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 8,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 8,
@@ -1459,12 +1749,15 @@
   },
   {
    "base": "Meowth ex",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "POR",
+     "num": "62"
     }
    ],
    "total": 2,
@@ -1475,12 +1768,15 @@
   },
   {
    "base": "Metal Energy",
+   "type": "Energy",
    "variants": [
     {
      "version": "Standard",
      "qty": 12,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 12,
@@ -1491,12 +1787,15 @@
   },
   {
    "base": "Metang",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "TEF",
+     "num": "114"
     }
    ],
    "total": 1,
@@ -1507,12 +1806,15 @@
   },
   {
    "base": "Mist Energy",
+   "type": "Energy",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -1523,12 +1825,15 @@
   },
   {
    "base": "Misty's Vitality",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 1,
@@ -1539,18 +1844,23 @@
   },
   {
    "base": "Moltres",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PFL",
+     "num": "14"
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PFL",
+     "num": "14"
     }
    ],
    "total": 2,
@@ -1561,18 +1871,23 @@
   },
   {
    "base": "Munkidori",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "TWM",
+     "num": "95"
     },
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "99"
     }
    ],
    "total": 5,
@@ -1583,18 +1898,23 @@
   },
   {
    "base": "N's Darmanitan",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "33"
     },
     {
      "version": "Prize Pack Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "JTG",
+     "num": "27"
     }
    ],
    "total": 2,
@@ -1605,12 +1925,15 @@
   },
   {
    "base": "N's Darumaka",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "32"
     }
    ],
    "total": 1,
@@ -1621,12 +1944,15 @@
   },
   {
    "base": "N's Plan",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 5,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 5,
@@ -1637,18 +1963,23 @@
   },
   {
    "base": "N's PP Up",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     },
     {
      "version": "Prize Pack",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 5,
@@ -1659,24 +1990,31 @@
   },
   {
    "base": "N's Reshiram",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Prize Pack",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "JTG",
+     "num": "116"
     },
     {
      "version": "Prize Pack Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "JTG",
+     "num": "116"
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "154"
     }
    ],
    "total": 4,
@@ -1687,18 +2025,23 @@
   },
   {
    "base": "N's Zekrom",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "155"
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "155"
     }
    ],
    "total": 3,
@@ -1709,12 +2052,15 @@
   },
   {
    "base": "N's Zoroark ex",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Japanese",
      "qty": 4,
      "jp": true,
-     "proxy": false
+     "proxy": false,
+     "set": "M2a",
+     "num": "112"
     }
    ],
    "total": 4,
@@ -1725,12 +2071,15 @@
   },
   {
    "base": "N's Zorua",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "136"
     }
    ],
    "total": 4,
@@ -1741,12 +2090,15 @@
   },
   {
    "base": "Night Stretcher",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 20,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 20,
@@ -1757,12 +2109,15 @@
   },
   {
    "base": "Noctowl",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PRE",
+     "num": "78"
     }
    ],
    "total": 1,
@@ -1773,12 +2128,15 @@
   },
   {
    "base": "Oricorio GX",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Full Art",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "CEC",
+     "num": "217/236"
     }
    ],
    "total": 1,
@@ -1789,12 +2147,15 @@
   },
   {
    "base": "Passimian",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "CRE",
+     "num": "088/198"
     }
    ],
    "total": 1,
@@ -1805,12 +2166,15 @@
   },
   {
    "base": "Patrat",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "CRI",
+     "num": "70"
     }
    ],
    "total": 1,
@@ -1821,12 +2185,15 @@
   },
   {
    "base": "Pikipek",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Reverse Holo",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PBL",
+     "num": "66"
     }
    ],
    "total": 4,
@@ -1837,12 +2204,15 @@
   },
   {
    "base": "Poke Pad",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 22,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 22,
@@ -1853,12 +2223,15 @@
   },
   {
    "base": "Poltchageist",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PBL",
+     "num": "5"
     }
    ],
    "total": 4,
@@ -1869,18 +2242,23 @@
   },
   {
    "base": "Premium Power Pro",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     },
     {
      "version": "Prize Pack",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 2,
@@ -1891,12 +2269,15 @@
   },
   {
    "base": "Prime Catcher",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 1,
@@ -1907,12 +2288,15 @@
   },
   {
    "base": "Prism Energy",
+   "type": "Energy",
    "variants": [
     {
      "version": "Standard",
      "qty": 6,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 6,
@@ -1923,12 +2307,15 @@
   },
   {
    "base": "Prism Tower",
+   "type": "Stadium",
    "variants": [
     {
      "version": "Standard",
      "qty": 6,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 6,
@@ -1939,12 +2326,15 @@
   },
   {
    "base": "Professor Turo's Scenario",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 2,
@@ -1955,12 +2345,15 @@
   },
   {
    "base": "Professor's Research",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -1971,18 +2364,23 @@
   },
   {
    "base": "Psychic Energy",
+   "type": "Energy",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     },
     {
      "version": "Prize Pack Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 3,
@@ -1993,12 +2391,15 @@
   },
   {
    "base": "Psyduck",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "39"
     }
    ],
    "total": 1,
@@ -2009,12 +2410,15 @@
   },
   {
    "base": "Quick Ball",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 22,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 22,
@@ -2025,18 +2429,23 @@
   },
   {
    "base": "Rapid Strike Urshifu V",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "SWSH",
+     "num": "107"
     },
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "BST",
+     "num": "087/163"
     }
    ],
    "total": 4,
@@ -2047,12 +2456,15 @@
   },
   {
    "base": "Rapid Strike Urshifu VMAX",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "BST",
+     "num": "088/163"
     }
    ],
    "total": 1,
@@ -2063,18 +2475,23 @@
   },
   {
    "base": "Rare Candy",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 5,
@@ -2085,18 +2502,23 @@
   },
   {
    "base": "Risky Ruins",
+   "type": "Stadium",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     },
     {
      "version": "Prize Pack",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 2,
@@ -2107,12 +2529,15 @@
   },
   {
    "base": "Rocky Fighting Energy",
+   "type": "Energy",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -2123,12 +2548,15 @@
   },
   {
    "base": "Rosa's Encouragement",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 1,
@@ -2139,12 +2567,15 @@
   },
   {
    "base": "Roto-Stick",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 3,
@@ -2155,12 +2586,15 @@
   },
   {
    "base": "Scoop Up Cyclone",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 1,
@@ -2171,12 +2605,15 @@
   },
   {
    "base": "Scoop Up Net",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 6,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 6,
@@ -2187,12 +2624,15 @@
   },
   {
    "base": "Scramble Switch",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 1,
@@ -2203,18 +2643,23 @@
   },
   {
    "base": "Shadow Rider Calyrex V",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "SWSH",
+     "num": "131"
     },
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "CRE",
+     "num": "074/198"
     }
    ],
    "total": 4,
@@ -2225,12 +2670,15 @@
   },
   {
    "base": "Shadow Rider Calyrex VMAX",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "CRE",
+     "num": "075/198"
     }
    ],
    "total": 3,
@@ -2241,12 +2689,15 @@
   },
   {
    "base": "Shadowy Darkness Energy",
+   "type": "Energy",
    "variants": [
     {
      "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 1,
@@ -2257,12 +2708,15 @@
   },
   {
    "base": "Shuppet",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PBL",
+     "num": "33"
     }
    ],
    "total": 4,
@@ -2273,12 +2727,15 @@
   },
   {
    "base": "Sinistcha",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PBL",
+     "num": "6"
     }
    ],
    "total": 4,
@@ -2289,12 +2746,15 @@
   },
   {
    "base": "Sobble",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 8,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "CRE",
+     "num": "41/198"
     }
    ],
    "total": 8,
@@ -2305,12 +2765,15 @@
   },
   {
    "base": "Solrock (Dusk Ball)",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Reverse Holo",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "106"
     }
    ],
    "total": 4,
@@ -2321,12 +2784,15 @@
   },
   {
    "base": "Special Red Card",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 2,
@@ -2337,12 +2803,15 @@
   },
   {
    "base": "Spiky Energy",
+   "type": "Energy",
    "variants": [
     {
      "version": "Standard",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 3,
@@ -2353,12 +2822,15 @@
   },
   {
    "base": "Surfing Beach",
+   "type": "Stadium",
    "variants": [
     {
      "version": "Prize Pack",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 1,
@@ -2369,12 +2841,15 @@
   },
   {
    "base": "Tapu Lele GX",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Full Art",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "GRI",
+     "num": "137/145"
     }
    ],
    "total": 1,
@@ -2385,12 +2860,15 @@
   },
   {
    "base": "Team Rocket's Archer",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -2401,12 +2879,15 @@
   },
   {
    "base": "Team Rocket's Ariana",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -2417,12 +2898,15 @@
   },
   {
    "base": "Team Rocket's Articuno",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "DRI",
+     "num": "51"
     }
    ],
    "total": 1,
@@ -2433,24 +2917,31 @@
   },
   {
    "base": "Team Rocket's Energy",
+   "type": "Energy",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     },
     {
      "version": "Prize Pack",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -2461,12 +2952,15 @@
   },
   {
    "base": "Team Rocket's Factory",
+   "type": "Stadium",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -2477,18 +2971,23 @@
   },
   {
    "base": "Team Rocket's Giovanni",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     },
     {
      "version": "Prize Pack",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 7,
@@ -2499,12 +2998,15 @@
   },
   {
    "base": "Team Rocket's Honchkrow",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "127"
     }
    ],
    "total": 3,
@@ -2515,24 +3017,31 @@
   },
   {
    "base": "Team Rocket's Mewtwo ex",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "79"
     },
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "DRI",
+     "num": "81"
     },
     {
      "version": "Japanese",
      "qty": 1,
      "jp": true,
-     "proxy": false
+     "proxy": false,
+     "set": "M2a",
+     "num": "63"
     }
    ],
    "total": 4,
@@ -2543,12 +3052,15 @@
   },
   {
    "base": "Team Rocket's Mimikyu",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "DRI",
+     "num": "87"
     }
    ],
    "total": 2,
@@ -2559,12 +3071,15 @@
   },
   {
    "base": "Team Rocket's Murkrow",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "ASC",
+     "num": "126"
     }
    ],
    "total": 4,
@@ -2575,12 +3090,15 @@
   },
   {
    "base": "Team Rocket's Petrel",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 5,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 5,
@@ -2591,12 +3109,15 @@
   },
   {
    "base": "Team Rocket's Proton",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -2607,12 +3128,15 @@
   },
   {
    "base": "Team Rocket's Spidops",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Prize Pack",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "DRI",
+     "num": "20"
     }
    ],
    "total": 1,
@@ -2623,12 +3147,15 @@
   },
   {
    "base": "Team Rocket's Transceiver",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 9,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 9,
@@ -2639,18 +3166,23 @@
   },
   {
    "base": "Team Rocket's Watchtower",
+   "type": "Stadium",
    "variants": [
     {
      "version": "Standard",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -2661,18 +3193,23 @@
   },
   {
    "base": "Telepathic Psychic Energy",
+   "type": "Energy",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     },
     {
      "version": "Reverse Holo",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -2683,12 +3220,15 @@
   },
   {
    "base": "Torchic",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Reverse Holo",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "DRI",
+     "num": "40"
     }
    ],
    "total": 2,
@@ -2699,12 +3239,15 @@
   },
   {
    "base": "Toucannon",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Reverse Holo",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PBL",
+     "num": "68"
     }
    ],
    "total": 4,
@@ -2715,12 +3258,15 @@
   },
   {
    "base": "Transformation Tome",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -2731,12 +3277,15 @@
   },
   {
    "base": "Trumbeak",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Reverse Holo",
      "qty": 4,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "PBL",
+     "num": "67"
     }
    ],
    "total": 4,
@@ -2747,18 +3296,23 @@
   },
   {
    "base": "Ultra Ball",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 17,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     },
     {
      "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 18,
@@ -2769,12 +3323,15 @@
   },
   {
    "base": "Unfair Stamp",
+   "type": "Item",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 1,
@@ -2785,12 +3342,15 @@
   },
   {
    "base": "Voltaic Lightning Energy",
+   "type": "Energy",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 1,
@@ -2801,12 +3361,15 @@
   },
   {
    "base": "Wally's Compassion",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Prize Pack Holo",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 3,
@@ -2817,18 +3380,23 @@
   },
   {
    "base": "Water Energy",
+   "type": "Energy",
    "variants": [
     {
      "version": "Standard",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     },
     {
      "version": "Prize Pack",
      "qty": 2,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 4,
@@ -2839,12 +3407,15 @@
   },
   {
    "base": "Xerosic's Machinations",
+   "type": "Supporter",
    "variants": [
     {
      "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": null,
+     "num": null
     }
    ],
    "total": 1,
@@ -2855,12 +3426,15 @@
   },
   {
    "base": "Yveltal",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 3,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "MEG",
+     "num": "88"
     }
    ],
    "total": 3,
@@ -2871,12 +3445,15 @@
   },
   {
    "base": "Zacian V",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "SWSH",
+     "num": "18"
     }
    ],
    "total": 1,
@@ -2887,12 +3464,15 @@
   },
   {
    "base": "Zoroark GX",
+   "type": "Pokémon",
    "variants": [
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
-     "proxy": false
+     "proxy": false,
+     "set": "SLG",
+     "num": "53/73"
     }
    ],
    "total": 1,

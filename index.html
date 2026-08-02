@@ -161,6 +161,7 @@
   .jphint{background:#eef3fb; color:#2a4a86; border-radius:12px; padding:9px 13px; font-size:.8rem; font-weight:600; margin:0 0 10px}
   .jp{display:inline-block; font-size:.58rem; font-weight:800; background:#c0392b; color:#fff; padding:1px 5px; border-radius:4px; margin-left:6px; vertical-align:middle; letter-spacing:.4px}
   .gcostline{border-top:1px solid var(--line); padding:8px 14px; font-size:.72rem; color:var(--muted); font-weight:600}
+  .vset{font-size:.72rem; color:var(--muted); font-weight:600; margin-left:6px}
 
   /* ---- Notes ---- */
   #noteInput{width:100%; min-height:96px; resize:vertical; padding:12px; border:1.5px solid var(--line); border-radius:12px;
@@ -261,15 +262,22 @@ function setHeadH(){ document.documentElement.style.setProperty("--head-h", $("h
 
 function groupMatches(g, q){ return q ? norm(g.base).includes(q) : false; }
 
+function setNumOf(v){ return v.set ? (v.num ? `${v.set} ${v.num}` : v.set) : ""; }
+
 function groupHTML(g){
   const many = g.variants.length > 1, v0 = g.variants[0];
-  const sub = many ? `${g.variants.length} versions`
-            : (v0.version !== "Standard" ? v0.version : (g.avgCost != null ? `${money(g.avgCost)} each` : "Standard"));
-  const rows = g.variants.map(v => `
+  let pset = ""; for(const v of g.variants){ const s = setNumOf(v); if(s){ pset = s; break; } }
+  const base = many ? `${g.variants.length} versions`
+             : (v0.version !== "Standard" ? v0.version : (g.avgCost != null ? `${money(g.avgCost)} each` : "Standard"));
+  const sub = pset ? `${pset} · ${base}` : base;
+  const rows = g.variants.map(v => {
+    const sn = setNumOf(v), showSn = (sn && sn !== pset) ? ` <span class="vset">${sn}</span>` : "";
+    return `
     <div class="vrow">
       <div class="vqty">${v.qty}</div>
-      <div class="vmeta"><div class="vname">${v.version}${v.jp ? ' <span class="jp">JP</span>' : ''}${v.proxy ? ' <span class="jp proxytag">PROXY</span>' : ''}</div></div>
-    </div>`).join("");
+      <div class="vmeta"><div class="vname">${v.version}${v.jp ? ' <span class="jp">JP</span>' : ''}${v.proxy ? ' <span class="jp proxytag">PROXY</span>' : ''}${showSn}</div></div>
+    </div>`;
+  }).join("");
   const costline = g.avgCost != null
     ? `<div class="gcostline">Avg ${money(g.avgCost)}/card · ${money(g.spent)} spent</div>` : "";
   return `
