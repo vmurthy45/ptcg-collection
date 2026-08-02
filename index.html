@@ -142,6 +142,12 @@
   .dstat.ok{color:#1c6b34}
   .dstat.short{color:var(--red)}
   .dstat.basic{color:var(--muted)}
+  .impsub2{color:var(--muted); font-size:.78rem; margin:-8px 0 8px; padding:0 2px}
+  .dninfo{flex:1; min-width:0}
+  .dninfo .dn{white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .dsub{font-size:.72rem; color:var(--red); font-weight:700; margin-top:1px}
+  .deckadd{flex:0 0 auto; border:0; background:var(--red); color:#fff; font-size:.75rem; font-weight:700; padding:8px 12px; border-radius:999px; cursor:pointer}
+  .deckadd.added{background:var(--muted)}
 
   /* ---- Notes ---- */
   #noteInput{width:100%; min-height:96px; resize:vertical; padding:12px; border:1.5px solid var(--line); border-radius:12px;
@@ -160,6 +166,7 @@
 
   .empty{text-align:center; color:var(--muted); padding:56px 24px; font-size:1rem}
   .empty .big{font-size:2.2rem; display:block; margin-bottom:10px}
+  .empty .bigimg{width:54px; height:54px; object-fit:contain; display:block; margin:0 auto 12px}
   .sechint{color:var(--muted); font-size:.74rem; padding:6px 4px 8px; font-weight:600; text-transform:uppercase; letter-spacing:.5px}
 
   /* ---- Result footer (live totals) ---- */
@@ -294,7 +301,7 @@ function renderSearch(){
   const raw = $("#q").value.trim(), q = norm(raw);
   const view = $("#view-search");
   if(!q){
-    view.innerHTML = `<div class="empty"><span class="big">🔍</span>Search your collection —<br>start typing a card name.</div>`;
+    view.innerHTML = `<div class="empty"><img class="bigimg" src="icons/tab-search.png" alt="">Search your collection —<br>start typing a card name.</div>`;
     updateResbar(0,0,false); return;
   }
   const matched = DATA.groups.filter(g => groupMatches(g, q));
@@ -470,7 +477,7 @@ function renderImportResults(){
     else {
       have = idx.get(dkey(c.name)) || 0;
       miss = Math.max(0, c.count - have);
-      if(miss > 0){ status = "short"; missCards += miss; missLines++; importMissing.push({ qty: miss, name: c.name }); }
+      if(miss > 0){ status = "short"; missCards += miss; missLines++; c._mi = importMissing.length; importMissing.push({ qty: miss, name: c.name }); }
     }
     (buckets[c.section] = buckets[c.section] || []).push({ ...c, have, status });
   });
@@ -479,14 +486,20 @@ function renderImportResults(){
     ? `<div class="impsum ok">✅ You have every card in this deck.</div>`
     : `<div class="impsum miss">⚠️ Missing ${missCards} card${missCards!==1?'s':''} across ${missLines} line${missLines!==1?'s':''}.</div>`;
   if(importMissing.length)
-    html += `<button id="importAddNeeds" class="impadd">➕ Add ${missCards} missing card${missCards!==1?'s':''} to Needs</button>`;
+    html += `<button id="importAddNeeds" class="impadd">➕ Add all ${missCards} missing to Needs</button>
+             <div class="impsub2">…or tap “+ Needs” on any card below to add just that one.</div>`;
 
   ["Pokémon","Trainer","Energy","Other"].forEach(sec => {
     const list = buckets[sec]; if(!list || !list.length) return;
     html += `<div class="deckhdr">${sec}</div>` + list.map(c => {
-      const stat = c.status === "basic" ? "basic · assumed in stock"
-                 : c.status === "short" ? `need ${c.count} · have ${c.have}`
-                 : `✓ have ${c.have}`;
+      if(c.status === "short"){
+        return `<div class="deckrow short">
+          <span class="dq">${c.count}</span>
+          <div class="dninfo"><div class="dn">${esc(c.name)}</div><div class="dsub">need ${c.count} · have ${c.have}</div></div>
+          <button class="deckadd" data-mi="${c._mi}">+ Needs</button>
+        </div>`;
+      }
+      const stat = c.status === "basic" ? "basic · assumed in stock" : `✓ have ${c.have}`;
       return `<div class="deckrow ${c.status}"><span class="dq">${c.count}</span><span class="dn">${esc(c.name)}</span><span class="dstat ${c.status}">${stat}</span></div>`;
     }).join("");
   });
@@ -640,6 +653,18 @@ async function init(){
     const nd = e.target.closest("[data-ndel]");
     if(nd){ if(confirm("Scrap this note?")){ notes.splice(+nd.dataset.ndel, 1); saveNotes(); renderNotesList(); } return; }
     if(e.target.closest("#copyAllNeeds")){ copyAllNeeds(); return; }
+    const dadd = e.target.closest(".deckadd");
+    if(dadd){
+      const m = importMissing[+dadd.dataset.mi];
+      if(m){
+        const k = dkey(m.name), i = pending.findIndex(p => dkey(p.name) === k);
+        if(i >= 0) pending[i].qty = m.qty; else pending.unshift({ qty: m.qty, name: m.name });
+        savePending(); updateNeedsBadge();
+        dadd.textContent = "✓ Added"; dadd.classList.add("added"); dadd.disabled = true;
+        toast(`Added ${m.name} to Needs`);
+      }
+      return;
+    }
     if(e.target.closest("#importAddNeeds")){
       importMissing.forEach(m => {
         const k = dkey(m.name), i = pending.findIndex(p => dkey(p.name) === k);
