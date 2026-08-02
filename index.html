@@ -148,6 +148,11 @@
   .dsub{font-size:.72rem; color:var(--red); font-weight:700; margin-top:1px}
   .deckadd{flex:0 0 auto; border:0; background:var(--red); color:#fff; font-size:.75rem; font-weight:700; padding:8px 12px; border-radius:999px; cursor:pointer}
   .deckadd.added{background:var(--muted)}
+  .jptoggle{display:flex; align-items:center; gap:9px; font-size:.9rem; font-weight:600; color:var(--ink); padding:12px 4px 4px; cursor:pointer}
+  .jptoggle input{width:20px; height:20px; flex:0 0 auto; accent-color:var(--red); cursor:pointer}
+  .jphint{background:#eef3fb; color:#2a4a86; border-radius:12px; padding:9px 13px; font-size:.8rem; font-weight:600; margin:0 0 10px}
+  .jp{display:inline-block; font-size:.58rem; font-weight:800; background:#c0392b; color:#fff; padding:1px 5px; border-radius:4px; margin-left:6px; vertical-align:middle; letter-spacing:.4px}
+  .gcostline{border-top:1px solid var(--line); padding:8px 14px; font-size:.72rem; color:var(--muted); font-weight:600}
 
   /* ---- Notes ---- */
   #noteInput{width:100%; min-height:96px; resize:vertical; padding:12px; border:1.5px solid var(--line); border-radius:12px;
@@ -234,7 +239,7 @@ const $ = s => document.querySelector(s);
 const money = n => "$" + n.toFixed(2);
 let DATA = null, TAB = "search", statsOpen = false;
 let pending = [], pendingQty = 1;              // on-the-go captured needs (populated from localStorage in init)
-let importMissing = [], deckText = "";         // deck-import state
+let importMissing = [], deckText = "", importJp = false;   // deck-import state (importJp: count Japanese prints?)
 let notes = [];                                // local notes / ideas (populated in init)
 
 const norm = s => (s||"").toLowerCase();
@@ -246,30 +251,19 @@ function fmtDate(iso){                       // "2026-08-02" -> "02-08-26"
 
 function setHeadH(){ document.documentElement.style.setProperty("--head-h", $("header").offsetHeight + "px"); }
 
-function groupMatches(g, q){
-  if(!q) return false;
-  if(norm(g.base).includes(q)) return true;
-  return g.variants.some(v => norm(v.name).includes(q));
-}
-
-function chip(v){
-  return v.variant === "Standard"
-    ? `<span class="chip std">Standard</span>`
-    : `<span class="chip">${v.variant}</span>`;
-}
+function groupMatches(g, q){ return q ? norm(g.base).includes(q) : false; }
 
 function groupHTML(g){
   const many = g.variants.length > 1, v0 = g.variants[0];
-  const sub = many ? `${g.variants.length} variants`
-            : (v0.variant !== "Standard" ? v0.variant : `${money(v0.avgAllIn)} each`);
+  const sub = many ? `${g.variants.length} versions`
+            : (v0.version !== "Standard" ? v0.version : (g.avgCost != null ? `${money(g.avgCost)} each` : "Standard"));
   const rows = g.variants.map(v => `
     <div class="vrow">
       <div class="vqty">${v.qty}</div>
-      <div class="vmeta">
-        <div class="vname">${v.name}</div>
-        <div class="vsub">${chip(v)}<span class="vcost">${money(v.avgAllIn)}/ea · ${money(v.cost)}</span></div>
-      </div>
+      <div class="vmeta"><div class="vname">${v.version}${v.jp ? ' <span class="jp">JP</span>' : ''}</div></div>
     </div>`).join("");
+  const costline = g.avgCost != null
+    ? `<div class="gcostline">Avg ${money(g.avgCost)}/card · ${money(g.spent)} spent</div>` : "";
   return `
     <div class="group">
       <div class="ghead">
@@ -277,23 +271,22 @@ function groupHTML(g){
         <div class="gtotal ${many?'':'one'}"><b>${g.total}</b><span>have</span></div>
         <span class="gchev">▸</span>
       </div>
-      <div class="variants">${rows}</div>
+      <div class="variants">${rows}${costline}</div>
     </div>`;
 }
 
 function tally(groups){
-  let cards = 0, cost = 0;
-  groups.forEach(g => g.variants.forEach(v => { cards += v.qty; cost += v.cost; }));
-  return { cards, cost };
+  let cards = 0, spent = 0, pqty = 0;
+  groups.forEach(g => { cards += g.total; if(g.spent != null){ spent += g.spent; pqty += g.pqty; } });
+  return { cards, avg: pqty ? spent/pqty : 0, hasAvg: pqty > 0 };
 }
 
-function updateResbar(cards, cost, show, label){
+function updateResbar(cards, avg, show, label, hasAvg){
   const bar = $("#resbar");
   if(!show){ bar.classList.add("hidden"); return; }
   bar.classList.remove("hidden");
-  const avg = cards ? cost/cards : 0;
   $("#resCount").innerHTML = `${label}: <b>${cards}</b> card${cards!==1?'s':''}`;
-  $("#resAvg").innerHTML = `Avg <b>${money(avg)}</b>/card`;
+  $("#resAvg").innerHTML = hasAvg ? `Avg <b>${money(avg)}</b>/card` : "";
 }
 
 /* ---- Search tab ---- */
@@ -311,15 +304,15 @@ function renderSearch(){
   }
   view.innerHTML = `<div class="sechint">${matched.length} name${matched.length!==1?'s':''} matched</div>` + matched.map(groupHTML).join("");
   const t = tally(matched);
-  updateResbar(t.cards, t.cost, true, "Result");
+  updateResbar(t.cards, t.avg, true, "Result", t.hasAvg);
 }
 
 /* ---- Collection tab (full browse + expandable stats) ---- */
 function renderCollection(){
   const s = DATA.stats;
   const statHTML = [
-    [s.totalCards, "Cards"], [s.uniqueNames, "Names"],
-    [s.uniqueVariants, "Variants"], [money(s.totalSpent), "Spent"],
+    [s.ownedCopies, "Owned"], [s.ownedNames, "Names"],
+    [s.ownedEntries, "Versions"], [money(s.totalSpent), "Spent"],
   ].map(([v,l]) => `<div class="stat"><b>${v}</b><span>${l}</span></div>`).join("");
 
   $("#view-collection").innerHTML =
@@ -330,7 +323,7 @@ function renderCollection(){
     DATA.groups.map(groupHTML).join("");
 
   const t = tally(DATA.groups);
-  updateResbar(t.cards, t.cost, true, "Total");
+  updateResbar(t.cards, t.avg, true, "Total", t.hasAvg);
 }
 
 /* ---- On-the-go needs capture (stored locally on this device) ---- */
@@ -425,6 +418,8 @@ async function copyAllNeeds(){
 const DKEY = "ptcg_deck";
 function loadDeck(){ try{ return localStorage.getItem(DKEY) || ""; }catch(e){ return ""; } }
 function saveDeck(){ try{ localStorage.setItem(DKEY, deckText); }catch(e){} }
+function loadImportJp(){ try{ return localStorage.getItem("ptcg_import_jp") === "1"; }catch(e){ return false; } }
+function saveImportJp(){ try{ localStorage.setItem("ptcg_import_jp", importJp ? "1" : "0"); }catch(e){} }
 // normalise a card name for matching: lowercase, strip accents, unify apostrophes, collapse spaces
 function dkey(s){ return String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[’'`´]/g,"'").replace(/\s+/g," ").trim(); }
 
@@ -465,17 +460,19 @@ function renderImportResults(){
     return;
   }
   const idx = new Map();
-  DATA.groups.forEach(g => idx.set(dkey(g.base), g.total));   // base name → total owned across all variants
+  DATA.groups.forEach(g => idx.set(dkey(g.base), g));   // base name → owned group
 
   const buckets = {};
-  let missCards = 0, missLines = 0;
+  let missCards = 0, missLines = 0, jpUsed = 0;
   importMissing = [];
   cards.forEach(c => {
     const basic = c.section === "Energy" && isBasicEnergy(c.name);
     let have = 0, status = "ok", miss = 0;
     if(basic){ status = "basic"; }
     else {
-      have = idx.get(dkey(c.name)) || 0;
+      const g = idx.get(dkey(c.name));
+      have = g ? (importJp ? g.total : g.totalNonJp) : 0;
+      if(g && !importJp && g.total > g.totalNonJp && c.count > g.totalNonJp) jpUsed += (g.total - g.totalNonJp);
       miss = Math.max(0, c.count - have);
       if(miss > 0){ status = "short"; missCards += miss; missLines++; c._mi = importMissing.length; importMissing.push({ qty: miss, name: c.name }); }
     }
@@ -485,6 +482,8 @@ function renderImportResults(){
   let html = missCards === 0
     ? `<div class="impsum ok">✅ You have every card in this deck.</div>`
     : `<div class="impsum miss">⚠️ Missing ${missCards} card${missCards!==1?'s':''} across ${missLines} line${missLines!==1?'s':''}.</div>`;
+  if(!importJp && jpUsed > 0)
+    html += `<div class="jphint">🇯🇵 You own Japanese copies of some missing cards — turn on “Include Japanese prints” to count them.</div>`;
   if(importMissing.length)
     html += `<button id="importAddNeeds" class="impadd">➕ Add all ${missCards} missing to Needs</button>
              <div class="impsub2">…or tap “+ Needs” on any card below to add just that one.</div>`;
@@ -565,6 +564,7 @@ function renderImport(){
        <button id="deckImport" class="pbtn copy" style="flex:1">📋 Import from clipboard</button>
        ${hasDeck ? `<button id="deckErase" class="pbtn clear">Erase</button>` : ``}
      </div>
+     <label class="jptoggle"><input type="checkbox" id="jpToggle" ${importJp?'checked':''}><span>Include Japanese prints when checking</span></label>
      <div id="importResults"></div>`;
   renderImportResults();
 }
@@ -642,6 +642,7 @@ async function init(){
   $("#updated").textContent = "Updated " + fmtDate(DATA.updated);
   pending = loadPending();     // load AFTER PKEY is initialised — fixes captures lost on reopen
   deckText = loadDeck();
+  importJp = loadImportJp();
   notes = loadNotes();
   if(navigator.storage && navigator.storage.persist) navigator.storage.persist();  // ask iOS not to evict
   updateNeedsBadge();
@@ -700,6 +701,9 @@ async function init(){
   });
   $("main").addEventListener("keydown", e => {
     if(e.target.id === "capName" && e.key === "Enter"){ e.preventDefault(); capture(); }
+  });
+  $("main").addEventListener("change", e => {
+    if(e.target.id === "jpToggle"){ importJp = e.target.checked; saveImportJp(); renderImportResults(); }
   });
   $("#q").addEventListener("input", onSearch);
   $("#clr").addEventListener("click", () => { $("#q").value=""; onSearch(); focusSearch(); });

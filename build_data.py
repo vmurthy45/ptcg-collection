@@ -100,64 +100,69 @@ def main():
 
     wb = openpyxl.load_workbook(xlsx, data_only=True)
 
-    # ---- Card Purchases -> variants ----
+    # ---- Card Purchases -> cost per BASE card name (for avg-cost display) ----
     cp = wb["Card Purchases"]
     rows = list(cp.iter_rows(values_only=True))
     header = [str(h).strip() if h else "" for h in rows[0]]
     col = {name: i for i, name in enumerate(header)}
-    ci_name = col["Card Name"]
-    ci_qty = col["Quantity"]
-    ci_total = col["Total Cost"]        # all-in (incl. shipping/tax/fees allocated)
-    ci_price = col["Price per Card"]    # sticker price per card (pre-allocation)
+    ci_name, ci_qty, ci_total = col["Card Name"], col["Quantity"], col["Total Cost"]
 
-    # aggregate by exact printed name (variant identity)
-    variants = OrderedDict()
+    cost_by_base = {}   # base name -> {"spent": all-in $, "pqty": purchased qty}
+    total_spent = 0.0
+    purchased_cards = 0
     for r in rows[1:]:
-        name = r[ci_name]
-        if not name:
+        if not r[ci_name]:
             continue
-        name = clean_ws(str(name))
+        base, _tags = parse_name(clean_ws(str(r[ci_name])))
         qty = r[ci_qty] or 0
         total = r[ci_total] or 0.0
-        price = r[ci_price] or 0.0
-        v = variants.get(name)
-        if v is None:
-            base, tags = parse_name(name)
-            v = variants[name] = {
-                "name": name,
-                "base": base,
-                "variant": variant_label(tags),
-                "qty": 0,
-                "allInCost": 0.0,       # sum of all-in Total Cost
-                "stickerCost": 0.0,     # sum of price*qty (sticker only)
-            }
-        v["qty"] += qty
-        v["allInCost"] += total
-        v["stickerCost"] += price * qty
+        cb = cost_by_base.setdefault(base, {"spent": 0.0, "pqty": 0})
+        cb["spent"] += total
+        cb["pqty"] += qty
+        total_spent += total
+        purchased_cards += qty
 
-    # ---- group variants by base name ----
-    groups = OrderedDict()
-    for v in variants.values():
-        g = groups.get(v["base"])
+    # ---- Collection sheet -> OWNED inventory (source of truth for what I have) ----
+    # Columns: Card Name | Set | Card Number | Version | Quantity
+    colws = wb["Collection"]
+    owned = OrderedDict()   # base name -> group
+    for r in list(colws.iter_rows(min_col=1, max_col=5, values_only=True))[1:]:
+        name, _set, _num, version, qty = r
+        if not name or not isinstance(qty, (int, float)):
+            continue
+        name = clean_ws(str(name))
+        version = clean_ws(str(version)) if version else "Standard"
+        qty = int(qty)
+        jp = version.lower() == "japanese"
+        g = owned.get(name)
         if g is None:
-            g = groups[v["base"]] = {"base": v["base"], "total": 0, "variants": []}
-        g["total"] += v["qty"]
-        g["variants"].append({
-            "name": v["name"],
-            "variant": v["variant"],
-            "qty": v["qty"],
-            "cost": round(v["allInCost"], 2),   # all-in total (shipping/tax/fees allocated)
-            "avgAllIn": round(v["allInCost"] / v["qty"], 2) if v["qty"] else 0.0,
-        })
+            g = owned[name] = {"base": name, "variants": [], "total": 0, "totalNonJp": 0}
+        g["variants"].append({"version": version, "qty": qty, "jp": jp})
+        g["total"] += qty
+        if not jp:
+            g["totalNonJp"] += qty
 
-    group_list = list(groups.values())
-    # sort variants within a group: Standard first, then by name
-    for g in group_list:
-        g["variants"].sort(key=lambda x: (x["variant"] != "Standard", x["name"].lower()))
+    # sort variants (Standard first, Japanese last) + attach cost from purchases
+    def vkey(v):
+        return (v["jp"], v["version"] != "Standard", v["version"].lower())
+    group_list = []
+    for g in owned.values():
+        g["variants"].sort(key=vkey)
+        cb = cost_by_base.get(g["base"])
+        if cb and cb["pqty"]:
+            g["spent"] = round(cb["spent"], 2)
+            g["pqty"] = cb["pqty"]
+            g["avgCost"] = round(cb["spent"] / cb["pqty"], 2)
+        else:
+            g["spent"] = None
+            g["pqty"] = 0
+            g["avgCost"] = None
+        group_list.append(g)
     group_list.sort(key=lambda g: g["base"].lower())
 
-    total_cards = sum(v["qty"] for v in variants.values())
-    total_all_in = sum(v["allInCost"] for v in variants.values())
+    owned_copies = sum(g["total"] for g in group_list)
+    owned_entries = sum(len(g["variants"]) for g in group_list)
+    jp_copies = sum(v["qty"] for g in group_list for v in g["variants"] if v["jp"])
 
     # ---- Needs ----
     needs = []
@@ -173,11 +178,13 @@ def main():
         "updated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         "currency": "NZD",
         "stats": {
-            "totalCards": total_cards,
-            "uniqueVariants": len(variants),
-            "uniqueNames": len(groups),
-            "totalSpent": round(total_all_in, 2),
-            "avgCostPerCard": round(total_all_in / total_cards, 2) if total_cards else 0.0,
+            "ownedCopies": owned_copies,
+            "ownedNames": len(group_list),
+            "ownedEntries": owned_entries,
+            "japaneseCopies": jp_copies,
+            "totalSpent": round(total_spent, 2),
+            "purchasedCards": purchased_cards,
+            "avgCostPerCard": round(total_spent / purchased_cards, 2) if purchased_cards else 0.0,
             "needsCount": sum(n["qty"] for n in needs),
         },
         "groups": group_list,
@@ -189,7 +196,8 @@ def main():
         json.dump(data, f, ensure_ascii=False, indent=1)
 
     print(f"Wrote {OUT_PATH}")
-    print(f"  {total_cards} cards | {len(variants)} variants | {len(groups)} names | ${total_all_in:.2f} {data['currency']}")
+    print(f"  OWNED: {owned_copies} copies | {len(group_list)} names | {owned_entries} versions | {jp_copies} Japanese")
+    print(f"  SPENT: ${total_spent:.2f} {data['currency']} over {purchased_cards} purchased cards")
     print(f"  needs: {len(needs)} lines / {data['stats']['needsCount']} cards")
 
 

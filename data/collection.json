@@ -2,2411 +2,2675 @@
  "updated": "2026-08-02",
  "currency": "NZD",
  "stats": {
-  "totalCards": 734,
-  "uniqueVariants": 202,
-  "uniqueNames": 164,
-  "totalSpent": 472.83,
+  "ownedCopies": 735,
+  "ownedNames": 166,
+  "ownedEntries": 200,
+  "japaneseCopies": 15,
+  "totalSpent": 472.91,
+  "purchasedCards": 735,
   "avgCostPerCard": 0.64,
-  "needsCount": 12
+  "needsCount": 23
  },
  "groups": [
   {
    "base": "Abra",
-   "total": 3,
    "variants": [
     {
-     "name": "Abra",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 3,
-     "cost": 0.25,
-     "avgAllIn": 0.08
+     "jp": false
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 0.25,
+   "pqty": 3,
+   "avgCost": 0.08
   },
   {
    "base": "Air Balloon",
-   "total": 19,
    "variants": [
     {
-     "name": "Air Balloon",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 19,
-     "cost": 3.8,
-     "avgAllIn": 0.2
+     "jp": false
     }
-   ]
+   ],
+   "total": 19,
+   "totalNonJp": 19,
+   "spent": 3.8,
+   "pqty": 19,
+   "avgCost": 0.2
   },
   {
    "base": "Alakazam",
-   "total": 6,
    "variants": [
     {
-     "name": "Alakazam",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.33,
-     "avgAllIn": 0.08
+     "jp": false
     },
     {
-     "name": "Alakazam [RH]",
-     "variant": "Reverse Holo",
+     "version": "Reverse Holo",
      "qty": 2,
-     "cost": 0.16,
-     "avgAllIn": 0.08
+     "jp": false
     }
-   ]
+   ],
+   "total": 6,
+   "totalNonJp": 6,
+   "spent": 0.49,
+   "pqty": 6,
+   "avgCost": 0.08
   },
   {
    "base": "Area Zero Underdepths",
-   "total": 3,
    "variants": [
     {
-     "name": "Area Zero Underdepths",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 3,
-     "cost": 0.36,
-     "avgAllIn": 0.12
+     "jp": false
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 0.36,
+   "pqty": 3,
+   "avgCost": 0.12
   },
   {
    "base": "Banette",
-   "total": 5,
    "variants": [
     {
-     "name": "Banette",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 5,
-     "cost": 2.78,
-     "avgAllIn": 0.56
+     "jp": false
     }
-   ]
+   ],
+   "total": 5,
+   "totalNonJp": 5,
+   "spent": 2.78,
+   "pqty": 5,
+   "avgCost": 0.56
   },
   {
    "base": "Basic Metal Energy",
-   "total": 1,
    "variants": [
     {
-     "name": "Basic Metal Energy [PP]",
-     "variant": "Prize Pack",
+     "version": "Prize Pack",
      "qty": 1,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.0,
+   "pqty": 1,
+   "avgCost": 0.0
   },
   {
    "base": "Battle Cage",
-   "total": 2,
    "variants": [
     {
-     "name": "Battle Cage",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 0.28,
-     "avgAllIn": 0.14
+     "jp": false
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 0.28,
+   "pqty": 2,
+   "avgCost": 0.14
   },
   {
    "base": "Bloodmoon Ursaluna ex",
-   "total": 1,
    "variants": [
     {
-     "name": "Bloodmoon Ursaluna ex",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 4.57,
-     "avgAllIn": 4.57
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 4.57,
+   "pqty": 1,
+   "avgCost": 4.57
   },
   {
    "base": "Boss's Orders",
-   "total": 30,
    "variants": [
     {
-     "name": "Boss's Orders",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 27,
-     "cost": 8.74,
-     "avgAllIn": 0.32
+     "jp": false
     },
     {
-     "name": "Boss's Orders [RH]",
-     "variant": "Reverse Holo",
+     "version": "Reverse Holo",
      "qty": 3,
-     "cost": 0.91,
-     "avgAllIn": 0.3
+     "jp": false
     }
-   ]
+   ],
+   "total": 30,
+   "totalNonJp": 30,
+   "spent": 9.65,
+   "pqty": 30,
+   "avgCost": 0.32
   },
   {
    "base": "Brave Bangle",
-   "total": 1,
    "variants": [
     {
-     "name": "Brave Bangle",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 0.5,
-     "avgAllIn": 0.5
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.5,
+   "pqty": 1,
+   "avgCost": 0.5
   },
   {
    "base": "Buddy-Buddy Poffin",
-   "total": 27,
    "variants": [
     {
-     "name": "Buddy-Buddy Poffin",
-     "variant": "Standard",
-     "qty": 26,
-     "cost": 10.88,
-     "avgAllIn": 0.42
-    },
-    {
-     "name": "Buddy-Buddy Poffin (Ascended Heroes)",
-     "variant": "Ascended Heroes",
-     "qty": 1,
-     "cost": 0.14,
-     "avgAllIn": 0.14
+     "version": "Standard",
+     "qty": 27,
+     "jp": false
     }
-   ]
+   ],
+   "total": 27,
+   "totalNonJp": 27,
+   "spent": 11.02,
+   "pqty": 27,
+   "avgCost": 0.41
   },
   {
    "base": "Budew",
-   "total": 4,
    "variants": [
     {
-     "name": "Budew",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 1.02,
-     "avgAllIn": 0.51
+     "jp": false
     },
     {
-     "name": "Budew [Holo] [PP]",
-     "variant": "Holo · Prize Pack",
+     "version": "Prize Pack Holo",
      "qty": 2,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 1.02,
+   "pqty": 4,
+   "avgCost": 0.26
   },
   {
    "base": "Bug Catching Set",
-   "total": 4,
    "variants": [
     {
-     "name": "Bug Catching Set",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.68,
-     "avgAllIn": 0.17
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.68,
+   "pqty": 4,
+   "avgCost": 0.17
   },
   {
    "base": "Cape of Toughness",
-   "total": 4,
    "variants": [
     {
-     "name": "Cape of Toughness",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.79,
-     "avgAllIn": 0.2
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.79,
+   "pqty": 4,
+   "avgCost": 0.2
   },
   {
    "base": "Chien-Pao",
-   "total": 1,
    "variants": [
     {
-     "name": "Chien-Pao",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 0.08,
-     "avgAllIn": 0.08
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.08,
+   "pqty": 1,
+   "avgCost": 0.08
   },
   {
    "base": "Chikorita",
-   "total": 1,
    "variants": [
     {
-     "name": "Chikorita [RH]",
-     "variant": "Reverse Holo",
+     "version": "Reverse Holo",
      "qty": 1,
-     "cost": 0.08,
-     "avgAllIn": 0.08
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.08,
+   "pqty": 1,
+   "avgCost": 0.08
   },
   {
    "base": "Ciphermaniac's Codebreaking",
-   "total": 3,
    "variants": [
     {
-     "name": "Ciphermaniac's Codebreaking",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 3,
-     "cost": 0.8,
-     "avgAllIn": 0.27
+     "jp": false
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 0.8,
+   "pqty": 3,
+   "avgCost": 0.27
   },
   {
    "base": "Combusken",
-   "total": 1,
    "variants": [
     {
-     "name": "Combusken",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 0.7,
-     "avgAllIn": 0.7
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.7,
+   "pqty": 1,
+   "avgCost": 0.7
   },
   {
    "base": "Counter Catcher",
-   "total": 2,
    "variants": [
     {
-     "name": "Counter Catcher",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 3.01,
-     "avgAllIn": 1.51
+     "jp": false
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 3.01,
+   "pqty": 2,
+   "avgCost": 1.51
   },
   {
    "base": "Crispin",
-   "total": 6,
    "variants": [
     {
-     "name": "Crispin",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 6,
-     "cost": 1.87,
-     "avgAllIn": 0.31
+     "jp": false
     }
-   ]
+   ],
+   "total": 6,
+   "totalNonJp": 6,
+   "spent": 1.87,
+   "pqty": 6,
+   "avgCost": 0.31
   },
   {
    "base": "Crushing Hammer",
-   "total": 5,
    "variants": [
     {
-     "name": "Crushing Hammer",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 1.86,
-     "avgAllIn": 0.47
+     "jp": false
     },
     {
-     "name": "Crushing Hammer [FA]",
-     "variant": "Full Art",
+     "version": "Full Art",
      "qty": 1,
-     "cost": 7.0,
-     "avgAllIn": 7.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 5,
+   "totalNonJp": 5,
+   "spent": 8.86,
+   "pqty": 5,
+   "avgCost": 1.77
   },
   {
    "base": "Crustle",
-   "total": 1,
    "variants": [
     {
-     "name": "Crustle",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 0.08,
-     "avgAllIn": 0.08
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.08,
+   "pqty": 1,
+   "avgCost": 0.08
   },
   {
    "base": "Cynthia's Gabite",
-   "total": 4,
    "variants": [
     {
-     "name": "Cynthia's Gabite",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 1.32,
-     "avgAllIn": 0.33
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 1.32,
+   "pqty": 4,
+   "avgCost": 0.33
   },
   {
    "base": "Cynthia's Garchomp ex",
-   "total": 3,
    "variants": [
     {
-     "name": "Cynthia's Garchomp ex",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 5.68,
-     "avgAllIn": 2.84
+     "jp": false
     },
     {
-     "name": "Cynthia's Garchomp ex [JP]",
-     "variant": "JP",
+     "version": "Japanese",
      "qty": 1,
-     "cost": 0.61,
-     "avgAllIn": 0.61
+     "jp": true
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 2,
+   "spent": 6.29,
+   "pqty": 3,
+   "avgCost": 2.1
   },
   {
    "base": "Cynthia's Gible",
-   "total": 4,
    "variants": [
     {
-     "name": "Cynthia's Gible",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.94,
-     "avgAllIn": 0.24
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.94,
+   "pqty": 4,
+   "avgCost": 0.24
   },
   {
    "base": "Cynthia's Power Weight",
-   "total": 4,
    "variants": [
     {
-     "name": "Cynthia's Power Weight",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 2.2,
-     "avgAllIn": 0.55
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 2.2,
+   "pqty": 4,
+   "avgCost": 0.55
   },
   {
    "base": "Cynthia's Roselia",
-   "total": 4,
    "variants": [
     {
-     "name": "Cynthia's Roselia",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 2.45,
-     "avgAllIn": 0.61
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 2.45,
+   "pqty": 4,
+   "avgCost": 0.61
   },
   {
    "base": "Cynthia's Roserade",
-   "total": 5,
    "variants": [
     {
-     "name": "Cynthia's Roserade",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 2.51,
-     "avgAllIn": 0.63
+     "jp": false
     },
     {
-     "name": "Cynthia's Roserade [PP]",
-     "variant": "Prize Pack",
+     "version": "Prize Pack",
      "qty": 1,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 5,
+   "totalNonJp": 5,
+   "spent": 2.51,
+   "pqty": 5,
+   "avgCost": 0.5
   },
   {
    "base": "Cyrano",
-   "total": 1,
    "variants": [
     {
-     "name": "Cyrano",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 0.85,
-     "avgAllIn": 0.85
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.85,
+   "pqty": 1,
+   "avgCost": 0.85
   },
   {
    "base": "Dark Bell",
-   "total": 4,
    "variants": [
     {
-     "name": "Dark Bell",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.28,
-     "avgAllIn": 0.07
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.28,
+   "pqty": 4,
+   "avgCost": 0.07
   },
   {
    "base": "Darkness Energy",
-   "total": 7,
    "variants": [
     {
-     "name": "Darkness Energy",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 7,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 7,
+   "totalNonJp": 7,
+   "spent": 0.0,
+   "pqty": 7,
+   "avgCost": 0.0
   },
   {
    "base": "Dawn",
-   "total": 3,
    "variants": [
     {
-     "name": "Dawn",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 3,
-     "cost": 1.38,
-     "avgAllIn": 0.46
+     "jp": false
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 1.38,
+   "pqty": 3,
+   "avgCost": 0.46
   },
   {
    "base": "Dhelmise",
-   "total": 4,
    "variants": [
     {
-     "name": "Dhelmise",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.28,
-     "avgAllIn": 0.07
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.28,
+   "pqty": 4,
+   "avgCost": 0.07
   },
   {
    "base": "Double Colorless Energy",
-   "total": 9,
    "variants": [
     {
-     "name": "Double Colorless Energy",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 9,
-     "cost": 6.28,
-     "avgAllIn": 0.7
+     "jp": false
     }
-   ]
+   ],
+   "total": 9,
+   "totalNonJp": 9,
+   "spent": 6.28,
+   "pqty": 9,
+   "avgCost": 0.7
   },
   {
    "base": "Dragapult ex",
-   "total": 7,
    "variants": [
     {
-     "name": "Dragapult ex",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 13.62,
-     "avgAllIn": 3.4
+     "jp": false
     },
     {
-     "name": "Dragapult ex [JP]",
-     "variant": "JP",
+     "version": "Japanese",
      "qty": 3,
-     "cost": 1.84,
-     "avgAllIn": 0.61
+     "jp": true
     }
-   ]
+   ],
+   "total": 7,
+   "totalNonJp": 4,
+   "spent": 15.46,
+   "pqty": 7,
+   "avgCost": 2.21
   },
   {
    "base": "Drakloak",
-   "total": 13,
    "variants": [
     {
-     "name": "Drakloak",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 9,
-     "cost": 2.68,
-     "avgAllIn": 0.3
+     "jp": false
     },
     {
-     "name": "Drakloak (Energy Symbol Pattern)",
-     "variant": "Energy Symbol Pattern",
-     "qty": 3,
-     "cost": 2.1,
-     "avgAllIn": 0.7
-    },
-    {
-     "name": "Drakloak [RH]",
-     "variant": "Reverse Holo",
+     "version": "Reverse Holo",
      "qty": 1,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 10,
+   "totalNonJp": 10,
+   "spent": 4.77,
+   "pqty": 13,
+   "avgCost": 0.37
+  },
+  {
+   "base": "Drakloak (Energy Symbol Pattern)",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 3,
+     "jp": false
+    }
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": null,
+   "pqty": 0,
+   "avgCost": null
   },
   {
    "base": "Dreepy",
-   "total": 12,
    "variants": [
     {
-     "name": "Dreepy",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 12,
-     "cost": 3.7,
-     "avgAllIn": 0.31
+     "jp": false
     }
-   ]
+   ],
+   "total": 12,
+   "totalNonJp": 12,
+   "spent": 3.7,
+   "pqty": 12,
+   "avgCost": 0.31
   },
   {
    "base": "Drilbur",
-   "total": 4,
    "variants": [
     {
-     "name": "Drilbur",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.62,
-     "avgAllIn": 0.16
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.62,
+   "pqty": 4,
+   "avgCost": 0.16
   },
   {
    "base": "Drizzile",
-   "total": 7,
    "variants": [
     {
-     "name": "Drizzile",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 7,
-     "cost": 3.13,
-     "avgAllIn": 0.45
+     "jp": false
     }
-   ]
+   ],
+   "total": 7,
+   "totalNonJp": 7,
+   "spent": 3.13,
+   "pqty": 7,
+   "avgCost": 0.45
   },
   {
    "base": "Dudunsparce",
-   "total": 4,
    "variants": [
     {
-     "name": "Dudunsparce",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 1.58,
-     "avgAllIn": 0.4
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 1.58,
+   "pqty": 4,
+   "avgCost": 0.4
   },
   {
    "base": "Dunsparce",
-   "total": 2,
    "variants": [
     {
-     "name": "Dunsparce",
-     "variant": "Standard",
-     "qty": 2,
-     "cost": 0.28,
-     "avgAllIn": 0.14
+     "version": "Standard",
+     "qty": 3,
+     "jp": false
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 0.36,
+   "pqty": 3,
+   "avgCost": 0.12
   },
   {
    "base": "Dusclops",
-   "total": 4,
    "variants": [
     {
-     "name": "Dusclops",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 1.07,
-     "avgAllIn": 0.27
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 1.07,
+   "pqty": 4,
+   "avgCost": 0.27
   },
   {
    "base": "Dusknoir",
-   "total": 2,
    "variants": [
     {
-     "name": "Dusknoir",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 1.3,
-     "avgAllIn": 0.65
+     "jp": false
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 1.3,
+   "pqty": 2,
+   "avgCost": 0.65
   },
   {
    "base": "Duskull",
-   "total": 2,
    "variants": [
     {
-     "name": "Duskull",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 0.68,
-     "avgAllIn": 0.34
+     "jp": false
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 0.68,
+   "pqty": 2,
+   "avgCost": 0.34
   },
   {
    "base": "Emboar",
-   "total": 1,
    "variants": [
     {
-     "name": "Emboar [PP]",
-     "variant": "Prize Pack",
+     "version": "Prize Pack",
      "qty": 1,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.0,
+   "pqty": 1,
+   "avgCost": 0.0
   },
   {
    "base": "Evosoda",
-   "total": 2,
    "variants": [
     {
-     "name": "Evosoda",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 7.5,
-     "avgAllIn": 3.75
+     "jp": false
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 7.5,
+   "pqty": 2,
+   "avgCost": 3.75
   },
   {
    "base": "Fan Rotom",
-   "total": 3,
    "variants": [
     {
-     "name": "Fan Rotom",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 0.4,
-     "avgAllIn": 0.2
+     "jp": false
     },
     {
-     "name": "Fan Rotom [RH]",
-     "variant": "Reverse Holo",
+     "version": "Reverse Holo",
      "qty": 1,
-     "cost": 0.5,
-     "avgAllIn": 0.5
+     "jp": false
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 0.9,
+   "pqty": 3,
+   "avgCost": 0.3
   },
   {
    "base": "Fezandipiti ex",
-   "total": 6,
    "variants": [
     {
-     "name": "Fezandipiti ex",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 17.51,
-     "avgAllIn": 8.75
+     "jp": false
     },
     {
-     "name": "Fezandipiti ex [JP]",
-     "variant": "JP",
+     "version": "Japanese",
      "qty": 4,
-     "cost": 2.75,
-     "avgAllIn": 0.69
+     "jp": true
     }
-   ]
+   ],
+   "total": 6,
+   "totalNonJp": 2,
+   "spent": 20.25,
+   "pqty": 6,
+   "avgCost": 3.38
   },
   {
    "base": "Fighting Energy",
-   "total": 12,
    "variants": [
     {
-     "name": "Fighting Energy",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 12,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 12,
+   "totalNonJp": 12,
+   "spent": 0.0,
+   "pqty": 12,
+   "avgCost": 0.0
   },
   {
    "base": "Fighting Gong",
-   "total": 9,
    "variants": [
     {
-     "name": "Fighting Gong",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 8,
-     "cost": 1.77,
-     "avgAllIn": 0.22
+     "jp": false
     },
     {
-     "name": "Fighting Gong [Holo] [PP]",
-     "variant": "Holo · Prize Pack",
+     "version": "Prize Pack Holo",
      "qty": 1,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 9,
+   "totalNonJp": 9,
+   "spent": 1.77,
+   "pqty": 9,
+   "avgCost": 0.2
   },
   {
    "base": "Fire Energy",
-   "total": 11,
    "variants": [
     {
-     "name": "Fire Energy",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 11,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 11,
+   "totalNonJp": 11,
+   "spent": 0.0,
+   "pqty": 11,
+   "avgCost": 0.0
   },
   {
    "base": "Flutter Mane",
-   "total": 1,
    "variants": [
     {
-     "name": "Flutter Mane [RH]",
-     "variant": "Reverse Holo",
+     "version": "Reverse Holo",
      "qty": 1,
-     "cost": 0.5,
-     "avgAllIn": 0.5
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.5,
+   "pqty": 1,
+   "avgCost": 0.5
   },
   {
    "base": "Grass Energy",
-   "total": 14,
    "variants": [
     {
-     "name": "Grass Energy",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 13,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     },
     {
-     "name": "Grass Energy [PP]",
-     "variant": "Prize Pack",
+     "version": "Prize Pack",
      "qty": 1,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 14,
+   "totalNonJp": 14,
+   "spent": 0.0,
+   "pqty": 14,
+   "avgCost": 0.0
   },
   {
    "base": "Gwynn",
-   "total": 8,
    "variants": [
     {
-     "name": "Gwynn",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 8,
-     "cost": 0.55,
-     "avgAllIn": 0.07
+     "jp": false
     }
-   ]
+   ],
+   "total": 8,
+   "totalNonJp": 8,
+   "spent": 0.55,
+   "pqty": 8,
+   "avgCost": 0.07
   },
   {
    "base": "Handheld Fan",
-   "total": 1,
    "variants": [
     {
-     "name": "Handheld Fan",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 0.2,
-     "avgAllIn": 0.2
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.2,
+   "pqty": 1,
+   "avgCost": 0.2
   },
   {
    "base": "Harlequin",
-   "total": 1,
    "variants": [
     {
-     "name": "Harlequin",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 0.4,
-     "avgAllIn": 0.4
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.4,
+   "pqty": 1,
+   "avgCost": 0.4
   },
   {
    "base": "Hilda",
-   "total": 1,
    "variants": [
     {
-     "name": "Hilda",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 0.08,
-     "avgAllIn": 0.08
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.08,
+   "pqty": 1,
+   "avgCost": 0.08
   },
   {
    "base": "Hoothoot",
-   "total": 3,
    "variants": [
     {
-     "name": "Hoothoot",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 3,
-     "cost": 0.6,
-     "avgAllIn": 0.2
+     "jp": false
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 0.6,
+   "pqty": 3,
+   "avgCost": 0.2
   },
   {
    "base": "Ice Rider Calyrex V",
-   "total": 4,
    "variants": [
     {
-     "name": "Ice Rider Calyrex V",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 6.67,
-     "avgAllIn": 1.67
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 6.67,
+   "pqty": 4,
+   "avgCost": 1.67
   },
   {
    "base": "Ice Rider Calyrex VMAX",
-   "total": 2,
    "variants": [
     {
-     "name": "Ice Rider Calyrex VMAX",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 6.29,
-     "avgAllIn": 3.14
+     "jp": false
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 6.29,
+   "pqty": 2,
+   "avgCost": 3.14
   },
   {
    "base": "Ignition Energy",
-   "total": 2,
    "variants": [
     {
-     "name": "Ignition Energy",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 0.28,
-     "avgAllIn": 0.14
+     "jp": false
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 0.28,
+   "pqty": 2,
+   "avgCost": 0.14
   },
   {
    "base": "Inteleon",
-   "total": 2,
    "variants": [
     {
-     "name": "Inteleon",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 2.34,
-     "avgAllIn": 1.17
+     "jp": false
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 2.34,
+   "pqty": 2,
+   "avgCost": 1.17
   },
   {
    "base": "Iono",
-   "total": 4,
    "variants": [
     {
-     "name": "Iono",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 3.35,
-     "avgAllIn": 0.84
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 3.35,
+   "pqty": 4,
+   "avgCost": 0.84
   },
   {
    "base": "Janine's Secret Art",
-   "total": 4,
    "variants": [
     {
-     "name": "Janine's Secret Art",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 1.17,
-     "avgAllIn": 0.29
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 1.17,
+   "pqty": 4,
+   "avgCost": 0.29
   },
   {
    "base": "Judge",
-   "total": 4,
    "variants": [
     {
-     "name": "Judge",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 1.61,
-     "avgAllIn": 0.4
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 1.61,
+   "pqty": 4,
+   "avgCost": 0.4
   },
   {
    "base": "Kadabra",
-   "total": 8,
    "variants": [
     {
-     "name": "Kadabra",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 8,
-     "cost": 0.66,
-     "avgAllIn": 0.08
+     "jp": false
     }
-   ]
+   ],
+   "total": 8,
+   "totalNonJp": 8,
+   "spent": 0.66,
+   "pqty": 8,
+   "avgCost": 0.08
   },
   {
    "base": "Keldeo EX",
-   "total": 1,
    "variants": [
     {
-     "name": "Keldeo EX",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 8.0,
-     "avgAllIn": 8.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 8.0,
+   "pqty": 1,
+   "avgCost": 8.0
   },
   {
    "base": "Latias ex",
-   "total": 2,
    "variants": [
     {
-     "name": "Latias ex",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 10.0,
-     "avgAllIn": 10.0
+     "jp": false
     },
     {
-     "name": "Latias ex [JP]",
-     "variant": "JP",
+     "version": "Japanese",
      "qty": 1,
-     "cost": 0.92,
-     "avgAllIn": 0.92
+     "jp": true
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 1,
+   "spent": 10.92,
+   "pqty": 2,
+   "avgCost": 5.46
   },
   {
    "base": "Lightning Energy",
-   "total": 4,
    "variants": [
     {
-     "name": "Lightning Energy",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 3,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     },
     {
-     "name": "Lightning Energy [Holo] [PP]",
-     "variant": "Holo · Prize Pack",
+     "version": "Prize Pack Holo",
      "qty": 1,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.0,
+   "pqty": 4,
+   "avgCost": 0.0
   },
   {
    "base": "Lillie's Clefairy ex",
-   "total": 2,
    "variants": [
     {
-     "name": "Lillie's Clefairy ex [JP]",
-     "variant": "JP",
+     "version": "Japanese",
      "qty": 2,
-     "cost": 1.6,
-     "avgAllIn": 0.8
+     "jp": true
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 0,
+   "spent": 1.6,
+   "pqty": 2,
+   "avgCost": 0.8
   },
   {
    "base": "Lillie's Determination",
-   "total": 22,
    "variants": [
     {
-     "name": "Lillie's Determination",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 21,
-     "cost": 13.9,
-     "avgAllIn": 0.66
+     "jp": false
     },
     {
-     "name": "Lillie's Determination [RH]",
-     "variant": "Reverse Holo",
+     "version": "Reverse Holo",
      "qty": 1,
-     "cost": 0.63,
-     "avgAllIn": 0.63
+     "jp": false
     }
-   ]
+   ],
+   "total": 22,
+   "totalNonJp": 22,
+   "spent": 14.54,
+   "pqty": 22,
+   "avgCost": 0.66
   },
   {
    "base": "Lillie's Pearl",
-   "total": 2,
    "variants": [
     {
-     "name": "Lillie's Pearl",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 0.16,
-     "avgAllIn": 0.08
+     "jp": false
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 0.16,
+   "pqty": 2,
+   "avgCost": 0.08
   },
   {
    "base": "Lively Stadium",
-   "total": 1,
    "variants": [
     {
-     "name": "Lively Stadium",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 0.14,
-     "avgAllIn": 0.14
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.14,
+   "pqty": 1,
+   "avgCost": 0.14
   },
   {
    "base": "Lumineon V",
-   "total": 1,
    "variants": [
     {
-     "name": "Lumineon V",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 3.0,
-     "avgAllIn": 3.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 3.0,
+   "pqty": 1,
+   "avgCost": 3.0
   },
   {
    "base": "Lunatone",
-   "total": 5,
    "variants": [
     {
-     "name": "Lunatone",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.07,
-     "avgAllIn": 0.02
+     "jp": false
     },
     {
-     "name": "Lunatone [Holo] [PP]",
-     "variant": "Holo · Prize Pack",
+     "version": "Prize Pack Holo",
      "qty": 1,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 5,
+   "totalNonJp": 5,
+   "spent": 0.07,
+   "pqty": 5,
+   "avgCost": 0.01
   },
   {
    "base": "Mega Darkrai ex",
-   "total": 4,
    "variants": [
     {
-     "name": "Mega Darkrai ex",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 13.87,
-     "avgAllIn": 3.47
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 13.87,
+   "pqty": 4,
+   "avgCost": 3.47
   },
   {
    "base": "Mega Kangaskhan ex",
-   "total": 3,
    "variants": [
     {
-     "name": "Mega Kangaskhan ex",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 3,
-     "cost": 5.88,
-     "avgAllIn": 1.96
+     "jp": false
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 5.88,
+   "pqty": 3,
+   "avgCost": 1.96
   },
   {
    "base": "Mega Signal",
-   "total": 5,
    "variants": [
     {
-     "name": "Mega Signal",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.55,
-     "avgAllIn": 0.14
+     "jp": false
     },
     {
-     "name": "Mega Signal [PP]",
-     "variant": "Prize Pack",
+     "version": "Prize Pack",
      "qty": 1,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 5,
+   "totalNonJp": 5,
+   "spent": 0.55,
+   "pqty": 5,
+   "avgCost": 0.11
   },
   {
    "base": "Meganium",
-   "total": 3,
    "variants": [
     {
-     "name": "Meganium",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 3,
-     "cost": 0.25,
-     "avgAllIn": 0.08
+     "jp": false
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 0.25,
+   "pqty": 3,
+   "avgCost": 0.08
   },
   {
    "base": "Megaton Blower",
-   "total": 1,
    "variants": [
     {
-     "name": "Megaton Blower",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 1.11,
-     "avgAllIn": 1.11
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 1.11,
+   "pqty": 1,
+   "avgCost": 1.11
   },
   {
    "base": "Melony",
-   "total": 8,
    "variants": [
     {
-     "name": "Melony",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 8,
-     "cost": 2.97,
-     "avgAllIn": 0.37
+     "jp": false
     }
-   ]
+   ],
+   "total": 8,
+   "totalNonJp": 8,
+   "spent": 2.97,
+   "pqty": 8,
+   "avgCost": 0.37
   },
   {
    "base": "Meowth ex",
-   "total": 2,
    "variants": [
     {
-     "name": "Meowth ex",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 12.49,
-     "avgAllIn": 6.24
+     "jp": false
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 12.49,
+   "pqty": 2,
+   "avgCost": 6.24
   },
   {
    "base": "Metal Energy",
-   "total": 12,
    "variants": [
     {
-     "name": "Metal Energy",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 12,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 12,
+   "totalNonJp": 12,
+   "spent": 0.0,
+   "pqty": 12,
+   "avgCost": 0.0
   },
   {
    "base": "Metang",
-   "total": 1,
    "variants": [
     {
-     "name": "Metang [RH]",
-     "variant": "Reverse Holo",
+     "version": "Reverse Holo",
      "qty": 1,
-     "cost": 0.5,
-     "avgAllIn": 0.5
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.5,
+   "pqty": 1,
+   "avgCost": 0.5
   },
   {
    "base": "Mist Energy",
-   "total": 4,
    "variants": [
     {
-     "name": "Mist Energy",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.56,
-     "avgAllIn": 0.14
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.56,
+   "pqty": 4,
+   "avgCost": 0.14
   },
   {
    "base": "Misty's Vitality",
-   "total": 1,
    "variants": [
     {
-     "name": "Misty's Vitality",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 2.5,
-     "avgAllIn": 2.5
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 2.5,
+   "pqty": 1,
+   "avgCost": 2.5
   },
   {
    "base": "Moltres",
-   "total": 2,
    "variants": [
     {
-     "name": "Moltres",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 0.52,
-     "avgAllIn": 0.52
+     "jp": false
     },
     {
-     "name": "Moltres [RH]",
-     "variant": "Reverse Holo",
+     "version": "Reverse Holo",
      "qty": 1,
-     "cost": 0.08,
-     "avgAllIn": 0.08
+     "jp": false
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 0.6,
+   "pqty": 2,
+   "avgCost": 0.3
   },
   {
    "base": "Munkidori",
-   "total": 5,
    "variants": [
     {
-     "name": "Munkidori",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 2.61,
-     "avgAllIn": 0.65
+     "jp": false
     },
     {
-     "name": "Munkidori [RH]",
-     "variant": "Reverse Holo",
+     "version": "Reverse Holo",
      "qty": 1,
-     "cost": 0.5,
-     "avgAllIn": 0.5
+     "jp": false
     }
-   ]
+   ],
+   "total": 5,
+   "totalNonJp": 5,
+   "spent": 3.11,
+   "pqty": 5,
+   "avgCost": 0.62
   },
   {
    "base": "N's Darmanitan",
-   "total": 2,
    "variants": [
     {
-     "name": "N's Darmanitan",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 0.2,
-     "avgAllIn": 0.2
+     "jp": false
     },
     {
-     "name": "N's Darmanitan [Holo] [PP]",
-     "variant": "Holo · Prize Pack",
+     "version": "Prize Pack Holo",
      "qty": 1,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 0.2,
+   "pqty": 2,
+   "avgCost": 0.1
   },
   {
    "base": "N's Darumaka",
-   "total": 1,
    "variants": [
     {
-     "name": "N's Darumaka",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 0.2,
-     "avgAllIn": 0.2
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.2,
+   "pqty": 1,
+   "avgCost": 0.2
   },
   {
    "base": "N's Plan",
-   "total": 5,
    "variants": [
     {
-     "name": "N's Plan",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 5,
-     "cost": 2.74,
-     "avgAllIn": 0.55
+     "jp": false
     }
-   ]
+   ],
+   "total": 5,
+   "totalNonJp": 5,
+   "spent": 2.74,
+   "pqty": 5,
+   "avgCost": 0.55
   },
   {
    "base": "N's PP Up",
-   "total": 5,
    "variants": [
     {
-     "name": "N's PP Up",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.14,
-     "avgAllIn": 0.03
+     "jp": false
     },
     {
-     "name": "N's PP Up [PP]",
-     "variant": "Prize Pack",
+     "version": "Prize Pack",
      "qty": 1,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 5,
+   "totalNonJp": 5,
+   "spent": 0.14,
+   "pqty": 5,
+   "avgCost": 0.03
   },
   {
    "base": "N's Reshiram",
-   "total": 4,
    "variants": [
     {
-     "name": "N's Reshiram (Poke Ball)",
-     "variant": "Poke Ball",
-     "qty": 1,
-     "cost": 0.31,
-     "avgAllIn": 0.31
-    },
-    {
-     "name": "N's Reshiram [Holo] [PP]",
-     "variant": "Holo · Prize Pack",
-     "qty": 1,
-     "cost": 0.0,
-     "avgAllIn": 0.0
-    },
-    {
-     "name": "N's Reshiram [PP]",
-     "variant": "Prize Pack",
+     "version": "Prize Pack",
      "qty": 2,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
+    },
+    {
+     "version": "Prize Pack Holo",
+     "qty": 1,
+     "jp": false
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 0.31,
+   "pqty": 4,
+   "avgCost": 0.08
+  },
+  {
+   "base": "N's Reshiram (Poke Ball)",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 1,
+     "jp": false
+    }
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": null,
+   "pqty": 0,
+   "avgCost": null
   },
   {
    "base": "N's Zekrom",
-   "total": 3,
    "variants": [
     {
-     "name": "N's Zekrom",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 0.66,
-     "avgAllIn": 0.33
+     "jp": false
     },
     {
-     "name": "N's Zekrom [RH]",
-     "variant": "Reverse Holo",
+     "version": "Reverse Holo",
      "qty": 1,
-     "cost": 0.08,
-     "avgAllIn": 0.08
+     "jp": false
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 0.74,
+   "pqty": 3,
+   "avgCost": 0.25
   },
   {
    "base": "N's Zoroark ex",
-   "total": 4,
    "variants": [
     {
-     "name": "N's Zoroark ex [JP]",
-     "variant": "JP",
+     "version": "Japanese",
      "qty": 4,
-     "cost": 3.11,
-     "avgAllIn": 0.78
+     "jp": true
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 0,
+   "spent": 3.11,
+   "pqty": 4,
+   "avgCost": 0.78
   },
   {
    "base": "N's Zorua",
-   "total": 4,
    "variants": [
     {
-     "name": "N's Zorua",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.62,
-     "avgAllIn": 0.16
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.62,
+   "pqty": 4,
+   "avgCost": 0.16
   },
   {
    "base": "Night Stretcher",
-   "total": 20,
    "variants": [
     {
-     "name": "Night Stretcher",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 20,
-     "cost": 10.52,
-     "avgAllIn": 0.53
+     "jp": false
     }
-   ]
+   ],
+   "total": 20,
+   "totalNonJp": 20,
+   "spent": 10.52,
+   "pqty": 20,
+   "avgCost": 0.53
   },
   {
    "base": "Noctowl",
-   "total": 1,
    "variants": [
     {
-     "name": "Noctowl",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 0.5,
-     "avgAllIn": 0.5
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.5,
+   "pqty": 1,
+   "avgCost": 0.5
   },
   {
    "base": "Oricorio ex",
-   "total": 1,
    "variants": [
     {
-     "name": "Oricorio ex FA",
-     "variant": "Full Art",
+     "version": "Full Art",
      "qty": 1,
-     "cost": 12.9,
-     "avgAllIn": 12.9
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 12.9,
+   "pqty": 1,
+   "avgCost": 12.9
   },
   {
    "base": "Passimian",
-   "total": 1,
    "variants": [
     {
-     "name": "Passimian",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 0.55,
-     "avgAllIn": 0.55
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.55,
+   "pqty": 1,
+   "avgCost": 0.55
   },
   {
    "base": "Patrat",
-   "total": 1,
    "variants": [
     {
-     "name": "Patrat",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 0.2,
-     "avgAllIn": 0.2
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.2,
+   "pqty": 1,
+   "avgCost": 0.2
   },
   {
    "base": "Pikipek",
-   "total": 4,
    "variants": [
     {
-     "name": "Pikipek",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 1.25,
-     "avgAllIn": 0.31
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 1.25,
+   "pqty": 4,
+   "avgCost": 0.31
   },
   {
    "base": "Poke Pad",
-   "total": 22,
    "variants": [
     {
-     "name": "Poke Pad",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 22,
-     "cost": 22.15,
-     "avgAllIn": 1.01
+     "jp": false
     }
-   ]
+   ],
+   "total": 22,
+   "totalNonJp": 22,
+   "spent": 22.15,
+   "pqty": 22,
+   "avgCost": 1.01
   },
   {
    "base": "Poltchageist",
-   "total": 4,
    "variants": [
     {
-     "name": "Poltchageist",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.62,
-     "avgAllIn": 0.16
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.62,
+   "pqty": 4,
+   "avgCost": 0.16
   },
   {
    "base": "Premium Power Pro",
-   "total": 2,
    "variants": [
     {
-     "name": "Premium Power Pro",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 0.27,
-     "avgAllIn": 0.27
+     "jp": false
     },
     {
-     "name": "Premium Power Pro [PP]",
-     "variant": "Prize Pack",
+     "version": "Prize Pack",
      "qty": 1,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 0.27,
+   "pqty": 2,
+   "avgCost": 0.13
   },
   {
    "base": "Prime Catcher",
-   "total": 1,
    "variants": [
     {
-     "name": "Prime Catcher",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 1.47,
-     "avgAllIn": 1.47
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 1.47,
+   "pqty": 1,
+   "avgCost": 1.47
   },
   {
    "base": "Prism Energy",
-   "total": 6,
    "variants": [
     {
-     "name": "Prism Energy",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 6,
-     "cost": 1.08,
-     "avgAllIn": 0.18
+     "jp": false
     }
-   ]
+   ],
+   "total": 6,
+   "totalNonJp": 6,
+   "spent": 1.08,
+   "pqty": 6,
+   "avgCost": 0.18
   },
   {
    "base": "Prism Tower",
-   "total": 6,
    "variants": [
     {
-     "name": "Prism Tower",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 6,
-     "cost": 1.31,
-     "avgAllIn": 0.22
+     "jp": false
     }
-   ]
+   ],
+   "total": 6,
+   "totalNonJp": 6,
+   "spent": 1.31,
+   "pqty": 6,
+   "avgCost": 0.22
   },
   {
    "base": "Professor Turo's Scenario",
-   "total": 2,
    "variants": [
     {
-     "name": "Professor Turo's Scenario",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 0.07,
-     "avgAllIn": 0.03
+     "jp": false
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 0.07,
+   "pqty": 2,
+   "avgCost": 0.03
   },
   {
    "base": "Professor's Research",
-   "total": 4,
    "variants": [
     {
-     "name": "Professor's Research",
-     "variant": "Standard",
-     "qty": 3,
-     "cost": 7.94,
-     "avgAllIn": 2.65
-    },
-    {
-     "name": "Professor's Research [Professor Sycamore]",
-     "variant": "Professor Sycamore",
-     "qty": 1,
-     "cost": 0.03,
-     "avgAllIn": 0.03
+     "version": "Standard",
+     "qty": 4,
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 7.98,
+   "pqty": 4,
+   "avgCost": 1.99
   },
   {
    "base": "Psychic Energy",
-   "total": 3,
    "variants": [
     {
-     "name": "Psychic Energy",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     },
     {
-     "name": "Psychic Energy [Holo] [PP]",
-     "variant": "Holo · Prize Pack",
+     "version": "Prize Pack Holo",
      "qty": 1,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 0.0,
+   "pqty": 3,
+   "avgCost": 0.0
   },
   {
    "base": "Psyduck",
-   "total": 1,
    "variants": [
     {
-     "name": "Psyduck",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 0.14,
-     "avgAllIn": 0.14
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.14,
+   "pqty": 1,
+   "avgCost": 0.14
   },
   {
    "base": "Quick Ball",
-   "total": 22,
    "variants": [
     {
-     "name": "Quick Ball",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 22,
-     "cost": 8.28,
-     "avgAllIn": 0.38
+     "jp": false
     }
-   ]
+   ],
+   "total": 22,
+   "totalNonJp": 22,
+   "spent": 8.28,
+   "pqty": 22,
+   "avgCost": 0.38
   },
   {
    "base": "Rapid Strike Urshifu V",
-   "total": 2,
    "variants": [
     {
-     "name": "Rapid Strike Urshifu V",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 5.03,
-     "avgAllIn": 2.51
+     "jp": false
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 5.03,
+   "pqty": 2,
+   "avgCost": 2.51
   },
   {
    "base": "Rapid Strike Urshifu VMAX",
-   "total": 1,
    "variants": [
     {
-     "name": "Rapid Strike Urshifu VMAX",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 3.42,
-     "avgAllIn": 3.42
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 3.42,
+   "pqty": 1,
+   "avgCost": 3.42
   },
   {
    "base": "Rare Candy",
-   "total": 5,
    "variants": [
     {
-     "name": "Rare Candy",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.8,
-     "avgAllIn": 0.2
+     "jp": false
     },
     {
-     "name": "Rare Candy [RH]",
-     "variant": "Reverse Holo",
+     "version": "Reverse Holo",
      "qty": 1,
-     "cost": 0.08,
-     "avgAllIn": 0.08
+     "jp": false
     }
-   ]
+   ],
+   "total": 5,
+   "totalNonJp": 5,
+   "spent": 0.88,
+   "pqty": 5,
+   "avgCost": 0.18
   },
   {
    "base": "Risky Ruins",
-   "total": 2,
    "variants": [
     {
-     "name": "Risky Ruins",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 0.62,
-     "avgAllIn": 0.62
+     "jp": false
     },
     {
-     "name": "Risky Ruins [PP]",
-     "variant": "Prize Pack",
+     "version": "Prize Pack",
      "qty": 1,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 0.62,
+   "pqty": 2,
+   "avgCost": 0.31
   },
   {
    "base": "Rocky Fighting Energy",
-   "total": 4,
    "variants": [
     {
-     "name": "Rocky Fighting Energy",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 2.13,
-     "avgAllIn": 0.53
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 2.13,
+   "pqty": 4,
+   "avgCost": 0.53
   },
   {
    "base": "Rosa's Encouragement",
-   "total": 1,
    "variants": [
     {
-     "name": "Rosa's Encouragement",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 0.4,
-     "avgAllIn": 0.4
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.4,
+   "pqty": 1,
+   "avgCost": 0.4
   },
   {
    "base": "Roto-Stick",
-   "total": 3,
    "variants": [
     {
-     "name": "Roto-Stick",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 3,
-     "cost": 0.48,
-     "avgAllIn": 0.16
+     "jp": false
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 0.48,
+   "pqty": 3,
+   "avgCost": 0.16
   },
   {
    "base": "Scoop Up Cyclone",
-   "total": 1,
    "variants": [
     {
-     "name": "Scoop Up Cyclone",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 1.41,
-     "avgAllIn": 1.41
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 1.41,
+   "pqty": 1,
+   "avgCost": 1.41
   },
   {
    "base": "Scoop Up Net",
-   "total": 6,
    "variants": [
     {
-     "name": "Scoop Up Net",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 6,
-     "cost": 4.03,
-     "avgAllIn": 0.67
+     "jp": false
     }
-   ]
+   ],
+   "total": 6,
+   "totalNonJp": 6,
+   "spent": 4.03,
+   "pqty": 6,
+   "avgCost": 0.67
   },
   {
    "base": "Scramble Switch",
-   "total": 1,
    "variants": [
     {
-     "name": "Scramble Switch",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 1.51,
-     "avgAllIn": 1.51
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 1.51,
+   "pqty": 1,
+   "avgCost": 1.51
   },
   {
    "base": "Shadow Rider Calyrex V",
-   "total": 4,
    "variants": [
     {
-     "name": "Shadow Rider Calyrex V",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 9.57,
-     "avgAllIn": 2.39
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 9.57,
+   "pqty": 4,
+   "avgCost": 2.39
   },
   {
    "base": "Shadow Rider Calyrex VMAX",
-   "total": 3,
    "variants": [
     {
-     "name": "Shadow Rider Calyrex VMAX",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 3,
-     "cost": 11.56,
-     "avgAllIn": 3.85
+     "jp": false
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 11.56,
+   "pqty": 3,
+   "avgCost": 3.85
   },
   {
    "base": "Shadowy Darkness Energy",
-   "total": 1,
    "variants": [
     {
-     "name": "Shadowy Darkness Energy [RH]",
-     "variant": "Reverse Holo",
+     "version": "Reverse Holo",
      "qty": 1,
-     "cost": 2.5,
-     "avgAllIn": 2.5
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 2.5,
+   "pqty": 1,
+   "avgCost": 2.5
   },
   {
    "base": "Shuppet",
-   "total": 4,
    "variants": [
     {
-     "name": "Shuppet",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.35,
-     "avgAllIn": 0.09
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.35,
+   "pqty": 4,
+   "avgCost": 0.09
   },
   {
    "base": "Sinistcha",
-   "total": 4,
    "variants": [
     {
-     "name": "Sinistcha",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.35,
-     "avgAllIn": 0.09
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.35,
+   "pqty": 4,
+   "avgCost": 0.09
   },
   {
    "base": "Sobble",
-   "total": 8,
    "variants": [
     {
-     "name": "Sobble",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 8,
-     "cost": 2.32,
-     "avgAllIn": 0.29
+     "jp": false
     }
-   ]
+   ],
+   "total": 8,
+   "totalNonJp": 8,
+   "spent": 2.32,
+   "pqty": 8,
+   "avgCost": 0.29
   },
   {
-   "base": "Solrock",
-   "total": 4,
+   "base": "Solrock (Dusk Ball)",
    "variants": [
     {
-     "name": "Solrock (Dusk Ball)",
-     "variant": "Dusk Ball",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.55,
-     "avgAllIn": 0.14
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": null,
+   "pqty": 0,
+   "avgCost": null
   },
   {
    "base": "Special Red Card",
-   "total": 2,
    "variants": [
     {
-     "name": "Special Red Card",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 1.24,
-     "avgAllIn": 0.62
+     "jp": false
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 1.24,
+   "pqty": 2,
+   "avgCost": 0.62
   },
   {
    "base": "Spiky Energy",
-   "total": 3,
    "variants": [
     {
-     "name": "Spiky Energy",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 3,
-     "cost": 0.36,
-     "avgAllIn": 0.12
+     "jp": false
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 0.36,
+   "pqty": 3,
+   "avgCost": 0.12
   },
   {
    "base": "Surfing Beach",
-   "total": 1,
    "variants": [
     {
-     "name": "Surfing Beach [PP]",
-     "variant": "Prize Pack",
+     "version": "Prize Pack",
      "qty": 1,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.0,
+   "pqty": 1,
+   "avgCost": 0.0
   },
   {
    "base": "Tapu Lele GX",
-   "total": 1,
    "variants": [
     {
-     "name": "Tapu Lele GX FA",
-     "variant": "Full Art",
+     "version": "Full Art",
      "qty": 1,
-     "cost": 15.0,
-     "avgAllIn": 15.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 15.0,
+   "pqty": 1,
+   "avgCost": 15.0
   },
   {
    "base": "Team Rocket's Archer",
-   "total": 4,
    "variants": [
     {
-     "name": "Team Rocket's Archer",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.8,
-     "avgAllIn": 0.2
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.8,
+   "pqty": 4,
+   "avgCost": 0.2
   },
   {
    "base": "Team Rocket's Ariana",
-   "total": 4,
    "variants": [
     {
-     "name": "Team Rocket's Ariana",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.8,
-     "avgAllIn": 0.2
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.8,
+   "pqty": 4,
+   "avgCost": 0.2
   },
   {
    "base": "Team Rocket's Articuno",
-   "total": 1,
    "variants": [
     {
-     "name": "Team Rocket's Articuno",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 1.1,
-     "avgAllIn": 1.1
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 1.1,
+   "pqty": 1,
+   "avgCost": 1.1
   },
   {
    "base": "Team Rocket's Energy",
-   "total": 4,
    "variants": [
     {
-     "name": "Team Rocket's Energy",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 0.4,
-     "avgAllIn": 0.2
+     "jp": false
     },
     {
-     "name": "Team Rocket's Energy [PP]",
-     "variant": "Prize Pack",
+     "version": "Prize Pack",
      "qty": 1,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     },
     {
-     "name": "Team Rocket's Energy [RH]",
-     "variant": "Reverse Holo",
+     "version": "Reverse Holo",
      "qty": 1,
-     "cost": 0.08,
-     "avgAllIn": 0.08
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.48,
+   "pqty": 4,
+   "avgCost": 0.12
   },
   {
    "base": "Team Rocket's Factory",
-   "total": 4,
    "variants": [
     {
-     "name": "Team Rocket's Factory",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.97,
-     "avgAllIn": 0.24
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.97,
+   "pqty": 4,
+   "avgCost": 0.24
   },
   {
    "base": "Team Rocket's Giovanni",
-   "total": 7,
    "variants": [
     {
-     "name": "Team Rocket's Giovanni",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.8,
-     "avgAllIn": 0.2
+     "jp": false
     },
     {
-     "name": "Team Rocket's Giovanni [PP]",
-     "variant": "Prize Pack",
+     "version": "Prize Pack",
      "qty": 3,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 7,
+   "totalNonJp": 7,
+   "spent": 0.8,
+   "pqty": 7,
+   "avgCost": 0.11
   },
   {
    "base": "Team Rocket's Honchkrow",
-   "total": 3,
    "variants": [
     {
-     "name": "Team Rocket's Honchkrow",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 3,
-     "cost": 0.99,
-     "avgAllIn": 0.33
+     "jp": false
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 0.99,
+   "pqty": 3,
+   "avgCost": 0.33
   },
   {
    "base": "Team Rocket's Mewtwo",
-   "total": 1,
    "variants": [
     {
-     "name": "Team Rocket's Mewtwo",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 3.0,
-     "avgAllIn": 3.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 3.0,
+   "pqty": 1,
+   "avgCost": 3.0
   },
   {
    "base": "Team Rocket's Mewtwo ex",
-   "total": 3,
    "variants": [
     {
-     "name": "Team Rocket's Mewtwo ex",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 3,
-     "cost": 12.45,
-     "avgAllIn": 4.15
+     "jp": false
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 12.45,
+   "pqty": 3,
+   "avgCost": 4.15
   },
   {
    "base": "Team Rocket's Mimikyu",
-   "total": 2,
    "variants": [
     {
-     "name": "Team Rocket's Mimikyu",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 1.56,
-     "avgAllIn": 0.78
+     "jp": false
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 1.56,
+   "pqty": 2,
+   "avgCost": 0.78
   },
   {
    "base": "Team Rocket's Murkrow",
-   "total": 4,
    "variants": [
     {
-     "name": "Team Rocket's Murkrow",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.8,
-     "avgAllIn": 0.2
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.8,
+   "pqty": 4,
+   "avgCost": 0.2
   },
   {
    "base": "Team Rocket's Petrel",
-   "total": 5,
    "variants": [
     {
-     "name": "Team Rocket's Petrel",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 5,
-     "cost": 2.08,
-     "avgAllIn": 0.42
+     "jp": false
     }
-   ]
+   ],
+   "total": 5,
+   "totalNonJp": 5,
+   "spent": 2.08,
+   "pqty": 5,
+   "avgCost": 0.42
   },
   {
    "base": "Team Rocket's Proton",
-   "total": 4,
    "variants": [
     {
-     "name": "Team Rocket's Proton",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.8,
-     "avgAllIn": 0.2
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.8,
+   "pqty": 4,
+   "avgCost": 0.2
   },
   {
    "base": "Team Rocket's Spidops",
-   "total": 1,
    "variants": [
     {
-     "name": "Team Rocket's Spidops [PP]",
-     "variant": "Prize Pack",
+     "version": "Prize Pack",
      "qty": 1,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.0,
+   "pqty": 1,
+   "avgCost": 0.0
   },
   {
    "base": "Team Rocket's Transceiver",
-   "total": 9,
    "variants": [
     {
-     "name": "Team Rocket's Transceiver",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 9,
-     "cost": 2.05,
-     "avgAllIn": 0.23
+     "jp": false
     }
-   ]
+   ],
+   "total": 9,
+   "totalNonJp": 9,
+   "spent": 2.05,
+   "pqty": 9,
+   "avgCost": 0.23
   },
   {
    "base": "Team Rocket's Watchtower",
-   "total": 4,
    "variants": [
     {
-     "name": "Team Rocket's Watchtower",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 3,
-     "cost": 1.63,
-     "avgAllIn": 0.54
+     "jp": false
     },
     {
-     "name": "Team Rocket's Watchtower [RH]",
-     "variant": "Reverse Holo",
+     "version": "Reverse Holo",
      "qty": 1,
-     "cost": 0.5,
-     "avgAllIn": 0.5
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 2.13,
+   "pqty": 4,
+   "avgCost": 0.53
   },
   {
    "base": "Telepathic Psychic Energy",
-   "total": 4,
    "variants": [
     {
-     "name": "Telepathic Psychic Energy",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 0.16,
-     "avgAllIn": 0.08
+     "jp": false
     },
     {
-     "name": "Telepathic Psychic Energy [RH]",
-     "variant": "Reverse Holo",
+     "version": "Reverse Holo",
      "qty": 2,
-     "cost": 0.58,
-     "avgAllIn": 0.29
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.75,
+   "pqty": 4,
+   "avgCost": 0.19
   },
   {
    "base": "Torchic",
-   "total": 2,
    "variants": [
     {
-     "name": "Torchic",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 1.4,
-     "avgAllIn": 0.7
+     "jp": false
     }
-   ]
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 1.4,
+   "pqty": 2,
+   "avgCost": 0.7
   },
   {
    "base": "Toucannon",
-   "total": 4,
    "variants": [
     {
-     "name": "Toucannon",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 1.66,
-     "avgAllIn": 0.42
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 1.66,
+   "pqty": 4,
+   "avgCost": 0.42
   },
   {
    "base": "Transformation Tome",
-   "total": 4,
    "variants": [
     {
-     "name": "Transformation Tome",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 1.6,
-     "avgAllIn": 0.4
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 1.6,
+   "pqty": 4,
+   "avgCost": 0.4
   },
   {
    "base": "Trumbeak",
-   "total": 4,
    "variants": [
     {
-     "name": "Trumbeak",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 4,
-     "cost": 0.9,
-     "avgAllIn": 0.23
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.9,
+   "pqty": 4,
+   "avgCost": 0.23
   },
   {
    "base": "Ultra Ball",
-   "total": 18,
    "variants": [
     {
-     "name": "Ultra Ball",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 17,
-     "cost": 6.81,
-     "avgAllIn": 0.4
+     "jp": false
     },
     {
-     "name": "Ultra Ball [RH]",
-     "variant": "Reverse Holo",
+     "version": "Reverse Holo",
      "qty": 1,
-     "cost": 0.08,
-     "avgAllIn": 0.08
+     "jp": false
     }
-   ]
+   ],
+   "total": 18,
+   "totalNonJp": 18,
+   "spent": 6.89,
+   "pqty": 18,
+   "avgCost": 0.38
   },
   {
    "base": "Unfair Stamp",
-   "total": 1,
    "variants": [
     {
-     "name": "Unfair Stamp",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 29.92,
-     "avgAllIn": 29.92
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 29.92,
+   "pqty": 1,
+   "avgCost": 29.92
   },
   {
    "base": "Voltaic Lightning Energy",
-   "total": 1,
    "variants": [
     {
-     "name": "Voltaic Lightning Energy",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 2.5,
-     "avgAllIn": 2.5
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 2.5,
+   "pqty": 1,
+   "avgCost": 2.5
   },
   {
    "base": "Wally's Compassion",
-   "total": 3,
    "variants": [
     {
-     "name": "Wally's Compassion [Holo] [PP]",
-     "variant": "Holo · Prize Pack",
+     "version": "Prize Pack Holo",
      "qty": 3,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 0.0,
+   "pqty": 3,
+   "avgCost": 0.0
   },
   {
    "base": "Water Energy",
-   "total": 4,
    "variants": [
     {
-     "name": "Water Energy",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 2,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     },
     {
-     "name": "Water Energy [PP]",
-     "variant": "Prize Pack",
+     "version": "Prize Pack",
      "qty": 2,
-     "cost": 0.0,
-     "avgAllIn": 0.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.0,
+   "pqty": 4,
+   "avgCost": 0.0
   },
   {
    "base": "Xerosic's Machinations",
-   "total": 1,
    "variants": [
     {
-     "name": "Xerosic's Machinations [RH]",
-     "variant": "Reverse Holo",
+     "version": "Reverse Holo",
      "qty": 1,
-     "cost": 0.08,
-     "avgAllIn": 0.08
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.08,
+   "pqty": 1,
+   "avgCost": 0.08
   },
   {
    "base": "Yveltal",
-   "total": 3,
    "variants": [
     {
-     "name": "Yveltal",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 3,
-     "cost": 0.25,
-     "avgAllIn": 0.08
+     "jp": false
     }
-   ]
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 0.25,
+   "pqty": 3,
+   "avgCost": 0.08
   },
   {
    "base": "Zacian V",
-   "total": 1,
    "variants": [
     {
-     "name": "Zacian V",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 2.0,
-     "avgAllIn": 2.0
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 2.0,
+   "pqty": 1,
+   "avgCost": 2.0
   },
   {
    "base": "Zoroark GX",
-   "total": 1,
    "variants": [
     {
-     "name": "Zoroark GX",
-     "variant": "Standard",
+     "version": "Standard",
      "qty": 1,
-     "cost": 5.97,
-     "avgAllIn": 5.97
+     "jp": false
     }
-   ]
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 5.97,
+   "pqty": 1,
+   "avgCost": 5.97
   }
  ],
  "needs": [
@@ -2424,15 +2688,47 @@
   },
   {
    "qty": 1,
+   "name": "Dawn"
+  },
+  {
+   "qty": 1,
    "name": "Enriching Energy"
   },
   {
-   "qty": 4,
+   "qty": 1,
+   "name": "Enriching Energy"
+  },
+  {
+   "qty": 1,
+   "name": "Genesect"
+  },
+  {
+   "qty": 6,
    "name": "Hilda"
   },
   {
    "qty": 1,
+   "name": "Lana's Aid"
+  },
+  {
+   "qty": 1,
+   "name": "Lucky Helmet"
+  },
+  {
+   "qty": 2,
+   "name": "Nighttime Mine"
+  },
+  {
+   "qty": 1,
    "name": "Pecharunt ex"
+  },
+  {
+   "qty": 1,
+   "name": "Sacred Ash"
+  },
+  {
+   "qty": 1,
+   "name": "Shaymin"
   },
   {
    "qty": 1,
