@@ -114,8 +114,8 @@ def main():
         if not r[ci_name]:
             continue
         base, _tags = parse_name(clean_ws(str(r[ci_name])))
-        qty = r[ci_qty] or 0
-        total = r[ci_total] or 0.0
+        qty = r[ci_qty] if isinstance(r[ci_qty], (int, float)) else 0
+        total = r[ci_total] if isinstance(r[ci_total], (int, float)) else 0.0   # skip #DIV/0! etc.
         cb = cost_by_base.setdefault(base, {"spent": 0.0, "pqty": 0})
         cb["spent"] += total
         cb["pqty"] += qty
@@ -123,11 +123,11 @@ def main():
         purchased_cards += qty
 
     # ---- Collection sheet -> OWNED inventory (source of truth for what I have) ----
-    # Columns: Card Name | Set | Card Number | Version | Quantity
+    # Columns: Card Name | Card Type | Set | Card Number | Version | Quantity
     colws = wb["Collection"]
     owned = OrderedDict()   # base name -> group
-    for r in list(colws.iter_rows(min_col=1, max_col=5, values_only=True))[1:]:
-        name, _set, _num, version, qty = r
+    for r in list(colws.iter_rows(min_col=1, max_col=6, values_only=True))[1:]:
+        name, _ctype, _set, _num, version, qty = r
         if not name or not isinstance(qty, (int, float)):
             continue
         name = clean_ws(str(name))

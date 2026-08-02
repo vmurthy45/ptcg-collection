@@ -2,15 +2,15 @@
  "updated": "2026-08-02",
  "currency": "NZD",
  "stats": {
-  "ownedCopies": 735,
-  "ownedNames": 166,
-  "ownedEntries": 200,
-  "japaneseCopies": 15,
+  "ownedCopies": 737,
+  "ownedNames": 164,
+  "ownedEntries": 208,
+  "japaneseCopies": 16,
   "proxyCopies": 0,
-  "totalSpent": 472.91,
-  "purchasedCards": 735,
-  "avgCostPerCard": 0.64,
-  "needsCount": 23
+  "totalSpent": 497.47,
+  "purchasedCards": 761,
+  "avgCostPerCard": 0.65,
+  "needsCount": 26
  },
  "groups": [
   {
@@ -165,9 +165,9 @@
    ],
    "total": 30,
    "totalNonJp": 30,
-   "spent": 9.65,
-   "pqty": 30,
-   "avgCost": 0.32
+   "spent": 11.62,
+   "pqty": 33,
+   "avgCost": 0.35
   },
   {
    "base": "Brave Bangle",
@@ -307,7 +307,7 @@
    "base": "Combusken",
    "variants": [
     {
-     "version": "Standard",
+     "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
      "proxy": false
@@ -598,7 +598,13 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 4,
+     "qty": 1,
+     "jp": false,
+     "proxy": false
+    },
+    {
+     "version": "Standard",
+     "qty": 3,
      "jp": false,
      "proxy": false
     },
@@ -629,10 +635,16 @@
      "qty": 1,
      "jp": false,
      "proxy": false
+    },
+    {
+     "version": "Reverse Holo",
+     "qty": 1,
+     "jp": false,
+     "proxy": false
     }
    ],
-   "total": 10,
-   "totalNonJp": 10,
+   "total": 11,
+   "totalNonJp": 11,
    "spent": 4.77,
    "pqty": 13,
    "avgCost": 0.37
@@ -641,14 +653,14 @@
    "base": "Drakloak (Energy Symbol Pattern)",
    "variants": [
     {
-     "version": "Standard",
-     "qty": 3,
+     "version": "Reverse Holo",
+     "qty": 2,
      "jp": false,
      "proxy": false
     }
    ],
-   "total": 3,
-   "totalNonJp": 3,
+   "total": 2,
+   "totalNonJp": 2,
    "spent": null,
    "pqty": 0,
    "avgCost": null
@@ -658,7 +670,13 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 12,
+     "qty": 8,
+     "jp": false,
+     "proxy": false
+    },
+    {
+     "version": "Reverse Holo",
+     "qty": 4,
      "jp": false,
      "proxy": false
     }
@@ -706,16 +724,22 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 4,
+     "qty": 1,
+     "jp": false,
+     "proxy": false
+    },
+    {
+     "version": "Reverse Holo",
+     "qty": 3,
      "jp": false,
      "proxy": false
     }
    ],
    "total": 4,
    "totalNonJp": 4,
-   "spent": 1.58,
-   "pqty": 4,
-   "avgCost": 0.4
+   "spent": 2.12,
+   "pqty": 5,
+   "avgCost": 0.42
   },
   {
    "base": "Dunsparce",
@@ -729,9 +753,9 @@
    ],
    "total": 3,
    "totalNonJp": 3,
-   "spent": 0.36,
-   "pqty": 3,
-   "avgCost": 0.12
+   "spent": 6.5,
+   "pqty": 4,
+   "avgCost": 1.62
   },
   {
    "base": "Dusclops",
@@ -753,7 +777,7 @@
    "base": "Dusknoir",
    "variants": [
     {
-     "version": "Standard",
+     "version": "Reverse Holo",
      "qty": 2,
      "jp": false,
      "proxy": false
@@ -818,7 +842,13 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 2,
+     "qty": 1,
+     "jp": false,
+     "proxy": false
+    },
+    {
+     "version": "Standard",
+     "qty": 1,
      "jp": false,
      "proxy": false
     },
@@ -1057,9 +1087,9 @@
    ],
    "total": 2,
    "totalNonJp": 2,
-   "spent": 6.29,
-   "pqty": 2,
-   "avgCost": 3.14
+   "spent": 10.25,
+   "pqty": 3,
+   "avgCost": 3.42
   },
   {
    "base": "Ignition Energy",
@@ -1121,9 +1151,9 @@
    ],
    "total": 4,
    "totalNonJp": 4,
-   "spent": 1.17,
-   "pqty": 4,
-   "avgCost": 0.29
+   "spent": 1.31,
+   "pqty": 8,
+   "avgCost": 0.16
   },
   {
    "base": "Judge",
@@ -1534,13 +1564,13 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 4,
+     "qty": 1,
      "jp": false,
      "proxy": false
     },
     {
-     "version": "Reverse Holo",
-     "qty": 1,
+     "version": "Standard",
+     "qty": 4,
      "jp": false,
      "proxy": false
     }
@@ -1641,29 +1671,19 @@
      "qty": 1,
      "jp": false,
      "proxy": false
-    }
-   ],
-   "total": 3,
-   "totalNonJp": 3,
-   "spent": 0.31,
-   "pqty": 4,
-   "avgCost": 0.08
-  },
-  {
-   "base": "N's Reshiram (Poke Ball)",
-   "variants": [
+    },
     {
-     "version": "Standard",
+     "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
      "proxy": false
     }
    ],
-   "total": 1,
-   "totalNonJp": 1,
-   "spent": null,
-   "pqty": 0,
-   "avgCost": null
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.31,
+   "pqty": 4,
+   "avgCost": 0.08
   },
   {
    "base": "N's Zekrom",
@@ -1739,7 +1759,7 @@
    "base": "Noctowl",
    "variants": [
     {
-     "version": "Standard",
+     "version": "Reverse Holo",
      "qty": 1,
      "jp": false,
      "proxy": false
@@ -1752,7 +1772,7 @@
    "avgCost": 0.5
   },
   {
-   "base": "Oricorio ex",
+   "base": "Oricorio GX",
    "variants": [
     {
      "version": "Full Art",
@@ -1763,9 +1783,9 @@
    ],
    "total": 1,
    "totalNonJp": 1,
-   "spent": 12.9,
-   "pqty": 1,
-   "avgCost": 12.9
+   "spent": null,
+   "pqty": 0,
+   "avgCost": null
   },
   {
    "base": "Passimian",
@@ -1803,7 +1823,7 @@
    "base": "Pikipek",
    "variants": [
     {
-     "version": "Standard",
+     "version": "Reverse Holo",
      "qty": 4,
      "jp": false,
      "proxy": false
@@ -1999,9 +2019,9 @@
    ],
    "total": 22,
    "totalNonJp": 22,
-   "spent": 8.28,
-   "pqty": 22,
-   "avgCost": 0.38
+   "spent": 8.73,
+   "pqty": 27,
+   "avgCost": 0.32
   },
   {
    "base": "Rapid Strike Urshifu V",
@@ -2011,13 +2031,19 @@
      "qty": 2,
      "jp": false,
      "proxy": false
+    },
+    {
+     "version": "Standard",
+     "qty": 2,
+     "jp": false,
+     "proxy": false
     }
    ],
-   "total": 2,
-   "totalNonJp": 2,
-   "spent": 5.03,
-   "pqty": 2,
-   "avgCost": 2.51
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 9.72,
+   "pqty": 4,
+   "avgCost": 2.43
   },
   {
    "base": "Rapid Strike Urshifu VMAX",
@@ -2180,7 +2206,13 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 4,
+     "qty": 2,
+     "jp": false,
+     "proxy": false
+    },
+    {
+     "version": "Standard",
+     "qty": 2,
      "jp": false,
      "proxy": false
     }
@@ -2203,9 +2235,9 @@
    ],
    "total": 3,
    "totalNonJp": 3,
-   "spent": 11.56,
-   "pqty": 3,
-   "avgCost": 3.85
+   "spent": 16.07,
+   "pqty": 4,
+   "avgCost": 4.02
   },
   {
    "base": "Shadowy Darkness Energy",
@@ -2275,7 +2307,7 @@
    "base": "Solrock (Dusk Ball)",
    "variants": [
     {
-     "version": "Standard",
+     "version": "Reverse Holo",
      "qty": 4,
      "jp": false,
      "proxy": false
@@ -2482,36 +2514,32 @@
    "avgCost": 0.33
   },
   {
-   "base": "Team Rocket's Mewtwo",
+   "base": "Team Rocket's Mewtwo ex",
    "variants": [
+    {
+     "version": "Standard",
+     "qty": 2,
+     "jp": false,
+     "proxy": false
+    },
     {
      "version": "Standard",
      "qty": 1,
      "jp": false,
      "proxy": false
-    }
-   ],
-   "total": 1,
-   "totalNonJp": 1,
-   "spent": 3.0,
-   "pqty": 1,
-   "avgCost": 3.0
-  },
-  {
-   "base": "Team Rocket's Mewtwo ex",
-   "variants": [
+    },
     {
-     "version": "Standard",
-     "qty": 3,
-     "jp": false,
+     "version": "Japanese",
+     "qty": 1,
+     "jp": true,
      "proxy": false
     }
    ],
-   "total": 3,
+   "total": 4,
    "totalNonJp": 3,
-   "spent": 12.45,
-   "pqty": 3,
-   "avgCost": 4.15
+   "spent": 15.45,
+   "pqty": 4,
+   "avgCost": 3.86
   },
   {
    "base": "Team Rocket's Mimikyu",
@@ -2657,7 +2685,7 @@
    "base": "Torchic",
    "variants": [
     {
-     "version": "Standard",
+     "version": "Reverse Holo",
      "qty": 2,
      "jp": false,
      "proxy": false
@@ -2673,7 +2701,7 @@
    "base": "Toucannon",
    "variants": [
     {
-     "version": "Standard",
+     "version": "Reverse Holo",
      "qty": 4,
      "jp": false,
      "proxy": false
@@ -2705,7 +2733,7 @@
    "base": "Trumbeak",
    "variants": [
     {
-     "version": "Standard",
+     "version": "Reverse Holo",
      "qty": 4,
      "jp": false,
      "proxy": false
@@ -2882,6 +2910,10 @@
   {
    "qty": 2,
    "name": "Blaziken ex"
+  },
+  {
+   "qty": 3,
+   "name": "Boomerang Energy"
   },
   {
    "qty": 1,
