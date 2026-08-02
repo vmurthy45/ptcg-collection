@@ -127,10 +127,6 @@
   .pbtn.clear{flex:0 0 auto; padding:0 16px; background:var(--chip); color:var(--chip-ink)}
 
   /* ---- Deck import ---- */
-  .impsub{color:var(--muted); font-size:.85rem; margin:4px 0 0}
-  #deckInput{width:100%; min-height:150px; resize:vertical; padding:12px; border:1.5px solid var(--line); border-radius:14px;
-    font-size:.9rem; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; background:var(--card); color:var(--ink); -webkit-appearance:none; margin:12px 0 8px}
-  #deckInput:focus{outline:none; border-color:var(--red)}
   .impsum{padding:11px 14px; border-radius:12px; font-weight:700; font-size:.9rem; margin:6px 0 10px}
   .impsum.ok{background:#e7f4ea; color:#1c6b34}
   .impsum.miss{background:#fdeceb; color:#a62622}
@@ -445,7 +441,7 @@ function renderImportResults(){
   const cards = parseDeck(deckText);
   if(!cards.length){
     importMissing = [];
-    el.innerHTML = `<div class="emptymini">Paste a deck list above and I'll check it against your collection.</div>`;
+    el.innerHTML = `<div class="emptymini">Copy a deck list, then tap “Import from clipboard”.</div>`;
     return;
   }
   const idx = new Map();
@@ -484,12 +480,26 @@ function renderImportResults(){
   el.innerHTML = html;
 }
 
+async function importFromClipboard(){
+  let text = null;
+  try{ text = await navigator.clipboard.readText(); }
+  catch(e){ text = null; }
+  if(text == null) text = window.prompt("Paste your deck list here:") || "";   // fallback if clipboard read is blocked
+  text = text.trim();
+  if(!text){ toast("Clipboard was empty"); return; }
+  deckText = text; saveDeck(); renderImport();
+  toast("Deck imported");
+}
+
 function renderImport(){
   updateResbar(0,0,false);
+  const hasDeck = !!deckText.trim();
   $("#view-import").innerHTML =
     `<div class="caphdr" style="margin-top:14px">🧩 Deck check</div>
-     <div class="impsub">Paste a deck list — I'll show what's missing, then you can add it to Needs.</div>
-     <textarea id="deckInput" placeholder="Paste your deck list here…">${esc(deckText)}</textarea>
+     <div class="pendactions" style="margin-top:10px">
+       <button id="deckImport" class="pbtn copy" style="flex:1">📋 Import from clipboard</button>
+       ${hasDeck ? `<button id="deckErase" class="pbtn clear">Erase</button>` : ``}
+     </div>
      <div id="importResults"></div>`;
   renderImportResults();
 }
@@ -570,6 +580,8 @@ async function init(){
   updateNeedsBadge();
   // delegated clicks
   $("main").addEventListener("click", e => {
+    if(e.target.closest("#deckImport")){ importFromClipboard(); return; }
+    if(e.target.closest("#deckErase")){ deckText = ""; saveDeck(); renderImport(); return; }
     if(e.target.closest("#copyAllNeeds")){ copyAllNeeds(); return; }
     if(e.target.closest("#importAddNeeds")){
       importMissing.forEach(m => {
@@ -606,9 +618,6 @@ async function init(){
   });
   $("main").addEventListener("keydown", e => {
     if(e.target.id === "capName" && e.key === "Enter"){ e.preventDefault(); capture(); }
-  });
-  $("main").addEventListener("input", e => {
-    if(e.target.id === "deckInput"){ deckText = e.target.value; saveDeck(); renderImportResults(); }
   });
   $("#q").addEventListener("input", onSearch);
   $("#clr").addEventListener("click", () => { $("#q").value=""; onSearch(); focusSearch(); });
