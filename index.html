@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#b3161f">
-<title>My PTCG Collection</title>
+<title>Vig's PTCG Collection</title>
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icons/icon-180.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -118,7 +118,7 @@
 
   /* ---- Bottom tab bar ---- */
   nav{position:fixed; left:0; right:0; bottom:0; z-index:18; display:flex; background:var(--card);
-    border-top:1px solid var(--line); padding-bottom:var(--safe-b)}
+    border-top:1px solid var(--line); padding-bottom:max(4px, calc(var(--safe-b) - 16px))}
   nav button{flex:1; border:0; background:none; color:var(--muted); padding:8px 0 6px; font:inherit;
     display:flex; flex-direction:column; align-items:center; gap:2px; cursor:pointer; font-size:.7rem; font-weight:600; position:relative}
   nav button .tico{font-size:1.25rem; line-height:1}
@@ -135,7 +135,7 @@
 <header>
   <div class="brand">
     <svg class="pokeball" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="#fff" stroke="#111" stroke-width="6"/><path d="M5 50a45 45 0 0190 0z" fill="#e33"/><line x1="5" y1="50" x2="34" y2="50" stroke="#111" stroke-width="6"/><line x1="66" y1="50" x2="95" y2="50" stroke="#111" stroke-width="6"/><circle cx="50" cy="50" r="14" fill="#fff" stroke="#111" stroke-width="6"/></svg>
-    <span class="title">My PTCG Collection</span>
+    <span class="title">Vig's PTCG Collection</span>
     <span class="updated" id="updated"></span>
   </div>
 </header>
