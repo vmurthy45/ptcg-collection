@@ -1,0 +1,2513 @@
+{
+ "updated": "2026-08-02",
+ "currency": "NZD",
+ "stats": {
+  "totalCards": 733,
+  "uniqueVariants": 215,
+  "uniqueNames": 164,
+  "totalSpent": 472.75,
+  "avgCostPerCard": 0.64,
+  "needsCount": 3
+ },
+ "groups": [
+  {
+   "base": "Abra",
+   "total": 3,
+   "variants": [
+    {
+     "name": "Abra",
+     "variant": "Standard",
+     "qty": 3,
+     "cost": 0.25,
+     "avgAllIn": 0.08
+    }
+   ]
+  },
+  {
+   "base": "Air Balloon",
+   "total": 19,
+   "variants": [
+    {
+     "name": "Air Balloon",
+     "variant": "Standard",
+     "qty": 19,
+     "cost": 3.8,
+     "avgAllIn": 0.2
+    }
+   ]
+  },
+  {
+   "base": "Alakazam",
+   "total": 6,
+   "variants": [
+    {
+     "name": "Alakazam",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.33,
+     "avgAllIn": 0.08
+    },
+    {
+     "name": "Alakazam [RH]",
+     "variant": "Reverse Holo",
+     "qty": 2,
+     "cost": 0.16,
+     "avgAllIn": 0.08
+    }
+   ]
+  },
+  {
+   "base": "Area Zero Underdepths",
+   "total": 3,
+   "variants": [
+    {
+     "name": "Area Zero Underdepths",
+     "variant": "Standard",
+     "qty": 3,
+     "cost": 0.36,
+     "avgAllIn": 0.12
+    }
+   ]
+  },
+  {
+   "base": "Banette",
+   "total": 5,
+   "variants": [
+    {
+     "name": "Banette",
+     "variant": "Standard",
+     "qty": 5,
+     "cost": 2.78,
+     "avgAllIn": 0.56
+    }
+   ]
+  },
+  {
+   "base": "Basic Metal Energy",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Basic Metal Energy [PP]",
+     "variant": "Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Battle Cage",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Battle Cage - 085/094",
+     "variant": "No. 085/094",
+     "qty": 2,
+     "cost": 0.28,
+     "avgAllIn": 0.14
+    }
+   ]
+  },
+  {
+   "base": "Bloodmoon Ursaluna ex",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Bloodmoon Ursaluna ex - 141/167",
+     "variant": "No. 141/167",
+     "qty": 1,
+     "cost": 4.57,
+     "avgAllIn": 4.57
+    }
+   ]
+  },
+  {
+   "base": "Boss's Orders",
+   "total": 30,
+   "variants": [
+    {
+     "name": "Boss's Orders",
+     "variant": "Standard",
+     "qty": 16,
+     "cost": 2.37,
+     "avgAllIn": 0.15
+    },
+    {
+     "name": "Boss's Orders [Corbeau] - 183/217",
+     "variant": "No. 183/217 · Corbeau",
+     "qty": 10,
+     "cost": 4.79,
+     "avgAllIn": 0.48
+    },
+    {
+     "name": "Boss's Orders [Ghetsis]",
+     "variant": "Ghetsis",
+     "qty": 3,
+     "cost": 2.41,
+     "avgAllIn": 0.8
+    },
+    {
+     "name": "Boss's Orders [RH]",
+     "variant": "Reverse Holo",
+     "qty": 1,
+     "cost": 0.08,
+     "avgAllIn": 0.08
+    }
+   ]
+  },
+  {
+   "base": "Brave Bangle",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Brave Bangle",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 0.5,
+     "avgAllIn": 0.5
+    }
+   ]
+  },
+  {
+   "base": "Buddy-Buddy Poffin",
+   "total": 27,
+   "variants": [
+    {
+     "name": "Buddy-Buddy Poffin",
+     "variant": "Standard",
+     "qty": 26,
+     "cost": 10.88,
+     "avgAllIn": 0.42
+    },
+    {
+     "name": "Buddy-Buddy Poffin (Ascended Heroes)",
+     "variant": "Ascended Heroes",
+     "qty": 1,
+     "cost": 0.14,
+     "avgAllIn": 0.14
+    }
+   ]
+  },
+  {
+   "base": "Budew",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Budew",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 1.02,
+     "avgAllIn": 0.51
+    },
+    {
+     "name": "Budew [Holo] [PP]",
+     "variant": "Holo · Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    },
+    {
+     "name": "Budew [PP]",
+     "variant": "Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Bug Catching Set",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Bug Catching Set",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.68,
+     "avgAllIn": 0.17
+    }
+   ]
+  },
+  {
+   "base": "Cape of Toughness",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Cape of Toughness",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.79,
+     "avgAllIn": 0.2
+    }
+   ]
+  },
+  {
+   "base": "Chicorita",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Chicorita [RH]",
+     "variant": "Reverse Holo",
+     "qty": 1,
+     "cost": 0.08,
+     "avgAllIn": 0.08
+    }
+   ]
+  },
+  {
+   "base": "Chien-Pao",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Chien-Pao",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 0.08,
+     "avgAllIn": 0.08
+    }
+   ]
+  },
+  {
+   "base": "Ciphermaniac's Codebreaking",
+   "total": 3,
+   "variants": [
+    {
+     "name": "Ciphermaniac's Codebreaking",
+     "variant": "Standard",
+     "qty": 3,
+     "cost": 0.8,
+     "avgAllIn": 0.27
+    }
+   ]
+  },
+  {
+   "base": "Combusken",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Combusken",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 0.7,
+     "avgAllIn": 0.7
+    }
+   ]
+  },
+  {
+   "base": "Counter Catcher",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Counter Catcher",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 3.01,
+     "avgAllIn": 1.51
+    }
+   ]
+  },
+  {
+   "base": "Crispin",
+   "total": 6,
+   "variants": [
+    {
+     "name": "Crispin",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    },
+    {
+     "name": "Crispin - 105/131",
+     "variant": "No. 105/131",
+     "qty": 4,
+     "cost": 1.87,
+     "avgAllIn": 0.47
+    }
+   ]
+  },
+  {
+   "base": "Crushing Hammer",
+   "total": 5,
+   "variants": [
+    {
+     "name": "Crushing Hammer",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 1.86,
+     "avgAllIn": 0.47
+    },
+    {
+     "name": "Crushing Hammer [FA]",
+     "variant": "Full Art",
+     "qty": 1,
+     "cost": 7.0,
+     "avgAllIn": 7.0
+    }
+   ]
+  },
+  {
+   "base": "Crustle",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Crustle",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 0.08,
+     "avgAllIn": 0.08
+    }
+   ]
+  },
+  {
+   "base": "Cynthia's Gabite",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Cynthia's Gabite",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 1.32,
+     "avgAllIn": 0.33
+    }
+   ]
+  },
+  {
+   "base": "Cynthia's Garchomp ex",
+   "total": 3,
+   "variants": [
+    {
+     "name": "Cynthia's Garchomp ex",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 0.61,
+     "avgAllIn": 0.61
+    },
+    {
+     "name": "Cynthia's Garchomp ex - 104/182",
+     "variant": "No. 104/182",
+     "qty": 2,
+     "cost": 5.68,
+     "avgAllIn": 2.84
+    }
+   ]
+  },
+  {
+   "base": "Cynthia's Gible",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Cynthia's Gible",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.94,
+     "avgAllIn": 0.24
+    }
+   ]
+  },
+  {
+   "base": "Cynthia's Power Weight",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Cynthia's Power Weight",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 2.2,
+     "avgAllIn": 0.55
+    }
+   ]
+  },
+  {
+   "base": "Cynthia's Roselia",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Cynthia's Roselia",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 2.45,
+     "avgAllIn": 0.61
+    }
+   ]
+  },
+  {
+   "base": "Cynthia's Roserade",
+   "total": 5,
+   "variants": [
+    {
+     "name": "Cynthia's Roserade",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 2.51,
+     "avgAllIn": 0.63
+    },
+    {
+     "name": "Cynthia's Roserade [PP]",
+     "variant": "Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Cyrano",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Cyrano - 170/191",
+     "variant": "No. 170/191",
+     "qty": 1,
+     "cost": 0.85,
+     "avgAllIn": 0.85
+    }
+   ]
+  },
+  {
+   "base": "Dark Bell",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Dark Bell - 075/084",
+     "variant": "No. 075/084",
+     "qty": 4,
+     "cost": 0.28,
+     "avgAllIn": 0.07
+    }
+   ]
+  },
+  {
+   "base": "Darkness Energy",
+   "total": 7,
+   "variants": [
+    {
+     "name": "Darkness Energy",
+     "variant": "Standard",
+     "qty": 7,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Dawn",
+   "total": 3,
+   "variants": [
+    {
+     "name": "Dawn",
+     "variant": "Standard",
+     "qty": 3,
+     "cost": 1.38,
+     "avgAllIn": 0.46
+    }
+   ]
+  },
+  {
+   "base": "Dhelmise",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Dhelmise - 039/084",
+     "variant": "No. 039/084",
+     "qty": 4,
+     "cost": 0.28,
+     "avgAllIn": 0.07
+    }
+   ]
+  },
+  {
+   "base": "Double Colorless Energy",
+   "total": 9,
+   "variants": [
+    {
+     "name": "Double Colorless Energy",
+     "variant": "Standard",
+     "qty": 9,
+     "cost": 6.28,
+     "avgAllIn": 0.7
+    }
+   ]
+  },
+  {
+   "base": "Dragapult ex",
+   "total": 7,
+   "variants": [
+    {
+     "name": "Dragapult ex",
+     "variant": "Standard",
+     "qty": 7,
+     "cost": 15.46,
+     "avgAllIn": 2.21
+    }
+   ]
+  },
+  {
+   "base": "Drakloak",
+   "total": 13,
+   "variants": [
+    {
+     "name": "Drakloak",
+     "variant": "Standard",
+     "qty": 5,
+     "cost": 2.19,
+     "avgAllIn": 0.44
+    },
+    {
+     "name": "Drakloak - 159/217",
+     "variant": "No. 159/217",
+     "qty": 4,
+     "cost": 0.49,
+     "avgAllIn": 0.12
+    },
+    {
+     "name": "Drakloak - 159/217 (Energy Symbol Pattern)",
+     "variant": "Energy Symbol Pattern · No. 159/217",
+     "qty": 3,
+     "cost": 2.1,
+     "avgAllIn": 0.7
+    },
+    {
+     "name": "Drakloak [RH]",
+     "variant": "Reverse Holo",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Dreepy",
+   "total": 12,
+   "variants": [
+    {
+     "name": "Dreepy",
+     "variant": "Standard",
+     "qty": 8,
+     "cost": 3.42,
+     "avgAllIn": 0.43
+    },
+    {
+     "name": "Dreepy - 158/217",
+     "variant": "No. 158/217",
+     "qty": 4,
+     "cost": 0.28,
+     "avgAllIn": 0.07
+    }
+   ]
+  },
+  {
+   "base": "Drilbur",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Drilbur",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.62,
+     "avgAllIn": 0.16
+    }
+   ]
+  },
+  {
+   "base": "Drizzile",
+   "total": 7,
+   "variants": [
+    {
+     "name": "Drizzile",
+     "variant": "Standard",
+     "qty": 7,
+     "cost": 3.13,
+     "avgAllIn": 0.45
+    }
+   ]
+  },
+  {
+   "base": "Dudunsparce",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Dudunsparce",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 1.58,
+     "avgAllIn": 0.4
+    }
+   ]
+  },
+  {
+   "base": "Dunsparce",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Dunsparce",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 0.28,
+     "avgAllIn": 0.14
+    }
+   ]
+  },
+  {
+   "base": "Dusclops",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Dusclops",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 1.07,
+     "avgAllIn": 0.27
+    }
+   ]
+  },
+  {
+   "base": "Dusknoir",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Dusknoir",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 1.3,
+     "avgAllIn": 0.65
+    }
+   ]
+  },
+  {
+   "base": "Duskull",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Duskull",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 0.68,
+     "avgAllIn": 0.34
+    }
+   ]
+  },
+  {
+   "base": "Emboar",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Emboar [PP]",
+     "variant": "Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Evosoda",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Evosoda",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 7.5,
+     "avgAllIn": 3.75
+    }
+   ]
+  },
+  {
+   "base": "Fan Rotom",
+   "total": 3,
+   "variants": [
+    {
+     "name": "Fan Rotom",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 0.4,
+     "avgAllIn": 0.2
+    },
+    {
+     "name": "Fan Rotom [RH]",
+     "variant": "Reverse Holo",
+     "qty": 1,
+     "cost": 0.5,
+     "avgAllIn": 0.5
+    }
+   ]
+  },
+  {
+   "base": "Fezandipiti ex",
+   "total": 6,
+   "variants": [
+    {
+     "name": "Fezandipiti ex - 114/193",
+     "variant": "No. 114/193",
+     "qty": 4,
+     "cost": 2.75,
+     "avgAllIn": 0.69
+    },
+    {
+     "name": "Fezandipiti ex - 142/217",
+     "variant": "No. 142/217",
+     "qty": 2,
+     "cost": 17.51,
+     "avgAllIn": 8.75
+    }
+   ]
+  },
+  {
+   "base": "Fighting Energy",
+   "total": 12,
+   "variants": [
+    {
+     "name": "Fighting Energy",
+     "variant": "Standard",
+     "qty": 12,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Fighting Gong",
+   "total": 9,
+   "variants": [
+    {
+     "name": "Fighting Gong",
+     "variant": "Standard",
+     "qty": 7,
+     "cost": 1.73,
+     "avgAllIn": 0.25
+    },
+    {
+     "name": "Fighting Gong - 116/132",
+     "variant": "No. 116/132",
+     "qty": 1,
+     "cost": 0.03,
+     "avgAllIn": 0.03
+    },
+    {
+     "name": "Fighting Gong [Holo] [PP]",
+     "variant": "Holo · Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Fire Energy",
+   "total": 11,
+   "variants": [
+    {
+     "name": "Fire Energy",
+     "variant": "Standard",
+     "qty": 11,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Flutter Mane",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Flutter Mane [RH]",
+     "variant": "Reverse Holo",
+     "qty": 1,
+     "cost": 0.5,
+     "avgAllIn": 0.5
+    }
+   ]
+  },
+  {
+   "base": "Grass Energy",
+   "total": 14,
+   "variants": [
+    {
+     "name": "Grass Energy",
+     "variant": "Standard",
+     "qty": 13,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    },
+    {
+     "name": "Grass Energy [PP]",
+     "variant": "Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Gwynn",
+   "total": 8,
+   "variants": [
+    {
+     "name": "Gwynn - 078/084",
+     "variant": "No. 078/084",
+     "qty": 8,
+     "cost": 0.55,
+     "avgAllIn": 0.07
+    }
+   ]
+  },
+  {
+   "base": "Handheld Fan",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Handheld Fan",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 0.2,
+     "avgAllIn": 0.2
+    }
+   ]
+  },
+  {
+   "base": "Harlequin",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Harlequin",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 0.4,
+     "avgAllIn": 0.4
+    }
+   ]
+  },
+  {
+   "base": "Hilda",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Hilda",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 0.08,
+     "avgAllIn": 0.08
+    }
+   ]
+  },
+  {
+   "base": "Hoothoot",
+   "total": 3,
+   "variants": [
+    {
+     "name": "Hoothoot",
+     "variant": "Standard",
+     "qty": 3,
+     "cost": 0.6,
+     "avgAllIn": 0.2
+    }
+   ]
+  },
+  {
+   "base": "Ice Rider Calyrex V",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Ice Rider Calyrex V",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 6.67,
+     "avgAllIn": 1.67
+    }
+   ]
+  },
+  {
+   "base": "Ice Rider Calyrex VMAX",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Ice Rider Calyrex VMAX",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 6.29,
+     "avgAllIn": 3.14
+    }
+   ]
+  },
+  {
+   "base": "Ignition Energy",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Ignition Energy",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 0.28,
+     "avgAllIn": 0.14
+    }
+   ]
+  },
+  {
+   "base": "Inteleon",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Inteleon",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 2.34,
+     "avgAllIn": 1.17
+    }
+   ]
+  },
+  {
+   "base": "Iono",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Iono",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 3.35,
+     "avgAllIn": 0.84
+    }
+   ]
+  },
+  {
+   "base": "Janine's Secret Art",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Janine's Secret Art - 059/064",
+     "variant": "No. 059/064",
+     "qty": 2,
+     "cost": 0.43,
+     "avgAllIn": 0.22
+    },
+    {
+     "name": "Janine's Secret Art - 112/131",
+     "variant": "No. 112/131",
+     "qty": 2,
+     "cost": 0.74,
+     "avgAllIn": 0.37
+    }
+   ]
+  },
+  {
+   "base": "Judge",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Judge",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 1.61,
+     "avgAllIn": 0.4
+    }
+   ]
+  },
+  {
+   "base": "Kadabra",
+   "total": 8,
+   "variants": [
+    {
+     "name": "Kadabra",
+     "variant": "Standard",
+     "qty": 8,
+     "cost": 0.66,
+     "avgAllIn": 0.08
+    }
+   ]
+  },
+  {
+   "base": "Keldeo EX",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Keldeo EX",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 8.0,
+     "avgAllIn": 8.0
+    }
+   ]
+  },
+  {
+   "base": "Latias ex",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Latias ex",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 10.92,
+     "avgAllIn": 5.46
+    }
+   ]
+  },
+  {
+   "base": "Lightning Energy",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Lightning Energy",
+     "variant": "Standard",
+     "qty": 3,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    },
+    {
+     "name": "Lightning Energy [Holo] [PP]",
+     "variant": "Holo · Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Lillie's Clefairy ex",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Lillie's Clefairy ex",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 1.6,
+     "avgAllIn": 0.8
+    }
+   ]
+  },
+  {
+   "base": "Lillie's Determination",
+   "total": 22,
+   "variants": [
+    {
+     "name": "Lillie's Determination",
+     "variant": "Standard",
+     "qty": 21,
+     "cost": 14.19,
+     "avgAllIn": 0.68
+    },
+    {
+     "name": "Lillie's Determination (Ascended Heroes)",
+     "variant": "Ascended Heroes",
+     "qty": 1,
+     "cost": 0.35,
+     "avgAllIn": 0.35
+    }
+   ]
+  },
+  {
+   "base": "Lillie's Pearl",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Lillie's Pearl",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 0.16,
+     "avgAllIn": 0.08
+    }
+   ]
+  },
+  {
+   "base": "Lively Stadium",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Lively Stadium",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 0.14,
+     "avgAllIn": 0.14
+    }
+   ]
+  },
+  {
+   "base": "Lumineon V",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Lumineon V",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 3.0,
+     "avgAllIn": 3.0
+    }
+   ]
+  },
+  {
+   "base": "Lunatone",
+   "total": 5,
+   "variants": [
+    {
+     "name": "Lunatone",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.07,
+     "avgAllIn": 0.02
+    },
+    {
+     "name": "Lunatone [Holo] [PP]",
+     "variant": "Holo · Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Mega Darkrai ex",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Mega Darkrai ex - 048/084",
+     "variant": "No. 048/084",
+     "qty": 4,
+     "cost": 13.87,
+     "avgAllIn": 3.47
+    }
+   ]
+  },
+  {
+   "base": "Mega Kangaskhan ex",
+   "total": 3,
+   "variants": [
+    {
+     "name": "Mega Kangaskhan ex - 025",
+     "variant": "No. 025",
+     "qty": 3,
+     "cost": 5.88,
+     "avgAllIn": 1.96
+    }
+   ]
+  },
+  {
+   "base": "Mega Signal",
+   "total": 5,
+   "variants": [
+    {
+     "name": "Mega Signal",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.55,
+     "avgAllIn": 0.14
+    },
+    {
+     "name": "Mega Signal [PP]",
+     "variant": "Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Meganium",
+   "total": 3,
+   "variants": [
+    {
+     "name": "Meganium",
+     "variant": "Standard",
+     "qty": 3,
+     "cost": 0.25,
+     "avgAllIn": 0.08
+    }
+   ]
+  },
+  {
+   "base": "Megaton Blower",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Megaton Blower - 182/191",
+     "variant": "No. 182/191",
+     "qty": 1,
+     "cost": 1.11,
+     "avgAllIn": 1.11
+    }
+   ]
+  },
+  {
+   "base": "Melony",
+   "total": 8,
+   "variants": [
+    {
+     "name": "Melony",
+     "variant": "Standard",
+     "qty": 8,
+     "cost": 2.97,
+     "avgAllIn": 0.37
+    }
+   ]
+  },
+  {
+   "base": "Meowth ex",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Meowth ex",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 7.0,
+     "avgAllIn": 7.0
+    },
+    {
+     "name": "Meowth ex - 062/088",
+     "variant": "No. 062/088",
+     "qty": 1,
+     "cost": 5.49,
+     "avgAllIn": 5.49
+    }
+   ]
+  },
+  {
+   "base": "Metal Energy",
+   "total": 12,
+   "variants": [
+    {
+     "name": "Metal Energy",
+     "variant": "Standard",
+     "qty": 12,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Metang",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Metang [RH]",
+     "variant": "Reverse Holo",
+     "qty": 1,
+     "cost": 0.5,
+     "avgAllIn": 0.5
+    }
+   ]
+  },
+  {
+   "base": "Mist Energy",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Mist Energy",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.56,
+     "avgAllIn": 0.14
+    }
+   ]
+  },
+  {
+   "base": "Misty's Vitality",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Misty's Vitality",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 2.5,
+     "avgAllIn": 2.5
+    }
+   ]
+  },
+  {
+   "base": "Moltres",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Moltres",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 0.52,
+     "avgAllIn": 0.52
+    },
+    {
+     "name": "Moltres [RH]",
+     "variant": "Reverse Holo",
+     "qty": 1,
+     "cost": 0.08,
+     "avgAllIn": 0.08
+    }
+   ]
+  },
+  {
+   "base": "Munkidori",
+   "total": 5,
+   "variants": [
+    {
+     "name": "Munkidori",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 2.61,
+     "avgAllIn": 0.65
+    },
+    {
+     "name": "Munkidori [RH]",
+     "variant": "Reverse Holo",
+     "qty": 1,
+     "cost": 0.5,
+     "avgAllIn": 0.5
+    }
+   ]
+  },
+  {
+   "base": "N's Darmanitan",
+   "total": 2,
+   "variants": [
+    {
+     "name": "N's Darmanitan",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 0.2,
+     "avgAllIn": 0.2
+    },
+    {
+     "name": "N's Darmanitan [Holo] [PP]",
+     "variant": "Holo · Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "N's Darumaka",
+   "total": 1,
+   "variants": [
+    {
+     "name": "N's Darumaka",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 0.2,
+     "avgAllIn": 0.2
+    }
+   ]
+  },
+  {
+   "base": "N's Plan",
+   "total": 5,
+   "variants": [
+    {
+     "name": "N's Plan",
+     "variant": "Standard",
+     "qty": 5,
+     "cost": 2.74,
+     "avgAllIn": 0.55
+    }
+   ]
+  },
+  {
+   "base": "N's PP Up",
+   "total": 5,
+   "variants": [
+    {
+     "name": "N's PP Up - 195/217",
+     "variant": "No. 195/217",
+     "qty": 4,
+     "cost": 0.14,
+     "avgAllIn": 0.03
+    },
+    {
+     "name": "N's PP Up [PP]",
+     "variant": "Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "N's Reshiram",
+   "total": 4,
+   "variants": [
+    {
+     "name": "N's Reshiram (Poke Ball)",
+     "variant": "Poke Ball",
+     "qty": 1,
+     "cost": 0.31,
+     "avgAllIn": 0.31
+    },
+    {
+     "name": "N's Reshiram [Holo] [PP]",
+     "variant": "Holo · Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    },
+    {
+     "name": "N's Reshiram [PP]",
+     "variant": "Prize Pack",
+     "qty": 2,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "N's Zekrom",
+   "total": 3,
+   "variants": [
+    {
+     "name": "N's Zekrom",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 0.66,
+     "avgAllIn": 0.33
+    },
+    {
+     "name": "N's Zekrom [RH]",
+     "variant": "Reverse Holo",
+     "qty": 1,
+     "cost": 0.08,
+     "avgAllIn": 0.08
+    }
+   ]
+  },
+  {
+   "base": "N's Zoroark ex",
+   "total": 4,
+   "variants": [
+    {
+     "name": "N's Zoroark ex - 112/193",
+     "variant": "No. 112/193",
+     "qty": 4,
+     "cost": 3.11,
+     "avgAllIn": 0.78
+    }
+   ]
+  },
+  {
+   "base": "N's Zorua",
+   "total": 4,
+   "variants": [
+    {
+     "name": "N's Zorua",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.62,
+     "avgAllIn": 0.16
+    }
+   ]
+  },
+  {
+   "base": "Night Stretcher",
+   "total": 20,
+   "variants": [
+    {
+     "name": "Night Stretcher",
+     "variant": "Standard",
+     "qty": 20,
+     "cost": 10.52,
+     "avgAllIn": 0.53
+    }
+   ]
+  },
+  {
+   "base": "Noctowl",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Noctowl",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 0.5,
+     "avgAllIn": 0.5
+    }
+   ]
+  },
+  {
+   "base": "Oricorio ex",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Oricorio ex FA",
+     "variant": "Full Art",
+     "qty": 1,
+     "cost": 12.9,
+     "avgAllIn": 12.9
+    }
+   ]
+  },
+  {
+   "base": "Passimian",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Passimian",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 0.55,
+     "avgAllIn": 0.55
+    }
+   ]
+  },
+  {
+   "base": "Patrat",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Patrat",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 0.2,
+     "avgAllIn": 0.2
+    }
+   ]
+  },
+  {
+   "base": "Pikipek",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Pikipek",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 1.25,
+     "avgAllIn": 0.31
+    }
+   ]
+  },
+  {
+   "base": "Poke Pad",
+   "total": 22,
+   "variants": [
+    {
+     "name": "Poke Pad",
+     "variant": "Standard",
+     "qty": 9,
+     "cost": 12.88,
+     "avgAllIn": 1.43
+    },
+    {
+     "name": "Poke Pad - 081/088",
+     "variant": "No. 081/088",
+     "qty": 13,
+     "cost": 9.27,
+     "avgAllIn": 0.71
+    }
+   ]
+  },
+  {
+   "base": "Poltchageist",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Poltchageist",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.62,
+     "avgAllIn": 0.16
+    }
+   ]
+  },
+  {
+   "base": "Premium Power Pro",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Premium Power Pro",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 0.27,
+     "avgAllIn": 0.27
+    },
+    {
+     "name": "Premium Power Pro [PP]",
+     "variant": "Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Prime Catcher",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Prime Catcher",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 1.47,
+     "avgAllIn": 1.47
+    }
+   ]
+  },
+  {
+   "base": "Prism Energy",
+   "total": 6,
+   "variants": [
+    {
+     "name": "Prism Energy",
+     "variant": "Standard",
+     "qty": 6,
+     "cost": 1.08,
+     "avgAllIn": 0.18
+    }
+   ]
+  },
+  {
+   "base": "Prism Tower",
+   "total": 6,
+   "variants": [
+    {
+     "name": "Prism Tower - 080/086",
+     "variant": "No. 080/086",
+     "qty": 6,
+     "cost": 1.31,
+     "avgAllIn": 0.22
+    }
+   ]
+  },
+  {
+   "base": "Professor Turo's Scenario",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Professor Turo's Scenario",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 0.07,
+     "avgAllIn": 0.03
+    }
+   ]
+  },
+  {
+   "base": "Professor's Research",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Professor's Research",
+     "variant": "Standard",
+     "qty": 3,
+     "cost": 7.94,
+     "avgAllIn": 2.65
+    },
+    {
+     "name": "Professor's Research [Professor Sycamore]",
+     "variant": "Professor Sycamore",
+     "qty": 1,
+     "cost": 0.03,
+     "avgAllIn": 0.03
+    }
+   ]
+  },
+  {
+   "base": "Psychic Energy",
+   "total": 3,
+   "variants": [
+    {
+     "name": "Psychic Energy",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    },
+    {
+     "name": "Psychic Energy [Holo] [PP]",
+     "variant": "Holo · Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Psyduck",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Psyduck - 039/217",
+     "variant": "No. 039/217",
+     "qty": 1,
+     "cost": 0.14,
+     "avgAllIn": 0.14
+    }
+   ]
+  },
+  {
+   "base": "Quick Ball",
+   "total": 22,
+   "variants": [
+    {
+     "name": "Quick Ball",
+     "variant": "Standard",
+     "qty": 22,
+     "cost": 8.28,
+     "avgAllIn": 0.38
+    }
+   ]
+  },
+  {
+   "base": "Rapid Strike Urshifu V",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Rapid Strike Urshifu V",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 5.03,
+     "avgAllIn": 2.51
+    }
+   ]
+  },
+  {
+   "base": "Rapid Strike Urshifu VMAX",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Rapid Strike Urshifu VMAX",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 3.42,
+     "avgAllIn": 3.42
+    }
+   ]
+  },
+  {
+   "base": "Rare Candy",
+   "total": 5,
+   "variants": [
+    {
+     "name": "Rare Candy",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.8,
+     "avgAllIn": 0.2
+    },
+    {
+     "name": "Rare Candy [RH]",
+     "variant": "Reverse Holo",
+     "qty": 1,
+     "cost": 0.08,
+     "avgAllIn": 0.08
+    }
+   ]
+  },
+  {
+   "base": "Risky Ruins",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Risky Ruins",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 0.62,
+     "avgAllIn": 0.62
+    },
+    {
+     "name": "Risky Ruins [PP]",
+     "variant": "Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Rocky Fighting Energy",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Rocky Fighting Energy",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 2.13,
+     "avgAllIn": 0.53
+    }
+   ]
+  },
+  {
+   "base": "Rosa's Encouragement",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Rosa's Encouragement",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 0.4,
+     "avgAllIn": 0.4
+    }
+   ]
+  },
+  {
+   "base": "Roto-Stick",
+   "total": 3,
+   "variants": [
+    {
+     "name": "Roto-Stick",
+     "variant": "Standard",
+     "qty": 3,
+     "cost": 0.48,
+     "avgAllIn": 0.16
+    }
+   ]
+  },
+  {
+   "base": "Scoop Up Cyclone",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Scoop Up Cyclone",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 1.41,
+     "avgAllIn": 1.41
+    }
+   ]
+  },
+  {
+   "base": "Scoop Up Net",
+   "total": 6,
+   "variants": [
+    {
+     "name": "Scoop Up Net",
+     "variant": "Standard",
+     "qty": 6,
+     "cost": 4.03,
+     "avgAllIn": 0.67
+    }
+   ]
+  },
+  {
+   "base": "Scramble Switch",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Scramble Switch",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 1.51,
+     "avgAllIn": 1.51
+    }
+   ]
+  },
+  {
+   "base": "Shadow Rider Calyrex V",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Shadow Rider Calyrex V",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 9.57,
+     "avgAllIn": 2.39
+    }
+   ]
+  },
+  {
+   "base": "Shadow Rider Calyrex VMAX",
+   "total": 3,
+   "variants": [
+    {
+     "name": "Shadow Rider Calyrex VMAX",
+     "variant": "Standard",
+     "qty": 3,
+     "cost": 11.56,
+     "avgAllIn": 3.85
+    }
+   ]
+  },
+  {
+   "base": "Shadowy Darkness Energy",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Shadowy Darkness Energy [RH]",
+     "variant": "Reverse Holo",
+     "qty": 1,
+     "cost": 2.5,
+     "avgAllIn": 2.5
+    }
+   ]
+  },
+  {
+   "base": "Shuppet",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Shuppet",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.35,
+     "avgAllIn": 0.09
+    }
+   ]
+  },
+  {
+   "base": "Sinistcha",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Sinistcha",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.35,
+     "avgAllIn": 0.09
+    }
+   ]
+  },
+  {
+   "base": "Sobble",
+   "total": 8,
+   "variants": [
+    {
+     "name": "Sobble",
+     "variant": "Standard",
+     "qty": 8,
+     "cost": 2.32,
+     "avgAllIn": 0.29
+    }
+   ]
+  },
+  {
+   "base": "Solrock",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Solrock (Dusk Ball)",
+     "variant": "Dusk Ball",
+     "qty": 4,
+     "cost": 0.55,
+     "avgAllIn": 0.14
+    }
+   ]
+  },
+  {
+   "base": "Special Red Card",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Special Red Card",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 1.24,
+     "avgAllIn": 0.62
+    }
+   ]
+  },
+  {
+   "base": "Spiky Energy",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Spiky Energy",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 0.28,
+     "avgAllIn": 0.14
+    }
+   ]
+  },
+  {
+   "base": "Surfing Beach",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Surfing Beach [PP]",
+     "variant": "Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Tapu Lele GX",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Tapu Lele GX FA",
+     "variant": "Full Art",
+     "qty": 1,
+     "cost": 15.0,
+     "avgAllIn": 15.0
+    }
+   ]
+  },
+  {
+   "base": "Team Rocket's Archer",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Team Rocket's Archer",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.8,
+     "avgAllIn": 0.2
+    }
+   ]
+  },
+  {
+   "base": "Team Rocket's Ariana",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Team Rocket's Ariana",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.8,
+     "avgAllIn": 0.2
+    }
+   ]
+  },
+  {
+   "base": "Team Rocket's Articuno",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Team Rocket's Articuno",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 1.1,
+     "avgAllIn": 1.1
+    }
+   ]
+  },
+  {
+   "base": "Team Rocket's Energy",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Team Rocket's Energy",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 0.4,
+     "avgAllIn": 0.2
+    },
+    {
+     "name": "Team Rocket's Energy [PP]",
+     "variant": "Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    },
+    {
+     "name": "Team Rocket's Energy [RH]",
+     "variant": "Reverse Holo",
+     "qty": 1,
+     "cost": 0.08,
+     "avgAllIn": 0.08
+    }
+   ]
+  },
+  {
+   "base": "Team Rocket's Factory",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Team Rocket's Factory",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.97,
+     "avgAllIn": 0.24
+    }
+   ]
+  },
+  {
+   "base": "Team Rocket's Giovanni",
+   "total": 7,
+   "variants": [
+    {
+     "name": "Team Rocket's Giovanni",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.8,
+     "avgAllIn": 0.2
+    },
+    {
+     "name": "Team Rocket's Giovanni [PP]",
+     "variant": "Prize Pack",
+     "qty": 3,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Team Rocket's Honchkrow",
+   "total": 3,
+   "variants": [
+    {
+     "name": "Team Rocket's Honchkrow",
+     "variant": "Standard",
+     "qty": 3,
+     "cost": 0.99,
+     "avgAllIn": 0.33
+    }
+   ]
+  },
+  {
+   "base": "Team Rocket's Mewtwo",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Team Rocket's Mewtwo",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 3.0,
+     "avgAllIn": 3.0
+    }
+   ]
+  },
+  {
+   "base": "Team Rocket's Mewtwo ex",
+   "total": 3,
+   "variants": [
+    {
+     "name": "Team Rocket's Mewtwo ex - 063/193",
+     "variant": "No. 063/193",
+     "qty": 1,
+     "cost": 1.62,
+     "avgAllIn": 1.62
+    },
+    {
+     "name": "Team Rocket's Mewtwo ex - 079/217",
+     "variant": "No. 079/217",
+     "qty": 1,
+     "cost": 4.61,
+     "avgAllIn": 4.61
+    },
+    {
+     "name": "Team Rocket's Mewtwo ex - 081/182",
+     "variant": "No. 081/182",
+     "qty": 1,
+     "cost": 6.22,
+     "avgAllIn": 6.22
+    }
+   ]
+  },
+  {
+   "base": "Team Rocket's Mimikyu",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Team Rocket's Mimikyu",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 1.56,
+     "avgAllIn": 0.78
+    }
+   ]
+  },
+  {
+   "base": "Team Rocket's Murkrow",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Team Rocket's Murkrow",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.8,
+     "avgAllIn": 0.2
+    }
+   ]
+  },
+  {
+   "base": "Team Rocket's Petrel",
+   "total": 5,
+   "variants": [
+    {
+     "name": "Team Rocket's Petrel",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.97,
+     "avgAllIn": 0.24
+    },
+    {
+     "name": "Team Rocket's Petrel - 176/182",
+     "variant": "No. 176/182",
+     "qty": 1,
+     "cost": 1.11,
+     "avgAllIn": 1.11
+    }
+   ]
+  },
+  {
+   "base": "Team Rocket's Proton",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Team Rocket's Proton",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.8,
+     "avgAllIn": 0.2
+    }
+   ]
+  },
+  {
+   "base": "Team Rocket's Spiders",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Team Rocket's Spiders [PP]",
+     "variant": "Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Team Rocket's Transceiver",
+   "total": 9,
+   "variants": [
+    {
+     "name": "Team Rocket's Transceiver",
+     "variant": "Standard",
+     "qty": 5,
+     "cost": 1.07,
+     "avgAllIn": 0.21
+    },
+    {
+     "name": "Team Rocket's Transceiver - 209/217",
+     "variant": "No. 209/217",
+     "qty": 4,
+     "cost": 0.97,
+     "avgAllIn": 0.24
+    }
+   ]
+  },
+  {
+   "base": "Team Rocket's Watchtower",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Team Rocket's Watchtower",
+     "variant": "Standard",
+     "qty": 3,
+     "cost": 1.63,
+     "avgAllIn": 0.54
+    },
+    {
+     "name": "Team Rocket's Watchtower [RH]",
+     "variant": "Reverse Holo",
+     "qty": 1,
+     "cost": 0.5,
+     "avgAllIn": 0.5
+    }
+   ]
+  },
+  {
+   "base": "Telepathic Psychic Energy",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Telepathic Psychic Energy",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 0.16,
+     "avgAllIn": 0.08
+    },
+    {
+     "name": "Telepathic Psychic Energy [RH]",
+     "variant": "Reverse Holo",
+     "qty": 2,
+     "cost": 0.58,
+     "avgAllIn": 0.29
+    }
+   ]
+  },
+  {
+   "base": "Torchic",
+   "total": 2,
+   "variants": [
+    {
+     "name": "Torchic",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 1.4,
+     "avgAllIn": 0.7
+    }
+   ]
+  },
+  {
+   "base": "Toucannon",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Toucannon - 068/084",
+     "variant": "No. 068/084",
+     "qty": 4,
+     "cost": 1.66,
+     "avgAllIn": 0.42
+    }
+   ]
+  },
+  {
+   "base": "Transformation Tome",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Transformation Tome",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 1.6,
+     "avgAllIn": 0.4
+    }
+   ]
+  },
+  {
+   "base": "Trumbeak",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Trumbeak",
+     "variant": "Standard",
+     "qty": 4,
+     "cost": 0.9,
+     "avgAllIn": 0.23
+    }
+   ]
+  },
+  {
+   "base": "Ultra Ball",
+   "total": 18,
+   "variants": [
+    {
+     "name": "Ultra Ball",
+     "variant": "Standard",
+     "qty": 17,
+     "cost": 6.81,
+     "avgAllIn": 0.4
+    },
+    {
+     "name": "Ultra Ball [RH]",
+     "variant": "Reverse Holo",
+     "qty": 1,
+     "cost": 0.08,
+     "avgAllIn": 0.08
+    }
+   ]
+  },
+  {
+   "base": "Unfair Stamp",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Unfair Stamp",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 29.92,
+     "avgAllIn": 29.92
+    }
+   ]
+  },
+  {
+   "base": "Voltaic Lightning Energy",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Voltaic Lightning Energy",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 2.5,
+     "avgAllIn": 2.5
+    }
+   ]
+  },
+  {
+   "base": "Wally's Compassion",
+   "total": 3,
+   "variants": [
+    {
+     "name": "Wally's Compassion [Holo] [PP]",
+     "variant": "Holo · Prize Pack",
+     "qty": 2,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    },
+    {
+     "name": "Wally's Compassion [PP]",
+     "variant": "Prize Pack",
+     "qty": 1,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Water Energy",
+   "total": 4,
+   "variants": [
+    {
+     "name": "Water Energy",
+     "variant": "Standard",
+     "qty": 2,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    },
+    {
+     "name": "Water Energy [PP]",
+     "variant": "Prize Pack",
+     "qty": 2,
+     "cost": 0.0,
+     "avgAllIn": 0.0
+    }
+   ]
+  },
+  {
+   "base": "Xerosic's Machinations",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Xerosic's Machinations [RH]",
+     "variant": "Reverse Holo",
+     "qty": 1,
+     "cost": 0.08,
+     "avgAllIn": 0.08
+    }
+   ]
+  },
+  {
+   "base": "Yveltal",
+   "total": 3,
+   "variants": [
+    {
+     "name": "Yveltal",
+     "variant": "Standard",
+     "qty": 3,
+     "cost": 0.25,
+     "avgAllIn": 0.08
+    }
+   ]
+  },
+  {
+   "base": "Zacian V",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Zacian V",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 2.0,
+     "avgAllIn": 2.0
+    }
+   ]
+  },
+  {
+   "base": "Zoroark GX",
+   "total": 1,
+   "variants": [
+    {
+     "name": "Zoroark GX",
+     "variant": "Standard",
+     "qty": 1,
+     "cost": 5.97,
+     "avgAllIn": 5.97
+    }
+   ]
+  }
+ ],
+ "needs": [
+  {
+   "qty": 1,
+   "name": "Abra"
+  },
+  {
+   "qty": 2,
+   "name": "Blaziken ex"
+  }
+ ]
+}
