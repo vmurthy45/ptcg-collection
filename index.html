@@ -148,8 +148,13 @@
   .dsub{font-size:.72rem; color:var(--red); font-weight:700; margin-top:1px}
   .deckadd{flex:0 0 auto; border:0; background:var(--red); color:#fff; font-size:.75rem; font-weight:700; padding:8px 12px; border-radius:999px; cursor:pointer}
   .deckadd.added{background:var(--muted)}
-  .jptoggle{display:flex; align-items:center; gap:9px; font-size:.9rem; font-weight:600; color:var(--ink); padding:12px 4px 4px; cursor:pointer}
-  .jptoggle input{width:20px; height:20px; flex:0 0 auto; accent-color:var(--red); cursor:pointer}
+  .jpswitch{display:inline-flex; align-items:center; gap:11px; padding:12px 4px 6px; cursor:pointer; user-select:none}
+  .jpswitch .flag{font-size:1.55rem; line-height:1}
+  .jpswitch input{position:absolute; opacity:0; width:0; height:0}
+  .jpswitch .slider{position:relative; width:52px; height:30px; background:#b9bcc2; border-radius:999px; transition:background .2s; flex:0 0 auto}
+  .jpswitch .slider::before{content:""; position:absolute; top:3px; left:3px; width:24px; height:24px; border-radius:50%; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,.3); transition:transform .2s}
+  .jpswitch input:checked + .slider{background:var(--red)}
+  .jpswitch input:checked + .slider::before{transform:translateX(22px)}
   .jphint{background:#eef3fb; color:#2a4a86; border-radius:12px; padding:9px 13px; font-size:.8rem; font-weight:600; margin:0 0 10px}
   .jp{display:inline-block; font-size:.58rem; font-weight:800; background:#c0392b; color:#fff; padding:1px 5px; border-radius:4px; margin-left:6px; vertical-align:middle; letter-spacing:.4px}
   .gcostline{border-top:1px solid var(--line); padding:8px 14px; font-size:.72rem; color:var(--muted); font-weight:600}
@@ -483,7 +488,7 @@ function renderImportResults(){
     ? `<div class="impsum ok">✅ You have every card in this deck.</div>`
     : `<div class="impsum miss">⚠️ Missing ${missCards} card${missCards!==1?'s':''} across ${missLines} line${missLines!==1?'s':''}.</div>`;
   if(!importJp && jpUsed > 0)
-    html += `<div class="jphint">🇯🇵 You own Japanese copies of some missing cards — turn on “Include Japanese prints” to count them.</div>`;
+    html += `<div class="jphint">🇯🇵 You own Japanese copies of some missing cards.</div>`;
   if(importMissing.length)
     html += `<button id="importAddNeeds" class="impadd">➕ Add all ${missCards} missing to Needs</button>
              <div class="impsub2">…or tap “+ Needs” on any card below to add just that one.</div>`;
@@ -564,7 +569,7 @@ function renderImport(){
        <button id="deckImport" class="pbtn copy" style="flex:1">📋 Import from clipboard</button>
        ${hasDeck ? `<button id="deckErase" class="pbtn clear">Erase</button>` : ``}
      </div>
-     <label class="jptoggle"><input type="checkbox" id="jpToggle" ${importJp?'checked':''}><span>Include Japanese prints when checking</span></label>
+     <label class="jpswitch" aria-label="Include Japanese prints"><span class="flag">🇯🇵</span><input type="checkbox" id="jpToggle" ${importJp?'checked':''}><span class="slider"></span></label>
      <div id="importResults"></div>`;
   renderImportResults();
 }
