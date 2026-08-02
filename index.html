@@ -143,6 +143,16 @@
   .dstat.short{color:var(--red)}
   .dstat.basic{color:var(--muted)}
 
+  /* ---- Notes ---- */
+  #noteInput{width:100%; min-height:96px; resize:vertical; padding:12px; border:1.5px solid var(--line); border-radius:12px;
+    font-size:1rem; font-family:inherit; line-height:1.4; background:var(--card); color:var(--ink); -webkit-appearance:none; margin-bottom:10px}
+  #noteInput:focus{outline:none; border-color:var(--red)}
+  .notecard{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:12px 14px; margin:10px 0; box-shadow:var(--shadow)}
+  .notetext{white-space:pre-wrap; overflow-wrap:anywhere; font-size:.95rem; line-height:1.45}
+  .noterow{display:flex; align-items:center; margin-top:10px; gap:10px}
+  .notedate{font-size:.72rem; color:var(--muted); font-weight:600}
+  .ndel{margin-left:auto; border:0; background:var(--chip); color:var(--chip-ink); font-size:.75rem; font-weight:700; padding:6px 12px; border-radius:999px; cursor:pointer}
+
   #toast{position:fixed; left:50%; bottom:calc(80px + var(--safe-b)); transform:translateX(-50%) translateY(16px);
     background:var(--dark); color:#fff; padding:10px 16px; border-radius:12px; font-size:.85rem; font-weight:600;
     box-shadow:0 6px 20px rgba(0,0,0,.3); opacity:0; pointer-events:none; transition:opacity .2s, transform .2s; z-index:30; max-width:88%; text-align:center}
@@ -166,7 +176,7 @@
     border-top:1px solid var(--line); padding-bottom:max(4px, calc(env(safe-area-inset-bottom, 0px) - 16px))}
   nav button{flex:1; border:0; background:none; color:var(--muted); padding:8px 0 6px; font:inherit;
     display:flex; flex-direction:column; align-items:center; gap:2px; cursor:pointer; font-size:.7rem; font-weight:600; position:relative}
-  nav button .tico{font-size:1.25rem; line-height:1}
+  nav button .tico{width:26px; height:26px; object-fit:contain; display:block}
   nav button.active{color:var(--red)}
   nav .badge{position:absolute; top:2px; left:50%; margin-left:8px; background:var(--gold); color:#3a2c00;
     border-radius:999px; font-size:.6rem; padding:1px 5px; font-weight:800}
@@ -199,15 +209,17 @@
   <section class="view" id="view-collection"></section>
   <section class="view" id="view-needs"></section>
   <section class="view" id="view-import"></section>
+  <section class="view" id="view-notes"></section>
 </main>
 
 <div class="resbar hidden" id="resbar"><div class="inner"><span id="resCount"></span><span id="resAvg"></span></div></div>
 
 <nav>
-  <button id="tab-search" class="active"><span class="tico">🔍</span>Search</button>
-  <button id="tab-collection"><span class="tico">🃏</span>Collection</button>
-  <button id="tab-needs"><span class="tico">📝</span>Needs</button>
-  <button id="tab-import"><span class="tico">📥</span>Import</button>
+  <button id="tab-search" class="active"><img class="tico" src="icons/tab-search.png" alt="">Search</button>
+  <button id="tab-collection"><img class="tico" src="icons/tab-collection.png" alt="">Collection</button>
+  <button id="tab-needs"><img class="tico" src="icons/tab-needs.png" alt="">Needs</button>
+  <button id="tab-import"><img class="tico" src="icons/tab-import.png" alt="">Import</button>
+  <button id="tab-notes"><img class="tico" src="icons/tab-notes.png" alt="">Notes</button>
 </nav>
 
 <script>
@@ -216,6 +228,7 @@ const money = n => "$" + n.toFixed(2);
 let DATA = null, TAB = "search", statsOpen = false;
 let pending = [], pendingQty = 1;              // on-the-go captured needs (populated from localStorage in init)
 let importMissing = [], deckText = "";         // deck-import state
+let notes = [];                                // local notes / ideas (populated in init)
 
 const norm = s => (s||"").toLowerCase();
 
@@ -491,6 +504,45 @@ async function importFromClipboard(){
   toast("Deck imported");
 }
 
+/* ---- Notes (local ideas / thoughts, this device only) ---- */
+const NKEY = "ptcg_notes";
+function loadNotes(){ try{ return JSON.parse(localStorage.getItem(NKEY)) || []; }catch(e){ return []; } }
+function saveNotes(){ try{ localStorage.setItem(NKEY, JSON.stringify(notes)); }catch(e){} }
+function noteDate(ts){
+  const d = new Date(ts); if(isNaN(d)) return "";
+  return d.toLocaleDateString(undefined,{day:"numeric",month:"short",year:"numeric"}) + " · " +
+         d.toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"});
+}
+function addNote(){
+  const el = $("#noteInput"); if(!el) return;
+  const text = (el.value || "").trim();
+  if(!text){ toast("Write something first"); el.focus(); return; }
+  notes.unshift({ text, ts: Date.now() });
+  saveNotes(); el.value = ""; renderNotesList(); el.focus();
+  toast("Note saved");
+}
+function renderNotesList(){
+  const el = $("#notesList"); if(!el) return;
+  if(!notes.length){ el.innerHTML = `<div class="emptymini">No notes yet — jot your first idea above.</div>`; return; }
+  el.innerHTML = `<div class="sechint">${notes.length} note${notes.length!==1?'s':''}</div>` +
+    notes.map((n,i) => `
+      <div class="notecard">
+        <div class="notetext">${esc(n.text)}</div>
+        <div class="noterow"><span class="notedate">${noteDate(n.ts)}</span><button class="ndel" data-ndel="${i}">🗑 Scrap</button></div>
+      </div>`).join("");
+}
+function renderNotes(){
+  updateResbar(0,0,false);
+  $("#view-notes").innerHTML =
+    `<div class="capbox">
+       <div class="caphdr">✍️ New note</div>
+       <textarea id="noteInput"></textarea>
+       <button id="noteAdd" class="capadd">Add note</button>
+     </div>
+     <div id="notesList"></div>`;
+  renderNotesList();
+}
+
 function renderImport(){
   updateResbar(0,0,false);
   const hasDeck = !!deckText.trim();
@@ -536,6 +588,7 @@ function render(){
   if(TAB === "search") renderSearch();
   else if(TAB === "collection") renderCollection();
   else if(TAB === "import") renderImport();
+  else if(TAB === "notes") renderNotes();
   else renderNeeds();
 }
 
@@ -543,7 +596,7 @@ function setTab(t){
   TAB = t;
   $("#q").value = "";
   $("#searchbox").classList.remove("has");
-  ["search","collection","needs","import"].forEach(k => {
+  ["search","collection","needs","import","notes"].forEach(k => {
     $("#tab-"+k).classList.toggle("active", k===t);
     $("#view-"+k).classList.toggle("active", k===t);
   });
@@ -576,12 +629,16 @@ async function init(){
   $("#updated").textContent = "Updated " + fmtDate(DATA.updated);
   pending = loadPending();     // load AFTER PKEY is initialised — fixes captures lost on reopen
   deckText = loadDeck();
+  notes = loadNotes();
   if(navigator.storage && navigator.storage.persist) navigator.storage.persist();  // ask iOS not to evict
   updateNeedsBadge();
   // delegated clicks
   $("main").addEventListener("click", e => {
     if(e.target.closest("#deckImport")){ importFromClipboard(); return; }
     if(e.target.closest("#deckErase")){ deckText = ""; saveDeck(); renderImport(); return; }
+    if(e.target.closest("#noteAdd")){ addNote(); return; }
+    const nd = e.target.closest("[data-ndel]");
+    if(nd){ if(confirm("Scrap this note?")){ notes.splice(+nd.dataset.ndel, 1); saveNotes(); renderNotesList(); } return; }
     if(e.target.closest("#copyAllNeeds")){ copyAllNeeds(); return; }
     if(e.target.closest("#importAddNeeds")){
       importMissing.forEach(m => {
@@ -625,6 +682,7 @@ async function init(){
   $("#tab-collection").addEventListener("click", () => setTab("collection"));
   $("#tab-needs").addEventListener("click", () => setTab("needs"));
   $("#tab-import").addEventListener("click", () => setTab("import"));
+  $("#tab-notes").addEventListener("click", () => setTab("notes"));
   render();
   focusSearch();
   setHeadH();
