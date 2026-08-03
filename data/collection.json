@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-02",
+ "updated": "2026-08-03",
  "currency": "NZD",
  "stats": {
   "ownedCopies": 737,
@@ -10,7 +10,7 @@
   "totalSpent": 497.47,
   "purchasedCards": 761,
   "avgCostPerCard": 0.65,
-  "needsCount": 26
+  "needsCount": 32
  },
  "groups": [
   {
@@ -3509,15 +3509,15 @@
   },
   {
    "qty": 1,
-   "name": "Enriching Energy"
-  },
-  {
-   "qty": 1,
    "name": "Genesect"
   },
   {
    "qty": 6,
    "name": "Hilda"
+  },
+  {
+   "qty": 2,
+   "name": "Ignition Energy"
   },
   {
    "qty": 1,
@@ -3526,6 +3526,10 @@
   {
    "qty": 1,
    "name": "Lucky Helmet"
+  },
+  {
+   "qty": 1,
+   "name": "Miracle Headset"
   },
   {
    "qty": 2,
@@ -3537,6 +3541,10 @@
   },
   {
    "qty": 1,
+   "name": "Roto-Stick"
+  },
+  {
+   "qty": 1,
    "name": "Sacred Ash"
   },
   {
@@ -3545,7 +3553,15 @@
   },
   {
    "qty": 1,
-   "name": "Shaymin"
+   "name": "Team Rocket's Articuno"
+  },
+  {
+   "qty": 2,
+   "name": "Team Rocket's Porygon"
+  },
+  {
+   "qty": 1,
+   "name": "Team Rocket's Porygon2"
   },
   {
    "qty": 1,
