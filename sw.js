@@ -1,5 +1,5 @@
 // Bump CACHE name whenever app files or data change.
-const CACHE = "ptcg-collection-v18";
+const CACHE = "ptcg-collection-v19";
 const ASSETS = [
   "./",
   "./index.html",
