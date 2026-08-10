@@ -1,15 +1,15 @@
 {
- "updated": "2026-08-04",
+ "updated": "2026-08-10",
  "currency": "NZD",
  "stats": {
-  "ownedCopies": 758,
-  "ownedNames": 175,
-  "ownedEntries": 223,
+  "ownedCopies": 847,
+  "ownedNames": 203,
+  "ownedEntries": 254,
   "japaneseCopies": 16,
   "proxyCopies": 0,
-  "totalSpent": 505.47,
-  "purchasedCards": 782,
-  "avgCostPerCard": 0.65,
+  "totalSpent": 591.2,
+  "purchasedCards": 871,
+  "avgCostPerCard": 0.68,
   "needsCount": 32
  },
  "groups": [
@@ -19,18 +19,37 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 3,
+     "qty": 4,
      "jp": false,
      "proxy": false,
      "set": "MEG",
      "num": "54"
     }
    ],
-   "total": 3,
-   "totalNonJp": 3,
-   "spent": 0.25,
-   "pqty": 3,
-   "avgCost": 0.08
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.65,
+   "pqty": 4,
+   "avgCost": 0.16
+  },
+  {
+   "base": "Academy at Night",
+   "type": "Stadium",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 4,
+     "jp": false,
+     "proxy": false,
+     "set": null,
+     "num": null
+    }
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 1.41,
+   "pqty": 4,
+   "avgCost": 0.35
   },
   {
    "base": "Air Balloon",
@@ -98,6 +117,44 @@
    "avgCost": 0.12
   },
   {
+   "base": "Artazon",
+   "type": "Stadium",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 2,
+     "jp": false,
+     "proxy": false,
+     "set": null,
+     "num": null
+    }
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 0.7,
+   "pqty": 2,
+   "avgCost": 0.35
+  },
+  {
+   "base": "Arven",
+   "type": "Supporter",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 4,
+     "jp": false,
+     "proxy": false,
+     "set": null,
+     "num": null
+    }
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 2.76,
+   "pqty": 4,
+   "avgCost": 0.69
+  },
+  {
    "base": "Banette",
    "type": "Pokémon",
    "variants": [
@@ -153,6 +210,25 @@
    "spent": 0.28,
    "pqty": 2,
    "avgCost": 0.14
+  },
+  {
+   "base": "Binding Mochi",
+   "type": "Item",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 2,
+     "jp": false,
+     "proxy": false,
+     "set": null,
+     "num": null
+    }
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 0.8,
+   "pqty": 2,
+   "avgCost": 0.4
   },
   {
    "base": "Bloodmoon Ursaluna ex",
@@ -218,6 +294,25 @@
    "spent": 0.5,
    "pqty": 1,
    "avgCost": 0.5
+  },
+  {
+   "base": "Briar",
+   "type": "Supporter",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 2,
+     "jp": false,
+     "proxy": false,
+     "set": null,
+     "num": null
+    }
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 0.51,
+   "pqty": 2,
+   "avgCost": 0.25
   },
   {
    "base": "Buddy-Buddy Poffin",
@@ -304,6 +399,44 @@
    "avgCost": 0.2
   },
   {
+   "base": "Charmander",
+   "type": "Pokémon",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 4,
+     "jp": false,
+     "proxy": false,
+     "set": "PAF",
+     "num": "7"
+    }
+   ],
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 1.6,
+   "pqty": 4,
+   "avgCost": 0.4
+  },
+  {
+   "base": "Charmeleon",
+   "type": "Pokémon",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 2,
+     "jp": false,
+     "proxy": false,
+     "set": "MEW",
+     "num": "5"
+    }
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 0.99,
+   "pqty": 2,
+   "avgCost": 0.5
+  },
+  {
    "base": "Chien-Pao",
    "type": "Pokémon",
    "variants": [
@@ -366,18 +499,18 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 3,
+     "qty": 7,
      "jp": false,
      "proxy": false,
      "set": null,
      "num": null
     }
    ],
-   "total": 3,
-   "totalNonJp": 3,
-   "spent": 0.8,
-   "pqty": 3,
-   "avgCost": 0.27
+   "total": 7,
+   "totalNonJp": 7,
+   "spent": 1.96,
+   "pqty": 7,
+   "avgCost": 0.28
   },
   {
    "base": "Combusken",
@@ -683,17 +816,17 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 3,
+     "qty": 5,
      "jp": false,
      "proxy": false,
      "set": null,
      "num": null
     }
    ],
-   "total": 3,
-   "totalNonJp": 3,
-   "spent": 1.38,
-   "pqty": 3,
+   "total": 5,
+   "totalNonJp": 5,
+   "spent": 2.3,
+   "pqty": 5,
    "avgCost": 0.46
   },
   {
@@ -714,6 +847,25 @@
    "spent": null,
    "pqty": 0,
    "avgCost": null
+  },
+  {
+   "base": "Dedenne",
+   "type": "Pokémon",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 1,
+     "jp": false,
+     "proxy": false,
+     "set": "SSP",
+     "num": "87"
+    }
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.41,
+   "pqty": 1,
+   "avgCost": 0.41
   },
   {
    "base": "Dhelmise",
@@ -997,18 +1149,37 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 2,
+     "qty": 4,
      "jp": false,
      "proxy": false,
      "set": "PRE",
      "num": "35"
     }
    ],
-   "total": 2,
-   "totalNonJp": 2,
-   "spent": 0.68,
-   "pqty": 2,
-   "avgCost": 0.34
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 1.56,
+   "pqty": 4,
+   "avgCost": 0.39
+  },
+  {
+   "base": "Elgyem",
+   "type": "Pokémon",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 1,
+     "jp": false,
+     "proxy": false,
+     "set": "BLK",
+     "num": "40"
+    }
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.27,
+   "pqty": 1,
+   "avgCost": 0.27
   },
   {
    "base": "Emboar",
@@ -1271,6 +1442,25 @@
    "avgCost": 0.0
   },
   {
+   "base": "Grand Tree",
+   "type": "Stadium",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 1,
+     "jp": false,
+     "proxy": false,
+     "set": null,
+     "num": null
+    }
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 1.19,
+   "pqty": 1,
+   "avgCost": 1.19
+  },
+  {
    "base": "Grass Energy",
    "type": "Energy",
    "variants": [
@@ -1507,6 +1697,25 @@
    "avgCost": 0.84
   },
   {
+   "base": "Jacq",
+   "type": "Supporter",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 1,
+     "jp": false,
+     "proxy": false,
+     "set": null,
+     "num": null
+    }
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.46,
+   "pqty": 1,
+   "avgCost": 0.46
+  },
+  {
    "base": "Janine's Secret Art",
    "type": "Item",
    "variants": [
@@ -1583,6 +1792,25 @@
    "avgCost": 8.0
   },
   {
+   "base": "Lana's Aid",
+   "type": "Supporter",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 3,
+     "jp": false,
+     "proxy": false,
+     "set": null,
+     "num": null
+    }
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 2.18,
+   "pqty": 3,
+   "avgCost": 0.73
+  },
+  {
    "base": "Latias ex",
    "type": "Pokémon",
    "variants": [
@@ -1641,6 +1869,14 @@
    "type": "Pokémon",
    "variants": [
     {
+     "version": "Standard",
+     "qty": 1,
+     "jp": false,
+     "proxy": false,
+     "set": "ASC",
+     "num": "76"
+    },
+    {
      "version": "Japanese",
      "qty": 2,
      "jp": true,
@@ -1649,11 +1885,11 @@
      "num": "60"
     }
    ],
-   "total": 2,
-   "totalNonJp": 0,
-   "spent": 1.6,
-   "pqty": 2,
-   "avgCost": 0.8
+   "total": 3,
+   "totalNonJp": 1,
+   "spent": 4.87,
+   "pqty": 3,
+   "avgCost": 1.62
   },
   {
    "base": "Lillie's Determination",
@@ -1721,6 +1957,33 @@
    "avgCost": 0.14
   },
   {
+   "base": "Lucky Helmet",
+   "type": "Item",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 2,
+     "jp": false,
+     "proxy": false,
+     "set": null,
+     "num": null
+    },
+    {
+     "version": "Reverse Holo",
+     "qty": 1,
+     "jp": false,
+     "proxy": false,
+     "set": null,
+     "num": null
+    }
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 2.05,
+   "pqty": 3,
+   "avgCost": 0.68
+  },
+  {
    "base": "Lumineon V",
    "type": "Pokémon",
    "variants": [
@@ -1765,6 +2028,25 @@
    "spent": 0.07,
    "pqty": 5,
    "avgCost": 0.01
+  },
+  {
+   "base": "Maximum Belt",
+   "type": "Item",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 1,
+     "jp": false,
+     "proxy": false,
+     "set": null,
+     "num": null
+    }
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 1.09,
+   "pqty": 1,
+   "avgCost": 1.09
   },
   {
    "base": "Mega Darkrai ex",
@@ -2065,6 +2347,25 @@
    "avgCost": 0.62
   },
   {
+   "base": "N's Castle",
+   "type": "Stadium",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 2,
+     "jp": false,
+     "proxy": false,
+     "set": null,
+     "num": null
+    }
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 0.8,
+   "pqty": 2,
+   "avgCost": 0.4
+  },
+  {
    "base": "N's Darmanitan",
    "type": "Pokémon",
    "variants": [
@@ -2276,6 +2577,25 @@
    "avgCost": 0.53
   },
   {
+   "base": "Nighttime Mine",
+   "type": "Stadium",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 1,
+     "jp": false,
+     "proxy": false,
+     "set": null,
+     "num": null
+    }
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.48,
+   "pqty": 1,
+   "avgCost": 0.48
+  },
+  {
    "base": "Noctowl",
    "type": "Pokémon",
    "variants": [
@@ -2293,6 +2613,25 @@
    "spent": 0.5,
    "pqty": 1,
    "avgCost": 0.5
+  },
+  {
+   "base": "Oricorio ex",
+   "type": "Pokémon",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 2,
+     "jp": false,
+     "proxy": false,
+     "set": "PFL",
+     "num": "18"
+    }
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 15.69,
+   "pqty": 3,
+   "avgCost": 5.23
   },
   {
    "base": "Oricorio GX",
@@ -2350,6 +2689,44 @@
    "spent": 0.2,
    "pqty": 1,
    "avgCost": 0.2
+  },
+  {
+   "base": "Pecharunt ex",
+   "type": "Pokémon",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 1,
+     "jp": false,
+     "proxy": false,
+     "set": "SFA",
+     "num": "39"
+    }
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 9.55,
+   "pqty": 1,
+   "avgCost": 9.55
+  },
+  {
+   "base": "Pidgeotto",
+   "type": "Pokémon",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 1,
+     "jp": false,
+     "proxy": false,
+     "set": "MEW",
+     "num": "17"
+    }
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.47,
+   "pqty": 1,
+   "avgCost": 0.47
   },
   {
    "base": "Pikipek",
@@ -2441,18 +2818,18 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 1,
+     "qty": 2,
      "jp": false,
      "proxy": false,
      "set": null,
      "num": null
     }
    ],
-   "total": 1,
-   "totalNonJp": 1,
-   "spent": 1.47,
-   "pqty": 1,
-   "avgCost": 1.47
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 2.53,
+   "pqty": 2,
+   "avgCost": 1.26
   },
   {
    "base": "Prism Energy",
@@ -2739,7 +3116,15 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 2,
+     "qty": 1,
+     "jp": false,
+     "proxy": false,
+     "set": null,
+     "num": null
+    },
+    {
+     "version": "Prize Pack",
+     "qty": 1,
      "jp": false,
      "proxy": false,
      "set": null,
@@ -2758,18 +3143,37 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 3,
+     "qty": 4,
      "jp": false,
      "proxy": false,
      "set": null,
      "num": null
     }
    ],
-   "total": 3,
-   "totalNonJp": 3,
-   "spent": 0.48,
-   "pqty": 3,
-   "avgCost": 0.16
+   "total": 4,
+   "totalNonJp": 4,
+   "spent": 0.92,
+   "pqty": 4,
+   "avgCost": 0.23
+  },
+  {
+   "base": "Sacred Ash",
+   "type": "Item",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 1,
+     "jp": false,
+     "proxy": false,
+     "set": null,
+     "num": null
+    }
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.41,
+   "pqty": 1,
+   "avgCost": 0.41
   },
   {
    "base": "Scoop Up Cyclone",
@@ -2894,6 +3298,25 @@
    "avgCost": 2.5
   },
   {
+   "base": "Shaymin",
+   "type": "Pokémon",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 2,
+     "jp": false,
+     "proxy": false,
+     "set": "DRI",
+     "num": "10"
+    }
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 1.24,
+   "pqty": 2,
+   "avgCost": 0.62
+  },
+  {
    "base": "Shuppet",
    "type": "Pokémon",
    "variants": [
@@ -2932,6 +3355,25 @@
    "avgCost": 0.09
   },
   {
+   "base": "Slowking",
+   "type": "Pokémon",
+   "variants": [
+    {
+     "version": "Reverse Holo",
+     "qty": 1,
+     "jp": false,
+     "proxy": false,
+     "set": "SCR",
+     "num": "58"
+    }
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 1.09,
+   "pqty": 1,
+   "avgCost": 1.09
+  },
+  {
    "base": "Sobble",
    "type": "Pokémon",
    "variants": [
@@ -2968,6 +3410,25 @@
    "spent": null,
    "pqty": 0,
    "avgCost": null
+  },
+  {
+   "base": "Sparkling Crystal",
+   "type": "Item",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 1,
+     "jp": false,
+     "proxy": false,
+     "set": null,
+     "num": null
+    }
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 1.13,
+   "pqty": 1,
+   "avgCost": 1.13
   },
   {
    "base": "Special Red Card",
@@ -3046,6 +3507,25 @@
    "avgCost": 15.0
   },
   {
+   "base": "Tatsugiri",
+   "type": "Pokémon",
+   "variants": [
+    {
+     "version": "Reverse Holo",
+     "qty": 1,
+     "jp": false,
+     "proxy": false,
+     "set": "TWM",
+     "num": "131"
+    }
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.7,
+   "pqty": 1,
+   "avgCost": 0.7
+  },
+  {
    "base": "Team Rocket's Archer",
    "type": "Supporter",
    "variants": [
@@ -3078,18 +3558,18 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 4,
+     "qty": 8,
      "jp": false,
      "proxy": false,
      "set": null,
      "num": null
     }
    ],
-   "total": 4,
-   "totalNonJp": 4,
-   "spent": 0.8,
-   "pqty": 4,
-   "avgCost": 0.2
+   "total": 8,
+   "totalNonJp": 8,
+   "spent": 2.69,
+   "pqty": 8,
+   "avgCost": 0.34
   },
   {
    "base": "Team Rocket's Articuno",
@@ -3116,7 +3596,7 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 2,
+     "qty": 6,
      "jp": false,
      "proxy": false,
      "set": null,
@@ -3139,11 +3619,11 @@
      "num": null
     }
    ],
-   "total": 5,
-   "totalNonJp": 5,
-   "spent": 0.48,
-   "pqty": 5,
-   "avgCost": 0.1
+   "total": 9,
+   "totalNonJp": 9,
+   "spent": 2.42,
+   "pqty": 9,
+   "avgCost": 0.27
   },
   {
    "base": "Team Rocket's Factory",
@@ -3289,18 +3769,56 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 5,
+     "qty": 6,
      "jp": false,
      "proxy": false,
      "set": null,
      "num": null
     }
    ],
-   "total": 5,
-   "totalNonJp": 5,
-   "spent": 2.08,
-   "pqty": 5,
-   "avgCost": 0.42
+   "total": 6,
+   "totalNonJp": 6,
+   "spent": 2.75,
+   "pqty": 6,
+   "avgCost": 0.46
+  },
+  {
+   "base": "Team Rocket's Porygon",
+   "type": "Pokémon",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 2,
+     "jp": false,
+     "proxy": false,
+     "set": "DRI",
+     "num": "153"
+    }
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 0.82,
+   "pqty": 2,
+   "avgCost": 0.41
+  },
+  {
+   "base": "Team Rocket's Porygon2",
+   "type": "Pokémon",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 1,
+     "jp": false,
+     "proxy": false,
+     "set": "DRI",
+     "num": "154"
+    }
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.46,
+   "pqty": 1,
+   "avgCost": 0.46
   },
   {
    "base": "Team Rocket's Proton",
@@ -3308,18 +3826,18 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 4,
+     "qty": 6,
      "jp": false,
      "proxy": false,
      "set": null,
      "num": null
     }
    ],
-   "total": 4,
-   "totalNonJp": 4,
-   "spent": 0.8,
-   "pqty": 4,
-   "avgCost": 0.2
+   "total": 6,
+   "totalNonJp": 6,
+   "spent": 1.72,
+   "pqty": 6,
+   "avgCost": 0.29
   },
   {
    "base": "Team Rocket's Spidops",
@@ -3430,7 +3948,7 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 2,
+     "qty": 7,
      "jp": false,
      "proxy": false,
      "set": null,
@@ -3438,18 +3956,18 @@
     },
     {
      "version": "Reverse Holo",
-     "qty": 2,
+     "qty": 5,
      "jp": false,
      "proxy": false,
      "set": null,
      "num": null
     }
    ],
-   "total": 4,
-   "totalNonJp": 4,
-   "spent": 0.75,
-   "pqty": 4,
-   "avgCost": 0.19
+   "total": 12,
+   "totalNonJp": 12,
+   "spent": 5.41,
+   "pqty": 12,
+   "avgCost": 0.45
   },
   {
    "base": "Torchic",
@@ -3533,7 +4051,7 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 17,
+     "qty": 23,
      "jp": false,
      "proxy": false,
      "set": null,
@@ -3556,11 +4074,11 @@
      "num": null
     }
    ],
-   "total": 19,
-   "totalNonJp": 19,
-   "spent": 6.89,
-   "pqty": 19,
-   "avgCost": 0.36
+   "total": 25,
+   "totalNonJp": 25,
+   "spent": 9.36,
+   "pqty": 25,
+   "avgCost": 0.37
   },
   {
    "base": "Unfair Stamp",
@@ -3568,18 +4086,18 @@
    "variants": [
     {
      "version": "Standard",
-     "qty": 1,
+     "qty": 2,
      "jp": false,
      "proxy": false,
      "set": null,
      "num": null
     }
    ],
-   "total": 1,
-   "totalNonJp": 1,
-   "spent": 29.92,
-   "pqty": 1,
-   "avgCost": 29.92
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 56.47,
+   "pqty": 2,
+   "avgCost": 28.24
   },
   {
    "base": "Voltaic Lightning Energy",
@@ -3645,6 +4163,25 @@
    "spent": 0.0,
    "pqty": 4,
    "avgCost": 0.0
+  },
+  {
+   "base": "Wondrous Patch",
+   "type": "Item",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 3,
+     "jp": false,
+     "proxy": false,
+     "set": null,
+     "num": null
+    }
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 1.38,
+   "pqty": 3,
+   "avgCost": 0.46
   },
   {
    "base": "Xerosic's Machinations",
@@ -3721,6 +4258,25 @@
    "spent": 5.97,
    "pqty": 1,
    "avgCost": 5.97
+  },
+  {
+   "base": "Zorua",
+   "type": "Pokémon",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 1,
+     "jp": false,
+     "proxy": false,
+     "set": "SLG",
+     "num": "52/73"
+    }
+   ],
+   "total": 1,
+   "totalNonJp": 1,
+   "spent": 0.75,
+   "pqty": 1,
+   "avgCost": 0.75
   }
  ],
  "needs": [
