@@ -1,16 +1,16 @@
 {
- "updated": "2026-08-11",
+ "updated": "2026-08-15",
  "currency": "NZD",
  "stats": {
-  "ownedCopies": 907,
-  "ownedNames": 214,
-  "ownedEntries": 272,
+  "ownedCopies": 912,
+  "ownedNames": 216,
+  "ownedEntries": 274,
   "japaneseCopies": 20,
   "proxyCopies": 0,
   "totalSpent": 651.9,
-  "purchasedCards": 931,
+  "purchasedCards": 936,
   "avgCostPerCard": 0.7,
-  "needsCount": 32
+  "needsCount": 20
  },
  "groups": [
   {
@@ -435,6 +435,25 @@
    "spent": 0.79,
    "pqty": 4,
    "avgCost": 0.2
+  },
+  {
+   "base": "Charizard ex",
+   "type": "Pokémon",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 3,
+     "jp": false,
+     "proxy": false,
+     "set": "OBF",
+     "num": "125"
+    }
+   ],
+   "total": 3,
+   "totalNonJp": 3,
+   "spent": 0.0,
+   "pqty": 3,
+   "avgCost": 0.0
   },
   {
    "base": "Charmander",
@@ -2883,6 +2902,25 @@
    "avgCost": 9.55
   },
   {
+   "base": "Pidgeot ex",
+   "type": "Pokémon",
+   "variants": [
+    {
+     "version": "Standard",
+     "qty": 2,
+     "jp": false,
+     "proxy": false,
+     "set": "OBF",
+     "num": "164"
+    }
+   ],
+   "total": 2,
+   "totalNonJp": 2,
+   "spent": 0.0,
+   "pqty": 2,
+   "avgCost": 0.0
+  },
+  {
    "base": "Pidgeotto",
    "type": "Pokémon",
    "variants": [
@@ -4546,24 +4584,12 @@
  ],
  "needs": [
   {
-   "qty": 1,
-   "name": "Abra"
-  },
-  {
    "qty": 2,
    "name": "Blaziken ex"
   },
   {
    "qty": 3,
    "name": "Boomerang Energy"
-  },
-  {
-   "qty": 1,
-   "name": "Chi-Yu"
-  },
-  {
-   "qty": 1,
-   "name": "Dawn"
   },
   {
    "qty": 1,
@@ -4583,51 +4609,15 @@
   },
   {
    "qty": 1,
-   "name": "Lana's Aid"
-  },
-  {
-   "qty": 1,
-   "name": "Lucky Helmet"
-  },
-  {
-   "qty": 1,
    "name": "Miracle Headset"
   },
   {
-   "qty": 2,
+   "qty": 3,
    "name": "Nighttime Mine"
   },
   {
    "qty": 1,
-   "name": "Pecharunt ex"
-  },
-  {
-   "qty": 1,
-   "name": "Roto-Stick"
-  },
-  {
-   "qty": 1,
-   "name": "Sacred Ash"
-  },
-  {
-   "qty": 1,
-   "name": "Shaymin"
-  },
-  {
-   "qty": 1,
    "name": "Team Rocket's Articuno"
-  },
-  {
-   "qty": 2,
-   "name": "Team Rocket's Porygon"
-  },
-  {
-   "qty": 1,
-   "name": "Team Rocket's Porygon2"
-  },
-  {
-   "qty": 1,
-   "name": "Volcanion ex"
   }
  ]
 }
